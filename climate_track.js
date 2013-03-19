@@ -213,7 +213,7 @@ var Track_time;
 function Track_Handler(request){
 	$('trackprocessing').title=(new Date().getTime()-Track_time)/1000;
 	if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
-		$('trackprocessing').innerHTML="<img src=\"bad.gif\" width=\"16\" height=\"16\">";
+		$('trackprocessing').innerHTML="<img src=\"img/bad.gif\" width=\"16\" height=\"16\">";
 		$j('#track_submit').removeClass("disabled");
 		$j('#stations_submit').removeClass("disabled");
 		$('clear_fit').disabled=false;
@@ -225,12 +225,12 @@ function Track_Handler(request){
 	$j('#stations_submit').removeClass("disabled");
 	$('clear_fit').disabled=false;
 	click.activate();
-	$('trackprocessing').innerHTML="<img src=\"good.gif\" width=\"16\" height=\"16\">";
+	$('trackprocessing').innerHTML="<img src=\"img/good.gif\" width=\"16\" height=\"16\">";
 
 	try{
 		var track_response=$j.parseJSON(request.responseText);
 	} catch (err) {
-		$('trackprocessing').innerHTML="<img src=\"bad.gif\" width=\"16\" height=\"16\">";
+		$('trackprocessing').innerHTML="<img src=\"img/bad.gif\" width=\"16\" height=\"16\">";
 		$j('#track_submit').removeClass("disabled");
 		$j('#stations_submit').removeClass("disabled");
 		$('clear_fit').disabled=false;
@@ -248,7 +248,7 @@ function Track_Handler(request){
 
 function Grad_Handler(request){
 	if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
-		$('trackprocessing').innerHTML="<img src=\"bad.gif\" width=\"16\" height=\"16\">";
+		$('trackprocessing').innerHTML="<img src=\"img/bad.gif\" width=\"16\" height=\"16\">";
 		$j('#track_submit').removeClass("disabled");
 		$j('#stations_submit').removeClass("disabled");
 		$('clear_fit').disabled=false;
@@ -260,12 +260,12 @@ function Grad_Handler(request){
 	$j('#stations_submit').removeClass("disabled");
 	$('clear_fit').disabled=false;
 	click.activate();
-	$('trackprocessing').innerHTML="<img src=\"good.gif\" width=\"16\" height=\"16\">";
+	$('trackprocessing').innerHTML="<img src=\"img/good.gif\" width=\"16\" height=\"16\">";
 
 	try{
 		var grad_response=$j.parseJSON(request.responseText);
 	} catch (err) {
-		$('trackprocessing').innerHTML="<img src=\"bad.gif\" width=\"16\" height=\"16\">";
+		$('trackprocessing').innerHTML="<img src=\"img/bad.gif\" width=\"16\" height=\"16\">";
 		$j('#track_submit').removeClass("disabled");
 		$j('#stations_submit').removeClass("disabled");
 		$('clear_fit').disabled=false;
@@ -304,7 +304,7 @@ var xurfaces_time;
 function FitSurfaces_Handler(request){
 	$('fitprocessing').title=(new Date().getTime()-FitSurfaces_time)/1000;
 	if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
-		$('fitprocessing').innerHTML="<img src=\"bad.gif\" width=\"16\" height=\"16\">";
+		$('fitprocessing').innerHTML="<img src=\"img/bad.gif\" width=\"16\" height=\"16\">";
 		$j('#fit_submit').removeClass("disabled");
 		$('clear_fit').disabled=false;
 		return;
@@ -315,14 +315,14 @@ function FitSurfaces_Handler(request){
 	$j('#track_submit').removeClass("disabled");
 	$j('#track_submit').addClass("down");
 	doTrack();
-	$('fitprocessing').innerHTML="<img src=\"good.gif\" width=\"16\" height=\"16\">";
+	$('fitprocessing').innerHTML="<img src=\"img/good.gif\" width=\"16\" height=\"16\">";
 }
 
 function FitSurfaces(){
 	$('fit_submit').disabled=true;
 	$('clear_fit').disabled=true;
 	click.deactivate();
-	$('fitprocessing').innerHTML="<img src=\"processing.gif\" width=\"16\" height=\"16\">";
+	$('fitprocessing').innerHTML="<img src=\"img/processing.gif\" width=\"16\" height=\"16\">";
 
 	if(Fit_box!=null){
 		tracks.removeFeatures([Fit_box]);
@@ -665,7 +665,7 @@ function init(){
 			$j('#track_submit').addClass("disabled");
 			$j('#stations_submit').addClass("disabled");
 			$('clear_fit').disabled=true;
-			$('trackprocessing').innerHTML="<img src=\"processing.gif\" width=\"16\" height=\"16\">";
+			$('trackprocessing').innerHTML="<img src=\"img/processing.gif\" width=\"16\" height=\"16\">";
 			Track_time=new Date().getTime();
 		    var lonlat = map.getLonLatFromViewPortPx(e.xy);
 			TrackParams=Fit_surf_params;
