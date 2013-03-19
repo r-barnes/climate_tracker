@@ -1,7 +1,5 @@
-Data Sources
-============
 USHCN (Usefully long, some quality concerns)
---------------------------------------------
+============================================
 Offers:
 
  * PRCP = precipitation (hundredths of inches)
@@ -97,8 +95,46 @@ The above results are not unexpected. The USHCN's site states:
 
 > The start date for stations in the USHCN vary so that the stations used to compute the national value may change from year to year, especially for the earliest years. At present, ancillary variables are not available in the USHCN. Information for geographical sub-regions such as climate regions, river basins, and agricultural regions are currently not available, although they could be computed eventually. Data for the USHCN are not available in near real-time status.
 
+Further Notes
+-------------
+Data for this project was drawn from the U.S. Historical Climatology Network (USHCN): a group of approximately 1200 stations, 33 in Minnesota, spread across the 48 contiguous states, drawn from the U.S. Cooperative Observer Network. The USHCN was developed as a collaboration between NOAA's National Climatic Data Center (NCDC) and the Department of Energy's Carbon Dioxide Information Analysis Center (CDIAC). The stations produce a set of daily values for maximum and minimum temperatures, precipitation, snowfall, and snow depth.
+
+While proof-of-concept models for the project utilised a different data set&mdash;the USHCN version 2 Monthly Data, discussed below&mdash;it was intended that this be replaced with daily data during actual analysis. Daily data is desirable because it records often important discrete extremes which are averaged out in the monthly data sets. For instance, while a given January may average -20F, certain species of tree-preying beetles are only killed if the temperature drops below -40F, something which is impossible to see in averaged data.
+
+However, data auditing showed trade-offs between the amount of data available and the reliability of the method of analysis used by this project. Our climate tracking paradigm relies on fitting quadratic surfaces to temporally-varying data and the assumption that temporal changes in the fitted quadratics correspond only to changes in climate. The chart below of the percentage of bad or missing data points over time shows this assumption to be invalid: missing data is also a source of variation. Significantly less USHCN data is available at the beginning of the record than at the end; disturbingly, the last decade shows the first long-term decrease in data availability, denying future scientists access to consistent high spatial resolution data.
+
+![](img/mn_summary_chart.png)
+
+Minnesota is reflective of the United States as a whole:
+
+![](img/us_summary_chart.png)
+
+While it may be possible to ignore the beginning of the record where whole months or years worth of data are missing (some stations had not even been put into operation yet), the entire record is littered with missing days. Throughout the period from 1950-2009, which shows the highest data availability above, very few stations show complete records, as illustrated below:
+
+![](img/ushcn_daily_quality_count_mn.png)
+
+The trend is similar for the United States as a whole:
+
+![](img/ushcn_daily_quality_count.png)
+
+For many stations, there is at least one month, and possibly many more, for which days of data are missing. A snapshot of the data availability from 1900 onwards for the entire network is below (white is 100% data availability, green is 0% data availability, blue is intermediate):
+
+![](img/ushcn_daily_month_picture_us_tmax.png)
+
+![](img/ushcn_daily_month_picture_us_prcp.png)
+
+![](img/ushcn_daily_month_picture_mn_tmax.png)
+
+![](img/ushcn_daily_month_picture_mn_prcp.png)
+
+It is clear from the above, that there is no subset of stations within the USHCN for which long-term climate data is available without any missing values.
+
+This implies that any project seeking to work with the USHCN must have a methodology for handling instances of missing data.
+
+Perhaps missing data can simply be ignored?
+
 USCRN (High-quality, but not yet useful)
-----------------------------------------
+========================================
 The US Climate Reference Network ([USCRN](http://www.ncdc.noaa.gov/crn/)) consists of 114 NOAA-maintained stations.
 
 The site states:
@@ -114,12 +150,12 @@ Performance of the system is measured against 4000 US Coop stations (todo: where
 Since the network had only 2 stations in 2000 (and ~203 by 2011), the data set is probably not yet useful for this study.
 
 USHCN-M (High-quality, but not yet useful)
-------------------------------------------
+==========================================
 
 U.S. Historical Climatology Network - Modernization (USHCN-M) will maintain the same quality as the USCRN, but be spaced more closely, and focus solely on temperature and precipitation. The USHCN-M stations will be deployed at a 100km spatial resolution to provide for the detection of regional climate change signals. Following completion of the pilot project, the long-term vision is deployment in each of the nine NOAA climate regions of the United States at a 100 km spatial resolution that will allow the detection of regional climate change signals. About 1000 locations in the United States will have either a USHCN-M or USCRN station at the end of deployment for this project.
 
 GSOD (Unevaluated)
-------------------
+==================
 
 Offers: 
 <pre>
@@ -155,7 +191,7 @@ cat tar_contents | sed 's/  */ /g' | cut -d ' ' -f 6 | grep gz | sed 's/[a-z.\/]
 </pre>
 
 [Global Historic Climate Network](http://www.ncdc.noaa.gov/ghcnm/)
-------------------------------------------------------------------
+==================================================================
 The Global Historical Climatology Network (GHCN-Monthly) data base contains historical temperature, precipitation, and pressure data for thousands of land stations worldwide. The period of record varies from station to station, with several thousand extending back to 1950 and several hundred being updated monthly via CLIMAT reports. The data are available without charge through NCDC's anonymous FTP service.
 
 Includes some Canadian stations:
@@ -165,19 +201,19 @@ Includes some Canadian stations:
 ![GHCN stations in Canada](img/ghcn_canada.png)
 
 VEMAP2 Gridded Record
----------------------
+=====================
 The VEMAP Phase 2 historical gridded record (1895-1993) provides the most spatially comprehensive information about minimum and maximum temperature, precipitation, solar radiation (and irradiance), and vapor pressure (relative humidity). The VEMAP record is based on data from NOAA's National Climatic Data Center's U.S. Historical Climate Network (HCN) and other cooperative network stations, plus the USDA-Natural Resources Conservation Service (NRCS) SnoTel stations for high elevation precipitation. Data from 8000 stations were statistically in-filled to create continuous records. These were then spatially interpolated to a 0.5 deg lat/log grid, accounting for elevation and rainshadow effects, using the PRISM model (Chris Daly, OSU and Tim Kittel, NCAR). There are both monthly and daily versions. Daily fields are generated from monthly fields using a stochastic weather generator. Grid point daily data are not spatially auto-correlated at the daily timestep (i.e. daily events are not synchronous in adjacent grid cells), but are resolved on the VEMAP 0.5� x 0.5� grid, a finer resolution than the GCM data. [Link](http://www.cgd.ucar.edu/vemap/)
 
 Climate Epochs Data Set
------------------------
+=======================
 This data set, developed by NCDC, is used to identify adjacent periods with significant changes of temperature, precipitation, or both. The data set is useful for examining the effects of climate change using observed data. Periods are 10 year, 15 year, and 20 year epochs, done for each season and annual.
 
 Nineteenth Century US Climate Data Set Project
-----------------------------------------------
+==============================================
 Monthly temperature and precipitation data from the 19th century, from published data that have been digitized by the Forts project. [Link](http://www.ncdc.noaa.gov/onlinedata/forts/forts.html)
 
 Canadian Climate Data and Information Archive
----------------------------------------------
+=============================================
 [Link](http://www.climate.weatheroffice.gc.ca/Welcome_e.html)
 
 For those with a high speed Internet connection, the 2006/7 CDCD containing daily temperature, precipitation and snow-on-the-ground data is available for download. Data is available for the complete period of record for each location up to 2007. The file contains software that provides access to the data. [CDCD Link](ftp://arcdm20.tor.ec.gc.ca/pub/dist/CDCD/)
@@ -215,9 +251,9 @@ Which can then be processed with [this](ranged_histogram.py) ranged histogram co
 Note that the above is based entirely on the start and end dates of data availability. There may be months, years, or decades missing in the middle.
 
 US First Order Summary of the Day
----------------------------------
+=================================
 Contains some Canadian data
 
 Governmental Exchange Data
---------------------------
+==========================
 Contains some Canadian data
