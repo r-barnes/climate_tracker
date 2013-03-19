@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>Climate Tracker</title>
+    	<script src="./lib/OpenLayers.js"></script>
+    	<script src="./OpenLayers_AddOns.js"></script>
+<!--		<script src="./html5slider.js"></script>-->
+		<link type="text/css" href="css/smoothness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+		<script src="OpenLayers_ScaleBar.js"></script>
+		<script src="station_data.js"></script>
+		<script src="climate_track.js" defer></script>
+		<link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body onLoad="init()">
+	<div id="main" style="height:600px;">
+		<div id="nav" style="width:80%; height:500px; float:left">
+			<div id="controls">
+				<a class="button down" id="pan_submit" onClick="doPan()">Pan/Zoom Map</a>
+				<a class="button" id="stations_submit" onClick="doSelect()">Select Stations</a>
+				<a class="button disabled" id="track_submit" onClick="doTrack()">Track</a>
+				<a class="button" id="backtrack_submit" onClick="doBackTrack()">Backtrack</a>
+				<a class="button" id="gradient_submit" onClick="doGradient()">Gradient</a>
+				<span id="trackprocessing" style="margin-right:5em;"></span>
+				<select id="which_season" style="display:none"><option>Summer</option><option>Winter</option></select>
+
+				<div style="float:right">
+					<a class="button" id="animate_submit" onClick="Animate()">Animate</a>
+					<select id="animatespeed"><option value="0.5">Fast</option><option value="1" selected>Slow</option></select>
+					<label>Loop<input type="checkbox" id="animateloop"></label>
+				</div>
+				<div style="float:right;margin-right:2em;">
+					<input type="submit" value="Center MN" onClick="centerMN()">
+					<input type="submit" value="Center US" onClick="centerUS()">
+				</div>
+			</div>
+			<div id="mapwrapper" style="margin:5px 0 5px 0;width:100%;position:relative;">
+				<div id="year_range_value">2010</div>
+				<div style="width:100%; height:600px; border:1px solid black;" id="map"></div>
+			</div>
+			<div id="year_range_div" style="text-align:center;width:100%;height:5em">
+				<div id="year_range" style="width:90%;margin:10px auto 0 auto"></div>
+				<div id="vrange_slider" style="width:90%;margin:10px auto 0 auto"></div>
+				<span id="velocity_min_num" style="float:left">1900</span>
+				<span id="velocity_max_num" style="float:right">2010</span>
+				<span id="velocity_avg" style="margin-left:2em;">Avg: </span>
+
+			</div>
+
+			<span id="grad_values" style="margin-left:2em;"></span>
+
+			<p><img src="warning.png">This sign indicates that two sequential points in the track were more than ~62.5 miles apart. This may indicate a bad fit.</p>
+			<p>The year in the upper right denotes the upper year of the bracket of data being shown.</p>
+			<p>Note that stations are "clustered". Selecting a station icon may select one or more neighbouring stations. Presently, stations don't preserve their selection colouring when you zoom in/out.</p>
+
+			<p>Created by Richard. Last updated 9/4/02011 at 12:10CST.</p>
+		</div>
+
+		<div id="sidebar" style="width:18%;float:left;margin-left:5px;">
+			<b>Selected Stations (<span id="stationnum">0</span>)</b>
+			<br><select id="stationslist" size="10" style="width:100%">
+			</select>
+			<br>
+			<input type="submit" id="fit_submit" value="Fit Surfaces" onClick="FitSurfaces()" disabled="true">
+			<input type="submit" id="clear_fit" value="Clear" onClick="ClearStations()" disabled="true">
+			<input type="submit" id="fit_box_toggle" value="Box" onClick="ToggleFixBox()">
+			<br><select id="surface_type" style="display:none;"><option>Linear</option><option selected>Quad</option></select>
+			<select id="do_seasonal" onchange="year_season_select(this.value)" style="display:none"><option selected>Yearly</option><option>Seasonal</option></select>
+			<br>
+			<select id="quickstations">
+			</select>
+			<input type="submit" id="quick_submit" value="<-Select" onClick="QuickSelect()">
+			<span id="fitprocessing"></span>
+			<hr>
+			<b>Track List (<span id="tracknum">0</span>)</b><input type="submit" id="track_hash_load" onClick="TrackHashLoad()" value="Load">
+			<select id="interesting_surfaces" style="width:100%">
+				<option value="box">From Box Below</option>
+<!--				<option value="9b2f3aec1d109ca7a47d1172dc5b451c4fa1727c.quad.yearly">Twin Cities</option>
+				<option value="c7d18e8b54657eec65b20b5dd64ba743abe4182f.quad.yearly">Red River Valley</option>
+				<option value="c8a89c3d652540684e63157fbe7d846107a2f248.quad.yearly">Duluth</option>
+				<option value="fc6fd50e36c9e2337b4a91476f030c4e2769d9d0.quad.yearly">Rochester</option>
+				<option value="65340d4a4c30e00482fc68ff19bd165ed9694ee9.quad.yearly">Marshall</option>-->
+			</select>
+			<br><input id="track_hashes" type="text" style="width:100%">
+			<br><div id="tracklist" style="height:10em;border:1px solid black;overflow-y:scroll;">
+			</div>
+			<hr>
+			<b>Hovering Over (<span id="hovernum">0</span>)</b>
+			<ul id="hoverlist"></ul>
+		</div>
+	</div>
+</body>
+</html>

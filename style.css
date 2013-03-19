@@ -1,0 +1,98 @@
+.olControlLayerSwitcher {top:45px !important;}
+
+#year_range_value{font-weight:bold;position:absolute;right:0;top:0;font-size:40px;z-index:20000;color:white;padding:0 5px 0 5px;
+	border-bottom-left-radius:10px;
+	background-color:darkBlue;
+	opacity:0.75;
+}
+
+
+a.button {
+    background: #ccc;
+    cursor: default;
+    border-top: solid 2px #eaeaea;
+    border-left: solid 2px #eaeaea;
+    border-bottom: solid 2px #777;
+    border-right: solid 2px #777;
+    padding: 2px;
+	font-size:10pt;
+}
+
+a.down {
+    background: #bbb;
+    border-top: solid 2px #777;
+    border-left: solid 2px #777;
+    border-bottom:solid 2px  #eaeaea;
+    border-right: solid 2px #eaeaea;
+}
+
+a.disabled {
+	color:#808080;
+	border-style:none;
+}
+
+#hoverlist{
+	padding-left:1.5em;
+	margin-top:0;
+}
+
+
+
+
+.olControlScaleBar {
+    bottom: 10px;
+    left: 10px;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.olControlScaleBarBar {
+    height: 1px;
+    top: 14px;
+    background: #333;
+}
+
+.olControlScaleBarBarAlt {
+    height: 1px;
+    top: 14px;
+    background: #333;
+}
+
+.olControlScaleBarMarkerMajor {
+    height: 7px;
+    width: 1px;
+    top: 11px;
+    background: #333;
+}
+
+.olControlScaleBarMarkerMinor {
+    height: 5px;
+    width: 1px;
+    top: 12px;
+    background: #333;
+}
+
+.olControlScaleBarNumbersBox {
+    width: 40px;
+    height: 13px;
+    top: 21px;
+    font-size: 0.7em;
+}
+
+.olControlScaleBarLabelBox {
+    top: -2px;
+    height: 15px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 0.7em;
+    font-variant: small-caps;
+}
+
+.olControlScaleBarLabelBoxSingleLine {
+    height: 15px;
+    width: 35px;
+    top: 5px;
+    left: 10px;
+    font-size: 0.7em;
+    font-variant: small-caps;
+}
