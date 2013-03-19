@@ -254,7 +254,9 @@ Further Notes
 -------------
 In addition to the [reference information](ext_doc/cdcd_descriptor.doc) provided to me by the CDCD, I have built my [own corrected documentation](my_doc/cdcd_guide.pdf).
 
-Statio nnumbers are based on a location scheme explained by [this map](ext_doc/Climatological_Districts.pdf).
+Station numbers are based on a location scheme explained by [this map](ext_doc/cdcd_Climatological_Districts.pdf).
+
+Contents of the CDCD data CDs are explained by [this file](ext_doc/cdcd_FILEINFO).
 
 US First Order Summary of the Day
 =================================
