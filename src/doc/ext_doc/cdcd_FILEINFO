@@ -1,0 +1,198 @@
+On the CD2 CD-ROM there are three types of files:
+
+
+Index files
+	In each index file there is one header record and for each station in the data file there is one data record
+		Stations in the index file are not arranged in any particular order (they were originally in order by station number, but insertions and deletions may have changed that somewhat); since none of the districts have a large number of stations (most have less than 100), a sequential search is roughly as fast, or faster, than any other method, and certainly less of a bother to program.  Sequence of stations in the index file is the same as for the associated data file.
+	Path and Name of Index File
+		"[d]:\" + left$(DistNum$,1) + "\Index." + DistNum$, where [d] is replaced with the letter of the drive containing the CD‑ROM
+	Index File Header record structure:
+		ID AS STRING * 4
+		MaxLat AS INTEGER
+		MinLat AS INTEGER
+		MaxLong AS INTEGER
+		MinLong AS INTEGER
+		MaxElev AS INTEGER
+		MinElev AS INTEGER
+		EarliestYear AS INTEGER
+		LatestYear AS INTEGER
+		NumberOfStns AS INTEGER
+		DistrictID AS STRING * 3
+		DistrictName AS STRING * 42
+	Index File header record explanation:
+		ID is a 4‑char field that identifies the data‑file version being used; for this version it's always "WWWW"
+		MaxLat is the maximum latitude of any station found in this district; it is an integer representation of the degrees of latitude multiplied by 100 and added to the minutes of latitude; all values are considered to be West; e.g., 10326'W is 10326
+		MinLat is the minimum latitude of any station found in this district; format is the same as MaxLat
+		MaxLong is the maximum longitude of any station found in this district; it is an integer representation of the degrees of longitude multiplied by 100 and added to the minutes of longitude; all values are considered to be north; e.g., 4550'N is 4550
+		MinLong is the minimum longitude of any station found in this district; format is the same as MaxLong
+		MaxElev is an integer representation of the maximum elevation of any station in this district
+		MinElev is an integer representation of the minimum elevation of any station in this district
+		EarliestYear is an integer representation of the earliest year of data of any station in this district
+		LatestYear is an integer representation of the latest year of data of any station in this district
+		NumberOfStns is an integer representation of the number of stations in this district
+		DistrictID is the 3‑character district number (e.g., "101" to "850")
+		DistrictName is the official name of the district  (e.g., "Lower Saskatchewan River Basin"); 42 characters are reserved for this field
+
+	Index File data record structure:
+		CSN AS STRING * 4
+		StationName AS STRING * 24
+		Airport AS STRING * 3
+		Longitude AS INTEGER
+		Latitude AS INTEGER
+		Elevation AS INTEGER
+		FirstYear(0 TO 6) AS INTEGER
+		LastYear(0 TO 6)  AS INTEGER
+		StartingRecordNumber AS INTEGER
+	Index File Data Record explanation:
+		CSN is the last four characters of the 7‑character station ID (e.g., for "6158733" this would contain "8733"
+		StationName is the station's name as found in the Station Data Catalogues; 24 characters are reserved for this field
+		Airport is the three‑character airport identifier that some stations have (e.g., "YWG" for Winnipeg); if none exists for this station then the field is left blank
+		Longitude is an integer representation of the degrees of longitude multiplied by 100 and added to the minutes of longitude; all values are considered to be West; e.g., 10326'W is 10326
+		Latitude is an integer representation of the degrees of latitude multiplied by 100 and added to the minutes of latitude; all values are considered to be north; e.g., 4550'N is 4550
+		Elevation is the elevation in metres
+		FirstYear is a seven‑integer array containing the first year of data for the station, and for each of the six elements (in the order 001,002,010,011,012,013)
+		LastYear is a seven‑integer array containing the last year of data for the station, and for each of the six elements (in the order 001,002,010,011,012,013)
+		StartingRecordNumber is the record number of the first record for the station; this record is a header that contains information about the station
+
+
+STATIONS.ALL 
+		file found on the root directory
+		This file contains all of the Index File Header records (in order); it's useful when compiling a list of districts and related information
+
+
+Data files
+	In the data file each station begins with a header record, and then the station's data records (one record for one element for one year). The file contains one header record for each station.
+	Path and Name of Data File
+		"[d]:\" + left$(DistNum$,1) + "\Data." + DistNum$, where [d] is replaced with the letter of the drive containing the CD‑ROM
+	Data File header record structure:
+		ID AS STRING * 4
+		CSN AS STRING * 7
+		StationName AS STRING * 24
+		Airport AS STRING * 3
+		Latitude AS INTEGER
+		Longitude AS INTEGER
+		Elevation AS INTEGER
+		FirstYear AS INTEGER
+		LastYear AS INTEGER
+		RecNumb(1 TO 300) AS INTEGER
+		DataAvailable(1 TO 300) AS STRING * 1
+		Filler AS STRING * 123
+	Data File header record explanation:
+		ID is a 4‑char field that identifies the data‑file version being used; for this version it's always "WWWW"
+		CSN is the 7‑character station ID as found in the station data catalogues (e.g., "6139525")
+		StationName is the station's name as found in the Station Data Catalogues; 24 characters are reserved for this field
+		Airport is the three‑character airport identifier that some stations have (e.g., "YWG" for Winnipeg); if none exists for this station then the field is left blank
+		Latitude is an integer representation of the degrees of latitude multiplied by 100 and added to the minutes of latitude; all values are considered to be West; e.g., 10326'W is 10326
+		Longitude is an integer representation of the degrees of longitude multiplied by 100 and added to the minutes of longitude; all values are considered to be north; e.g., 4550'N is 4550
+		Elevation is the elevation in metres
+		FirstYear is an integer containing the first year of data for the station
+		LastYear is an integer containing the last year of data for the station
+		RecNumb is a 300‑element integer containing the record number of each year's first element; this number is an offset from the header record (the first record following the header is record #1); in this array the first element is for the year 1801, the 100th is for 1901, the 150th is for 1951, etc.
+		DataAvailable is a 300‑element single‑character element that contains information about the availability of data in a year. Each character in this array is a bit‑field in which each of the right‑most six bits indicates whether or not an element is available for a requested year; e.g., if the entire byte is "00100011" this indicates that there is data for the first, second, and sixth elements.  From right to left, the elements indicated are:  Maximum Temperature (001), Minimum Temperature (002), One‑Day Rainfall (010), One‑Day Snowfall (011), One‑Day Precipitation (012), Snow On The Ground (013).  As with the RecNumb array the first element is the year 1801, the 100th is for 1901, etc.
+		Filler takes up 123‑bytes and is only here to pad the record out to the same length as a data record (1071 bytes); fixed‑length records make life easier when reading the file
+	Data File data record structure & explanation:
+		There is one basic format with several different variations, depending upon the element contained within. 
+		The structure is as follows:
+			an array of 366 integer values (2 bytes each), each containing one day's value; 
+			an array of 366 flags (1 nibble each), each containing one day's flag
+				this array can be expanded to 366 bytes, in which each byte has a value between 0 and 15.  Flags corresponding to these values are:
+					0 ‑> no flag
+					1 ‑> "E"
+					2 ‑> "T"
+					3 ‑> "C"
+					4 ‑> "L"
+					5 ‑> "A"
+					6 ‑> "F"
+					7 to 13 ‑> unused
+					14 ‑> "φ" (ASCII 237) ‑‑ this is used to denote Feb 29 in a non‑leap year
+					15 ‑> "M"
+			12 sets of summary values (each set 13 bytes in length) of monthly data: Total Size=>12*13=156 bytes
+				Maximum Temperature
+					1 Mean Max for Month (Integer)
+					2 # Days Missing (one character)
+					3 #Days with Max above 0 (one character)
+					4 Maximum Max for Month (Integer)
+					5 Date of Maximum Max (one character)
+					6 Minimum Max for Month (one character)
+					7 Date of Minimum Max (one character)
+					8 Max # Days in a Row with Missing Data (one character)
+					9 # Days with Misg Mean Temperature (one character)
+					10 Maximum # Days in a row with Misg Mean Temperature (one character)
+				Minimum Temperature
+					1 Mean Minimum for Month (Integer)
+					2 # Days Missing (one character)
+					3 #Days with Min above 0 (one character)
+					4 Maximum Min for Month (Integer)
+					5 Date of Maximum Min (one character)
+					6 Minimum Min for Month (one character)
+					7 Date of Minimum Min (one character)
+					8 Max # Days in a Row with Missing Data (one character)
+					9 Mean Temperature (Integer)
+				Precipitation (Rain, Snow, Total Pcpn)
+					1 Total for Month (Integer)
+					2 # Days Missing (one character)
+					3 # Days with > 0 cm/mm (one character)
+					4 Max one‑day total for Month (Integer)
+					5 Date of Max (one character)
+					6 # Days with > Trace (one character)
+					7 # Days with > 1 cm (one character)
+					8 # Days with Uncrtn/accum pcpn (one character)
+					9 Maximum # Days in a row with Uncrtn/accum Pcpn (one character)
+					10 Unassigned (2 chars)
+				Snow on the Ground
+					1 Median for Month (Integer)
+					2 # Days Missing (one character)
+					3 Days with >0 cm (one character)
+					4 Max for Month (Integer)
+					5 Date of Max (one character)
+					6 Min for Month (Integer)
+					7 Date of Min (one character)
+					8 Days with > Trace (one character)
+					9 Days with > 1 cm (one character)
+					10 Unassigned (1 char)
+			Note that, except for Snow on the Ground, all values need to be divided by 10; e.g., the value 10.3 is stored as 103 (this is done to remove the need to store values as the more space‑consuming floating‑points).
+			The variables that are stored as "one character" are actually single‑byte integers; their ASCII value corresponds to their numeric value. 
+
+
+
+Following are the basic steps required to obtain data values from the CD
+
+	read index file for district
+		sequentially seek through the index file until the required station is found (the largest index file is less than 16K, so this is not a lengthy procedure).
+		from the index file get the information about the station and its location.  Note that the location data is for the most part only "nice to know" material, the FirstYear and LastYear arrays are useful by not absolutely essential, and the StartingRecordNumber is necessary if the reading software is not to do a sequential search through all stations preceding the requested station.
+	Read the station's header information found in the data file for the appropriate district
+		The header record is found at the location pointed to by the value in StartingRecordNumber previously read from the index file
+	Using DataAvailable and RecNumb arrays determine whether or not data exists for a given year, and if so what the record number is for the first record in that year.
+	From the data file, read the data for the required year, convert daily flags, and any necessary monthly character/integer data.
+
+
+
+/*	0 ‑> no flag
+
+	1 ‑> "E"		//Estimated
+
+	2 ‑> "T"		//Trace occurred. Value is zero
+
+	3 ‑> "C"		//Precipitation occurred; amount is uncertain; recorded value is 0
+
+	4 ‑> "L"		//Precipitation may or may not have occurred; amount is unknown; record values is 0
+
+	5 ‑> "A"		//Amount accumulated over more than one day; previous value's flag was C or L
+
+	6 ‑> "F"		//Amount accumulated over more than one day and estimated
+
+	7 to 13 ‑> unused
+
+	14 ‑> "φ" (ASCII 237) ‑‑ this is used to denote Feb 29 in a non‑leap year
+
+	15 ‑> "M"		//Missing
+
+
+Accumulated values are not used by the Extremes. When processing the Sums & Averages section the following rules are used to decide whether months/seasons should be considered missing:
+
+-a month of temperature data will be considered as missing when it has more than a total of five daily values missing or when there are more than three consecutive dail values missing at any point in the month
+
+-a month of precip data will be deemed as missing when it has any missing daily values (Note that while precip flags indicating accumulated values are always considered to be issing for the purposes of the extremes section, they only constitute a period missing data in this section when there are mroe than four consectuvie days with an A, C, F, or L flag. A season with any missing monthly values will be considered to be missing
+
+The binary sequency F1D8 (in the station index file) implies that there is no firstyear or lastyear for that element
+Which is to say: a firstyear or lastyear value of -9999 means that there is no data for that element
