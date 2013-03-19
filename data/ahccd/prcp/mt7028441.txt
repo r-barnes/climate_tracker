@@ -1,5 +1,5 @@
-7028441,THETFORD MINES           ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7028441,THETFORD MINES           ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7028441,THETFORD MINES           ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7028441,THETFORD MINES           ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1922, -9999.9,M, -9999.9,M,    56.6, ,   103.5, ,    65.9, ,   310.4, ,    52.8, ,   122.3, ,    47.3, ,   105.4, ,    76.1, ,   147.8, , -9999.9,M, -9999.9,M,   226.1, ,   485.6, ,   228.8, ,
@@ -91,3 +91,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   120.6, ,   157.2, ,   170.1, ,    74.1, ,    61.2, ,   234.2, ,   150.7, ,   162.0, ,    86.4, ,   122.7, ,    73.8, ,   154.0, ,  1566.9, ,   476.4, ,   305.4, ,   546.9, ,   282.8, ,
 2009,   132.2, ,   117.3, ,    59.2, ,   140.8, ,   130.1, ,   152.4, ,   183.5, ,   128.8, ,    78.1, ,   100.0, ,   129.5, ,   133.1, ,  1485.0, ,   403.4, ,   330.1, ,   464.7, ,   307.6, ,
 2010,   113.6, ,    55.9, ,    48.3, ,    79.7, ,    81.7, ,   160.7, ,   130.2, ,    80.4, ,   173.3, ,   138.8, ,   134.6, ,   134.9, ,  1331.9, ,   302.6, ,   209.6, ,   371.3, ,   446.6, ,
+2011,    54.2, ,   205.6, ,   194.1, ,   134.5, ,   183.3, ,   101.4, ,   155.7, ,   219.3, ,   144.9, ,   122.8, , -9999.9,M, -9999.9,M, -9999.9,M,   394.7, ,   511.9, ,   476.4, , -9999.9,M,

@@ -1,5 +1,5 @@
-5010640,CYPRESS RIVER            ,MB  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-5010640,CYPRESS RIVER            ,MB  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+5010640,CYPRESS RIVER            ,MB  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+5010640,CYPRESS RIVER            ,MB  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1948, -9999.9,M, -9999.9,M, -9999.9,M,    49.1, ,    73.9, ,    68.7, ,    73.8, ,    48.5, ,     6.8, ,    23.0, ,    35.8, ,   112.7, , -9999.9,M, -9999.9,M, -9999.9,M,   190.9, ,    65.6, ,
@@ -65,3 +65,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    14.8, ,    11.0, ,    29.8, ,    37.4, ,    37.3, ,   123.1, , -9999.9,M,    91.2, ,    50.5, ,    55.4, ,    25.6, ,    59.6, , -9999.9,M,    86.3, ,   104.4, , -9999.9,M,   131.5, ,
 2009,    36.4, ,    44.9, ,    45.0, ,    36.5, ,    82.8, ,    78.7, ,    84.6, ,    63.6, ,    42.5, ,    67.9, ,    18.0, ,    51.0, ,   651.9, ,   140.8, ,   164.3, ,   227.0, ,   128.4, ,
 2010,    18.9, ,    40.6, ,     9.2, ,    46.5, , -9999.9,M,   115.0, ,    47.0, ,   115.8, ,    61.3, ,    64.0, ,    57.4, ,    51.9, , -9999.9,M,   110.5, , -9999.9,M,   277.9, ,   182.6, ,
+2011,    57.8, ,    20.3, ,    15.3, ,    51.1, ,   161.6, ,    73.4, ,    47.1, ,    40.7, ,    26.1, ,     6.8, ,    29.4, ,    14.2, ,   543.7, ,   130.0, ,   227.9, ,   161.2, ,    62.3, ,

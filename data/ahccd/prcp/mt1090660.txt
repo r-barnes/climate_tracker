@@ -1,5 +1,5 @@
-1090660,BARKERVILLE              ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1090660,BARKERVILLE              ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1090660,BARKERVILLE              ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1090660,BARKERVILLE              ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1888, -9999.9,M,   114.3, ,    71.0, ,   147.0, ,    43.5, ,   110.1, ,    94.7, ,    88.9, ,    62.7, ,    99.9, ,    63.4, ,    83.4, , -9999.9,M, -9999.9,M,   261.5, ,   293.7, ,   226.0, ,
@@ -125,3 +125,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    96.8, ,    98.2, ,    66.2, ,    18.3, ,    62.5, ,    47.3, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   321.7, ,   147.0, , -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

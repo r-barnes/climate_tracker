@@ -1,5 +1,5 @@
-1125079,MERRITT STP              ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1125079,MERRITT STP              ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1125079,MERRITT STP              ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1125079,MERRITT STP              ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1919,    48.7, ,     4.6, ,    69.8, ,    13.8, ,    16.8, ,    28.1, ,    16.5, ,     1.2, ,    17.0, ,    27.5, ,    49.8, ,    22.4, ,   316.3, , -9999.9,M,   100.4, ,    45.9, ,    94.3, ,
@@ -94,3 +94,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    16.0, ,     7.9, ,     3.4, ,     6.9, ,    40.6, ,    29.8, ,    10.0, ,    10.8, ,    17.4, ,    30.3, ,    19.8, ,    34.6, ,   227.4, ,    71.9, ,    50.9, ,    50.6, ,    67.4, ,
 2009,     7.1, ,    13.0, ,    23.9, ,    19.5, ,    11.9, ,    26.1, ,    19.9, ,     2.0, ,    32.3, ,    62.0, ,    62.6, ,    38.0, ,   318.4, ,    54.7, ,    55.3, ,    48.0, ,   156.9, ,
 2010,    21.3, ,    11.9, ,    31.9, ,     6.5, ,    60.8, ,    30.1, ,    14.1, ,    30.0, ,    47.8, ,    13.6, ,    33.9, ,    15.7, ,   317.5, ,    71.2, ,    99.2, ,    74.1, ,    95.3, ,
+2011,    41.8, ,    22.3, ,    23.9, ,    20.7, ,    48.2, ,    16.7, ,    50.8, ,     0.0, ,    30.5, ,    19.4, ,    59.9, ,    15.3, ,   349.4, ,    79.8, ,    92.9, ,    67.4, ,   109.8, ,

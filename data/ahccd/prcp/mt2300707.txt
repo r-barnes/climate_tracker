@@ -1,5 +1,5 @@
-2300707,CHESTERFIELD INLET A     ,NU  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-2300707,CHESTERFIELD INLET A     ,NU  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+2300707,CHESTERFIELD INLET       ,NU  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+2300707,CHESTERFIELD INLET       ,NU  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1931, -9999.9,M,    24.4, ,     6.1, ,    17.5, ,     8.8, ,    84.9, ,    26.9, ,    12.4, ,    55.2, ,    45.0, ,    47.0, ,    71.5, , -9999.9,M, -9999.9,M,    32.5, ,   124.2, ,   147.2, ,
@@ -82,3 +82,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008, -9999.9,M, -9999.9,M,    15.6, ,    44.9, , -9999.9,M,    14.7, ,    25.8, ,    78.0, ,    44.1, ,    32.7, ,    39.1, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   118.5, ,   115.9, ,
 2009, -9999.9,M,    14.7, ,    24.8, ,    17.6, ,    11.0, ,    22.5, ,    49.1, ,    32.2, ,    56.1, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    53.3, ,   103.8, , -9999.9,M,
 2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

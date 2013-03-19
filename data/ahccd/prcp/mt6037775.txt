@@ -1,5 +1,5 @@
-6037775,SIOUX LOOKOUT A          ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6037775,SIOUX LOOKOUT A          ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6037775,SIOUX LOOKOUT            ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6037775,SIOUX LOOKOUT            ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1914, -9999.9,M,    18.4, ,    30.2, , -9999.9,M,    96.5, ,   112.5, ,   115.5, ,    42.5, ,   139.7, ,    49.1, ,    43.0, ,    35.5, , -9999.9,M, -9999.9,M, -9999.9,M,   270.5, ,   231.8, ,
@@ -98,4 +98,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,    34.0, ,    21.7, ,    44.7, ,    32.1, ,   177.5, ,   147.6, ,   132.0, ,    81.2, ,   112.3, ,   146.4, ,    50.9, ,    58.1, ,  1038.5, ,    85.5, ,   254.3, ,   360.8, ,   309.6, ,
 2008,    33.3, ,    39.5, ,    30.9, ,    91.2, ,    90.3, ,   146.1, ,   192.4, ,    35.5, ,    78.1, ,    88.6, ,    80.5, ,    36.5, ,   942.9, ,   130.9, ,   212.4, ,   374.0, ,   247.2, ,
 2009,    49.4, ,    38.7, ,    96.7, ,    44.7, ,   118.3, ,   125.3, ,   108.5, ,   148.1, ,    22.9, ,    73.9, ,    36.6, ,    51.2, ,   914.2, ,   124.6, ,   259.7, ,   382.0, ,   133.3, ,
-2010,    32.0, ,    10.1, ,    16.2, ,    50.8, ,   119.1, ,    97.3, , -9999.9,M,   117.6, ,    96.9, ,    38.8, ,    91.4, ,    38.0, , -9999.9,M,    93.2, ,   186.1, , -9999.9,M,   227.0, ,
+2010,    32.0, ,    10.1, ,    16.2, ,    50.8, ,   119.1, ,    97.3, ,   195.9, ,   117.6, ,    96.9, ,    38.8, ,    91.4, ,    38.0, ,   903.9, ,    93.2, ,   186.1, ,   410.8, ,   227.0, ,
+2011,    38.3, ,    38.0, ,    41.8, ,    73.1, ,    39.1, ,    68.6, ,    38.1, ,    58.3, ,    56.4, ,    60.7, ,    42.0, ,    37.2, ,   591.5, ,   114.2, ,   154.0, ,   164.9, ,   159.1, ,

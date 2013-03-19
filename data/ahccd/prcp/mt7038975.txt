@@ -1,5 +1,5 @@
-7038975,WRIGHT                   ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7038975,WRIGHT                   ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7038975,WRIGHT                   ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7038975,WRIGHT                   ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1914,    57.5, , -9999.9,M,    54.1, ,    41.7, ,    10.2, ,    75.5, ,    79.6, ,    38.8, ,    53.5, ,    84.9, ,    98.2, , -9999.9,M, -9999.9,M, -9999.9,M,   106.0, ,   193.9, ,   236.5, ,
@@ -99,3 +99,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    60.5, ,   102.2, ,    87.7, ,    55.5, ,    88.8, ,   121.1, ,   133.6, ,    67.4, ,   102.6, ,    80.3, ,    82.9, ,   115.0, ,  1097.6, ,   287.6, ,   232.0, ,   322.1, ,   265.9, ,
 2009,    71.6, ,    82.4, ,    43.0, ,   108.6, ,   111.8, ,    69.2, ,   213.6, ,   107.1, ,    64.3, ,    96.7, ,    39.4, ,    77.5, ,  1085.1, ,   269.0, ,   263.3, ,   389.9, ,   200.4, ,
 2010,    72.0, ,    43.8, ,    12.4, ,    49.0, ,    49.5, ,   103.4, ,   136.8, ,    97.8, ,   166.3, ,    78.7, ,    87.9, ,    66.8, ,   964.4, ,   193.3, ,   110.9, ,   337.9, ,   332.9, ,
+2011,    51.1, ,    68.0, ,    99.5, ,    89.4, ,    74.5, ,   139.8, ,    82.1, ,    68.0, ,    60.4, ,    85.8, , -9999.9,M, -9999.9,M, -9999.9,M,   186.0, ,   263.4, ,   289.8, , -9999.9,M,

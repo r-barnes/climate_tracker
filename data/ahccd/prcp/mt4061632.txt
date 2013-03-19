@@ -1,5 +1,5 @@
-4061632,COLLINS BAY CAMECO       ,SK  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-4061632,COLLINS BAY CAMECO       ,SK  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+4061632,COLLINS BAY CAMECO       ,SK  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+4061632,COLLINS BAY CAMECO       ,SK  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1965, -9999.9,M, -9999.9,M, -9999.9,M,    21.8, ,    22.5, ,    66.6, ,    54.4, ,    64.9, ,    42.1, ,    53.9, ,    51.3, ,    53.0, , -9999.9,M, -9999.9,M, -9999.9,M,   185.9, ,   147.3, ,
@@ -48,3 +48,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    41.1, ,    22.2, ,    61.2, ,    10.4, ,     8.8, ,    60.0, ,    52.2, , -9999.9,M,    61.3, ,    25.3, , -9999.9,M,    32.3, , -9999.9,M,    84.6, ,    80.4, , -9999.9,M, -9999.9,M,
 2009,    31.5, ,    16.6, ,    15.3, ,    36.4, ,    24.1, ,    87.8, ,   146.4, ,    94.4, ,   100.5, ,    62.2, ,    25.3, ,    10.0, ,   650.5, ,    80.4, ,    75.8, ,   328.6, ,   188.0, ,
 2010,    21.1, ,     2.2, ,    35.5, ,   183.3, ,    59.5, ,     4.7, ,    34.4, ,   135.5, ,   100.9, ,    32.8, ,    35.8, ,    48.0, ,   693.6, ,    33.2, ,   278.2, ,   174.7, ,   169.5, ,
+2011,    21.7, ,    11.6, ,    12.8, ,    30.5, ,     4.7, ,    17.9, ,    77.0, ,   105.1, ,    57.7, , -9999.9,M,    43.1, , -9999.9,M, -9999.9,M,    81.3, ,    48.0, ,   200.0, , -9999.9,M,

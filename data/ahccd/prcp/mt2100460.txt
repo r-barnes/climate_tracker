@@ -1,5 +1,5 @@
-2100460,DRURY CREEK              ,YT  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-2100460,DRURY CREEK              ,YT  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+2100460,DRURY CREEK              ,YT  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+2100460,DRURY CREEK              ,YT  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1970,    19.3, ,    34.1, ,     9.6, ,    20.9, ,    16.1, ,    25.3, , -9999.9,M,    22.3, ,   101.8, ,    41.4, ,    33.0, ,    31.4, , -9999.9,M, -9999.9,M,    46.7, , -9999.9,M,   176.1, ,
@@ -43,3 +43,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    19.7, , -9999.9,M,   339.3, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    33.1, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2009,    37.7, ,    14.0, ,    15.0, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    84.9, , -9999.9,M, -9999.9,M, -9999.9,M,
 2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

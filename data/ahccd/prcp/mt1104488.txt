@@ -1,5 +1,5 @@
-1104488,LAIDLAW                  ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1104488,LAIDLAW                  ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1104488,LAIDLAW                  ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1104488,LAIDLAW                  ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1910, -9999.9,M, -9999.9,M,   166.7, ,    94.5, ,    88.3, ,    28.7, ,     4.6, ,    33.2, ,    90.1, ,   347.9, ,   384.4, ,   263.7, , -9999.9,M, -9999.9,M,   349.5, ,    66.5, ,   822.4, ,
@@ -103,3 +103,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   255.7, ,   175.4, ,   184.0, ,   113.5, ,    52.2, ,    93.6, ,    67.1, ,   254.3, ,    50.9, ,   153.6, ,   256.5, ,   222.8, ,  1879.5, ,   719.9, ,   349.8, ,   414.9, ,   461.0, ,
 2009,   336.2, ,   104.3, ,   191.2, ,   105.9, ,   192.4, ,    47.0, ,    41.0, , -9999.9,M,   139.3, , -9999.9,M,   563.4, ,    88.7, , -9999.9,M,   663.4, ,   489.5, , -9999.9,M, -9999.9,M,
 2010,   267.0, ,   100.3, , -9999.9,M, -9999.9,M,   161.4, ,   103.8, ,    15.8, ,    74.0, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   456.0, , -9999.9,M,   193.6, , -9999.9,M,
+2011, -9999.9,M,   252.2, ,   403.7, ,   231.7, ,   174.5, ,   115.9, ,    86.2, ,    31.6, ,   157.8, ,   286.2, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   809.9, ,   233.7, , -9999.9,M,

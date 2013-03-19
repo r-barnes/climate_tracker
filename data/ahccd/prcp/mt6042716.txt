@@ -1,5 +1,5 @@
-6042716,GERALDTON A              ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6042716,GERALDTON A              ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6042716,GERALDTON                ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6042716,GERALDTON                ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1950, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   115.0, ,    62.7, ,   101.8, ,    35.8, ,   133.8, ,    78.4, ,    34.0, , -9999.9,M, -9999.9,M, -9999.9,M,   279.5, ,   248.0, ,
@@ -62,4 +62,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,    39.7, ,    36.6, ,    40.7, ,    55.0, ,   138.3, ,   108.4, ,   203.6, ,    96.5, ,   193.0, ,   116.3, ,    76.6, ,   114.0, ,  1218.7, ,   126.7, ,   234.1, ,   408.4, ,   385.9, ,
 2008,    47.7, ,    38.4, ,    35.3, ,    61.0, ,   103.2, ,   205.1, ,   139.2, ,    46.8, ,   126.5, ,    74.6, ,    65.2, ,    53.4, ,   996.5, ,   200.1, ,   199.5, ,   391.2, ,   266.3, ,
 2009,    37.0, ,    31.5, ,    60.6, ,    77.2, ,    59.3, ,    61.9, ,    60.0, ,   103.8, ,    34.6, ,    52.3, ,    55.6, ,    47.0, ,   680.8, ,   122.0, ,   197.1, ,   225.7, ,   142.5, ,
-2010,    23.1, ,    16.2, ,    20.0, ,    20.7, ,    33.2, ,    98.8, , -9999.9,M,    42.8, ,   170.4, ,    51.4, ,    92.1, ,    31.4, , -9999.9,M,    86.3, ,    74.0, , -9999.9,M,   313.9, ,
+2010,    23.1, ,    16.2, ,    20.0, ,    20.7, ,    33.2, ,    98.8, ,   123.2, ,    42.8, ,   170.4, ,    51.4, ,    92.1, ,    31.4, ,   723.4, ,    86.3, ,    74.0, ,   264.9, ,   313.9, ,
+2011,    45.5, ,    38.6, ,    37.1, ,    79.0, ,    54.8, ,    71.3, ,    58.2, ,    92.6, ,   128.8, ,    35.0, ,    35.6, ,    46.3, ,   722.7, ,   115.4, ,   170.9, ,   222.1, ,   199.4, ,

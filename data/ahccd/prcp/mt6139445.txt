@@ -1,5 +1,5 @@
-6139445,WELLAND                  ,ON  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6139445,WELLAND                  ,ON  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6139445,WELLAND                  ,ON  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6139445,WELLAND                  ,ON  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1873, -9999.9,M,    28.5, ,   137.1, , -9999.9,M,    46.1, ,    44.0, ,    78.6, ,    72.6, ,    52.5, ,   103.4, ,    82.7, ,    90.2, , -9999.9,M, -9999.9,M, -9999.9,M,   195.2, ,   238.6, ,
@@ -140,3 +140,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    64.3, ,    45.1, ,   105.5, ,    52.5, ,    82.9, ,   102.5, ,   126.4, ,   187.4, ,    92.1, ,    87.7, ,    61.6, ,   124.0, ,  1132.1, ,   204.6, ,   240.9, ,   416.3, ,   241.5, ,
 2009,    60.9, ,    62.3, ,   125.3, ,   131.5, ,    68.5, ,   104.5, ,   168.1, ,   128.2, ,    54.0, ,    88.6, ,    43.8, ,    94.2, ,  1130.0, ,   247.2, ,   325.2, ,   400.9, ,   186.4, ,
 2010, -9999.9,M,    25.9, , -9999.9,M,    65.7, ,   105.7, ,   158.6, ,    66.7, , -9999.9,M,    59.6, ,    78.5, ,    80.8, ,    42.5, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   218.8, ,
+2011, -9999.9,M,    33.3, ,    50.4, ,   154.8, , -9999.9,M,    62.2, ,    34.5, ,    64.0, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   160.7, , -9999.9,M,

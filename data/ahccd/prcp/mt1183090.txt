@@ -1,5 +1,5 @@
-1183090,GERMANSEN LANDING        ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1183090,GERMANSEN LANDING        ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1183090,GERMANSEN LANDING        ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1183090,GERMANSEN LANDING        ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1952,    83.7, ,    27.7, ,    30.0, ,    86.6, ,     5.0, ,    74.4, ,    23.3, ,    41.5, ,    25.1, , -9999.9,M,    18.7, ,    68.9, , -9999.9,M, -9999.9,M,   121.7, ,   139.2, , -9999.9,M,
@@ -61,3 +61,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    58.2, ,    68.3, ,    38.0, ,    15.6, ,    41.6, ,    43.3, ,    36.3, ,    62.3, ,    10.2, ,    37.4, ,    88.8, ,    42.9, ,   543.0, ,   187.0, ,    95.3, ,   141.9, ,   136.4, ,
 2009,    45.3, ,     8.6, ,    34.8, ,    20.1, ,    70.7, ,    30.5, ,    32.7, ,    24.4, ,    76.8, ,    70.0, ,    59.3, ,    23.4, ,   496.6, ,    96.8, ,   125.6, ,    87.6, ,   206.1, ,
 2010,    43.8, ,    13.3, ,     6.2, ,    23.9, ,    36.0, ,    29.7, ,    34.6, ,    22.7, ,    39.3, ,    62.0, ,    31.2, ,    66.1, ,   408.8, ,    80.5, ,    66.2, ,    87.0, ,   132.4, ,
+2011,    65.4, ,    36.0, ,    40.7, ,    16.2, ,    59.9, ,    85.3, ,    81.7, ,    43.5, ,    59.4, ,    47.5, ,    89.5, ,    35.7, ,   661.0, ,   167.6, ,   116.8, ,   210.5, ,   196.4, ,

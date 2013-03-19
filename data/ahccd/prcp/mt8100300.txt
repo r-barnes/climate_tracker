@@ -1,5 +1,5 @@
-8100300,AROOSTOOK                ,NB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-8100300,AROOSTOOK                ,NB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+8100300,AROOSTOOK                ,NB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+8100300,AROOSTOOK                ,NB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1920,    76.1, ,   152.4, ,    60.7, ,   141.4, ,    25.4, ,   128.5, ,   138.7, ,    99.8, ,   122.0, ,   149.7, ,    98.4, ,   116.1, ,  1309.2, , -9999.9,M,   227.5, ,   367.1, ,   370.1, ,
@@ -93,3 +93,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   102.0, ,   177.3, ,   124.8, ,    79.6, ,    69.3, ,   138.3, ,   108.3, ,    88.3, ,   127.1, ,   122.7, ,   132.7, ,   147.6, ,  1417.9, ,   424.2, ,   273.6, ,   334.8, ,   382.5, ,
 2009,   102.5, ,   100.4, ,    88.3, ,   102.9, ,   121.6, ,   109.0, ,   153.9, , -9999.9,M,    64.4, ,   129.2, ,   115.5, ,   108.4, , -9999.9,M,   350.5, ,   312.7, , -9999.9,M,   309.1, ,
 2010,    94.8, ,    91.5, ,   104.0, ,    82.4, ,    58.3, ,   154.6, ,    90.0, , -9999.9,M,   144.3, ,   106.2, ,   114.5, ,   210.3, , -9999.9,M,   294.8, ,   244.7, , -9999.9,M,   365.0, ,
+2011,    73.6, ,   145.0, ,   209.8, ,    91.7, ,   138.8, ,   222.3, ,   166.1, ,   244.3, ,    71.3, ,    88.7, , -9999.9,M,   144.5, , -9999.9,M,   428.9, ,   440.3, ,   632.7, , -9999.9,M,

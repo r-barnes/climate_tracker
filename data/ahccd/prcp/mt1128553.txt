@@ -1,5 +1,5 @@
-1128553,VERNON BELLA VISTA       ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1128553,VERNON BELLA VISTA       ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1128553,VERNON BELLA VISTA       ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1128553,VERNON BELLA VISTA       ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1900, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    41.3, ,    56.7, ,    22.3, ,    47.0, ,    36.1, , -9999.9,M,    24.6, ,    21.3, , -9999.9,M, -9999.9,M, -9999.9,M,   126.0, , -9999.9,M,
@@ -112,4 +112,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,    24.1, ,    28.1, ,    21.6, ,     5.8, ,    16.5, ,   110.5, ,    36.9, ,     8.2, ,    30.1, ,    52.2, ,    26.3, ,    52.5, ,   412.7, ,    86.1, ,    43.9, ,   155.5, ,   108.5, ,
 2008,    26.6, ,    18.2, ,    16.0, ,    17.7, ,    25.2, ,    25.2, ,    12.7, ,    44.1, ,     6.5, ,    30.5, ,    26.0, ,    58.5, ,   307.1, ,    97.2, ,    58.9, ,    82.0, ,    63.0, ,
 2009,    27.2, ,    20.1, ,    13.6, ,    24.2, ,    31.7, ,    13.9, ,    44.4, ,   279.1, ,    13.6, , -9999.9,M,    17.0, ,    27.4, , -9999.9,M,   105.7, ,    69.5, ,   337.5, , -9999.9,M,
-2010,    29.3, ,    21.1, , -9999.9,M, -9999.9,M,    55.1, ,    28.7, ,    11.8, ,    23.8, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    77.8, , -9999.9,M,    64.3, , -9999.9,M,
+2010,    29.3, ,    21.1, ,    22.1, , -9999.9,M,    55.1, ,    28.7, ,    11.8, ,    23.8, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    77.8, , -9999.9,M,    64.3, , -9999.9,M,
+2011, -9999.9,M, -9999.9,M,    22.4, ,    29.3, ,    56.9, ,    33.5, ,    30.4, ,     8.2, ,    10.8, ,    52.4, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   108.6, ,    72.1, , -9999.9,M,

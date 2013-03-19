@@ -1,5 +1,5 @@
-6130257,AMHERSTBURG              ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6130257,AMHERSTBURG              ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6130257,AMHERSTBURG              ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6130257,AMHERSTBURG              ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1917, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   118.2, ,   161.1, ,   118.7, ,    41.8, ,    55.6, ,   130.1, ,    15.9, ,    22.2, , -9999.9,M, -9999.9,M, -9999.9,M,   321.5, ,   201.6, ,
@@ -96,3 +96,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    54.4, ,   115.4, ,   129.6, ,    29.8, ,    47.2, ,   203.0, ,   105.1, ,    15.1, ,   159.9, ,    33.2, ,   113.2, ,    98.2, ,  1104.2, ,   285.8, ,   206.6, ,   323.2, ,   306.4, ,
 2009,    54.5, ,    87.5, ,   123.2, ,   137.7, ,    78.8, ,    78.6, ,    59.8, ,    90.9, ,    61.4, ,    91.7, ,    19.7, ,    88.4, ,   972.1, ,   240.2, ,   339.6, ,   229.3, ,   172.8, ,
 2010,    37.8, ,    63.7, ,    55.7, ,    78.8, ,   155.3, ,   109.3, ,   165.4, ,    15.2, ,   101.9, ,    50.6, ,    97.9, ,    59.4, ,   991.0, ,   189.9, ,   289.8, ,   289.9, ,   250.4, ,
+2011,    48.9, ,    85.3, ,   115.9, ,   156.7, ,   136.9, ,    64.1, ,   170.7, ,   237.7, ,   219.7, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   193.6, ,   409.6, ,   472.5, , -9999.9,M,

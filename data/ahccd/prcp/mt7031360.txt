@@ -1,5 +1,5 @@
-7031360,CHELSEA                  ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7031360,CHELSEA                  ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7031360,CHELSEA                  ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7031360,CHELSEA                  ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1928,   137.1, ,    69.1, ,    83.2, ,    65.5, ,    80.0, ,    72.0, ,    99.8, ,    69.7, ,   119.9, ,   148.0, ,    56.1, ,    63.7, ,  1064.2, , -9999.9,M,   228.8, ,   241.5, ,   324.0, ,
@@ -85,3 +85,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   106.2, ,   125.6, ,   138.7, ,    77.6, ,    93.5, ,   163.2, ,    95.7, ,    79.8, ,    65.1, ,    75.8, ,    80.5, ,   161.3, ,  1263.2, ,   415.3, ,   309.9, ,   338.7, ,   221.5, ,
 2009,    74.1, ,    55.6, ,    54.1, ,   125.7, ,    85.6, ,    56.0, , -9999.9,M,    79.9, ,    64.5, ,   131.5, ,    56.5, ,   122.3, , -9999.9,M,   291.1, ,   265.5, , -9999.9,M,   252.5, ,
 2010,    83.8, ,    73.4, ,    48.2, ,    72.2, ,    49.1, ,   135.5, , -9999.9,M,   122.2, ,   159.8, ,    71.6, ,   139.3, ,    84.3, , -9999.9,M,   279.5, ,   169.5, , -9999.9,M,   370.7, ,
+2011,    65.9, ,    71.6, ,   130.7, ,   171.1, , -9999.9,M,   345.1, ,    53.9, , -9999.9,M,    80.8, ,   117.0, , -9999.9,M, -9999.9,M, -9999.9,M,   221.8, , -9999.9,M, -9999.9,M, -9999.9,M,

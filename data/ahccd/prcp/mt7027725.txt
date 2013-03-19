@@ -1,5 +1,5 @@
-7027725,ST SEBASTIEN             ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7027725,ST SEBASTIEN             ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7027725,ST SEBASTIEN             ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7027725,ST SEBASTIEN             ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1915, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    71.1, ,    87.3, ,    75.7, ,    76.0, ,    95.8, ,    95.7, ,    80.1, ,   186.1, , -9999.9,M, -9999.9,M, -9999.9,M,   239.0, ,   271.7, ,
@@ -98,3 +98,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   134.3, ,   127.0, ,   119.8, , -9999.9,M,    60.0, , -9999.9,M,   163.4, ,   167.6, ,    63.7, ,    81.7, , -9999.9,M,   148.4, , -9999.9,M,   384.8, , -9999.9,M, -9999.9,M, -9999.9,M,
 2009,    84.2, ,   110.3, ,    50.2, ,   111.9, ,   120.4, ,   102.6, ,   187.9, ,    78.3, ,    57.1, ,   122.1, ,   102.4, ,   119.6, ,  1247.1, ,   342.9, ,   282.5, ,   368.8, ,   281.6, ,
 2010,   103.9, ,    68.2, ,    83.6, ,    79.8, ,    86.6, ,   160.4, ,   113.3, , -9999.9,M,   229.0, ,   129.7, , -9999.9,M,   205.5, , -9999.9,M,   291.7, ,   249.9, , -9999.9,M, -9999.9,M,
+2011,    95.8, ,   177.2, ,   159.8, ,   114.1, , -9999.9,M,   125.1, ,   131.5, ,   206.2, ,   141.6, ,   142.0, , -9999.9,M, -9999.9,M, -9999.9,M,   478.4, , -9999.9,M,   462.8, , -9999.9,M,

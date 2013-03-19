@@ -1,5 +1,5 @@
-1125865,OSOYOOS WEST             ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1125865,OSOYOOS WEST             ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1125865,OSOYOOS WEST             ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1125865,OSOYOOS WEST             ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1954, -9999.9,M, -9999.9,M, -9999.9,M,     2.1, ,    51.2, ,    36.5, ,    20.1, ,    48.9, ,    24.9, ,     4.4, ,    31.7, ,    20.1, , -9999.9,M, -9999.9,M, -9999.9,M,   105.5, ,    61.1, ,
@@ -59,3 +59,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    31.3, ,     8.4, ,     8.5, ,     7.7, ,    39.6, ,    31.5, ,    22.4, ,    42.2, ,     2.9, ,    13.0, ,    40.9, ,    35.8, ,   284.0, , -9999.9,M,    55.7, ,    96.1, ,    56.7, ,
 2009,    22.5, ,    12.3, ,    18.5, ,    10.8, ,    15.4, ,    12.4, ,    28.7, ,    21.1, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    70.5, ,    44.6, ,    62.2, , -9999.9,M,
 2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

@@ -1,5 +1,5 @@
-8201410,DEMING                   ,NS  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-8201410,DEMING                   ,NS  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+8201410,DEMING                   ,NS  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+8201410,DEMING                   ,NS  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1884,    82.2, ,    60.5, , -9999.9,M,    98.3, ,    91.8, ,   130.3, ,    94.9, ,    37.0, ,    50.1, ,    94.2, ,   133.0, ,   104.5, , -9999.9,M, -9999.9,M, -9999.9,M,   262.1, ,   277.3, ,
@@ -128,4 +128,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,   130.5, ,    46.6, ,    66.4, ,   133.4, ,    52.5, ,   167.1, ,   237.9, ,   113.4, ,   131.5, ,    68.3, ,   178.4, , -9999.9,M, -9999.9,M,   346.6, ,   252.3, ,   518.4, ,   378.2, ,
 2008,   145.9, ,   147.1, ,   140.3, ,    81.9, ,   221.0, ,    70.6, ,   111.7, ,   200.8, ,    57.7, ,    68.9, ,   161.3, ,   199.7, ,  1606.9, , -9999.9,M,   443.2, ,   383.1, ,   287.8, ,
 2009,   108.3, ,   131.4, ,   103.9, ,    87.5, ,    92.6, , -9999.9,M,   136.1, ,   137.5, ,    57.9, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   439.4, ,   284.0, , -9999.9,M, -9999.9,M,
-2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2010,   114.3, ,   105.5, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    99.7, ,    69.2, ,   140.5, , -9999.9,M,   185.5, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

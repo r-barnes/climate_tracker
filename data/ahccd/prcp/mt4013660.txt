@@ -1,5 +1,5 @@
-4013660,KELLIHER                 ,SK  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-4013660,KELLIHER                 ,SK  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+4013660,KELLIHER                 ,SK  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+4013660,KELLIHER                 ,SK  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1908,    26.3, ,    45.0, ,    43.1, ,    26.6, ,    17.2, ,   127.8, ,     7.2, ,    27.4, ,     6.2, ,    40.4, ,    11.2, ,    29.8, ,   408.1, , -9999.9,M,    86.9, ,   162.4, ,    57.8, ,
@@ -105,3 +105,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    23.6, ,    14.6, ,     3.1, ,    18.2, ,    23.2, ,    69.4, ,   131.7, ,    31.0, ,    24.3, ,    47.5, ,    22.0, ,    45.4, ,   454.1, ,    65.5, ,    44.6, ,   232.1, ,    93.7, ,
 2009,    19.4, ,    30.3, ,    19.6, ,    38.7, ,    36.4, ,    81.8, ,    80.4, ,    71.6, ,    21.4, ,    88.9, ,     8.5, ,    20.7, ,   517.6, ,    95.0, ,    94.7, ,   233.8, ,   118.8, ,
 2010,    42.6, ,     9.7, ,     3.0, ,    69.0, ,    99.5, ,   109.1, ,    77.9, ,   160.6, ,    81.8, ,    41.9, ,    67.6, ,    15.8, ,   778.6, ,    72.9, ,   171.5, ,   347.7, ,   191.3, ,
+2011,    40.2, , -9999.9,M,    20.3, ,    13.8, ,    29.8, ,   117.0, ,   117.7, ,    68.2, ,    23.9, ,    28.3, ,    34.0, ,    21.2, , -9999.9,M, -9999.9,M,    63.8, ,   302.9, ,    86.2, ,

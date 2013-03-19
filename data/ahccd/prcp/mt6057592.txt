@@ -1,5 +1,5 @@
-6057592,SAULT STE MARIE A        ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6057592,SAULT STE MARIE A        ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6057592,SAULT STE MARIE          ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6057592,SAULT STE MARIE          ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1945, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    25.6, ,    42.3, ,    55.9, ,   109.6, ,    91.5, ,    83.4, ,   104.8, , -9999.9,M, -9999.9,M, -9999.9,M,   123.9, ,   284.5, ,
@@ -66,5 +66,6 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2006,    74.4, ,   156.7, ,    23.4, ,    42.8, ,    95.3, ,    19.5, ,    77.2, ,    74.6, ,   111.9, ,    99.2, ,    92.2, ,   107.8, ,   975.0, ,   307.7, ,   161.5, ,   171.3, ,   303.4, ,
 2007,   111.9, ,   137.2, ,    87.5, ,    78.7, ,    40.9, ,    66.5, ,    36.7, ,    42.0, ,   136.8, ,   149.4, ,   124.7, ,   105.8, ,  1118.1, ,   356.9, ,   207.0, ,   145.2, ,   411.0, ,
 2008,   161.6, ,   104.9, ,    99.9, ,   112.2, ,    75.1, ,    67.3, ,    84.5, ,    54.1, ,   105.0, ,    68.2, ,   157.1, ,   205.7, ,  1295.7, ,   372.4, ,   287.2, ,   205.9, ,   330.4, ,
-2009,    73.3, ,    73.9, ,    56.2, ,    40.8, ,    94.6, ,    73.7, ,    50.1, ,   114.9, ,    24.9, ,   174.5, ,    47.1, ,    87.1, ,   911.0, ,   352.9, ,   191.6, ,   238.6, ,   246.4, ,
-2010,    58.4, ,    23.2, ,     6.4, ,    47.2, ,    33.2, , -9999.9,M, -9999.9,M,   111.6, ,   249.1, ,    84.1, ,    81.1, , -9999.9,M, -9999.9,M,   168.7, ,    86.8, , -9999.9,M,   414.4, ,
+2009,    73.3, ,    73.9, ,    56.2, ,    40.8, ,    94.6, ,    73.7, ,    50.1, ,   114.9, ,    24.9, ,   174.5, ,    55.1, ,    87.1, ,   919.0, ,   352.9, ,   191.6, ,   238.6, ,   254.4, ,
+2010,    58.4, ,    23.2, ,     6.4, ,    47.2, ,    33.2, ,   163.7, ,    35.5, ,   111.6, ,   249.1, ,    84.1, ,    81.1, ,    85.5, ,   979.0, ,   168.7, ,    86.8, ,   310.7, ,   414.4, ,
+2011,    62.2, ,    47.7, ,    62.2, ,   134.0, ,    68.7, ,   100.7, ,    76.5, ,    75.2, ,   132.1, ,   117.0, ,   108.3, ,    55.0, ,  1039.6, ,   195.4, ,   264.9, ,   252.4, ,   357.4, ,

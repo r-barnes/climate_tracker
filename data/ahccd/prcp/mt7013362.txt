@@ -1,5 +1,5 @@
-7013362,JOLIETTE VILLE           ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7013362,JOLIETTE VILLE           ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7013362,JOLIETTE VILLE           ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7013362,JOLIETTE VILLE           ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1914,   121.9, ,    53.1, ,    56.3, ,    46.7, ,    28.2, ,   114.3, ,    60.2, ,   109.1, ,    77.6, ,    70.2, ,   134.7, ,    89.6, ,   961.8, , -9999.9,M,   131.2, ,   283.5, ,   282.5, ,
@@ -99,3 +99,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    90.0, ,   128.3, ,   115.4, ,    77.8, ,    73.9, ,   117.6, ,   185.7, ,    62.8, ,    76.6, ,   103.0, ,   108.0, ,   146.6, ,  1285.8, ,   401.9, ,   267.2, ,   366.1, ,   287.6, ,
 2009,   127.5, ,    77.9, ,    48.9, ,    84.3, ,   108.2, ,   140.7, ,   169.8, ,    89.8, ,    57.6, ,    96.3, ,    52.4, ,   122.2, ,  1175.7, ,   352.1, ,   241.4, ,   400.4, ,   206.3, ,
 2010,    62.5, ,    61.4, ,    31.5, ,    93.2, ,    53.3, ,   115.2, ,   131.4, ,   172.5, ,   178.2, ,    97.3, ,   102.0, ,   125.6, ,  1224.2, ,   246.1, ,   178.0, ,   419.1, ,   377.5, ,
+2011,    27.8, ,    92.7, ,    63.5, ,   142.3, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   246.2, , -9999.9,M, -9999.9,M, -9999.9,M,

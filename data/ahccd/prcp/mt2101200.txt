@@ -1,5 +1,5 @@
-2101200,WATSON LAKE A            ,YT  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-2101200,WATSON LAKE A            ,YT  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+2101200,WATSON LAKE              ,YT  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+2101200,WATSON LAKE              ,YT  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1939,    43.4, ,    17.8, ,    14.7, ,     7.4, ,    53.5, ,    72.0, ,    40.9, ,    42.7, ,   100.9, ,    21.4, ,     6.7, ,    14.9, ,   436.2, , -9999.9,M,    75.7, ,   155.5, ,   129.0, ,
@@ -74,3 +74,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    40.0, ,    28.5, ,    11.4, ,    24.6, ,    28.1, ,    97.7, ,    33.7, ,    55.2, ,    56.7, ,    40.7, ,    52.4, ,    63.4, ,   532.5, ,   104.0, ,    64.2, ,   186.7, ,   149.8, ,
 2009,    66.5, ,    14.9, ,    31.1, ,    13.2, ,    11.5, ,    79.1, ,    28.8, ,    82.1, ,    73.3, ,    44.2, ,    18.4, ,    14.6, ,   477.7, ,   144.8, ,    55.8, ,   190.0, ,   135.9, ,
 2010,    33.6, ,    10.9, ,     9.3, ,     7.7, ,    29.7, ,    53.4, ,    38.2, ,    36.4, ,    42.4, ,    46.0, ,    27.3, ,    46.8, ,   381.8, ,    59.1, ,    46.8, ,   127.9, ,   115.8, ,
+2011,    45.1, ,     9.6, ,     7.8, ,     1.2, ,    31.3, ,    72.8, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   101.5, ,    40.2, , -9999.9,M, -9999.9,M,

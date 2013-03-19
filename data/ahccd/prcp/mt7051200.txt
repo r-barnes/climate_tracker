@@ -1,5 +1,5 @@
-7051200,CAUSAPSCAL               ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7051200,CAUSAPSCAL               ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7051200,CAUSAPSCAL               ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7051200,CAUSAPSCAL               ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1921,   135.7, ,    12.0, ,    73.8, ,    23.6, ,    21.3, ,    38.8, ,    43.6, ,   121.1, ,    54.1, ,   150.5, ,    69.6, ,    51.7, ,   795.8, , -9999.9,M,   118.7, ,   203.5, ,   274.2, ,
@@ -92,3 +92,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    63.8, ,   103.5, ,   113.0, ,    80.1, ,    71.8, ,   118.9, ,    88.0, ,   105.2, ,   152.2, ,    76.6, ,   123.2, ,   100.9, ,  1197.2, ,   251.9, ,   264.9, ,   312.1, ,   352.0, ,
 2009,   104.2, ,    73.4, ,    52.1, ,    94.2, ,   117.2, ,    90.9, ,   124.5, ,    75.8, ,    53.4, ,   135.2, ,    59.9, ,   102.1, ,  1082.9, ,   278.5, ,   263.5, ,   291.1, ,   248.6, ,
 2010,    49.5, ,    33.1, ,    58.0, ,    85.0, ,   124.2, ,   107.2, ,   126.5, ,    14.4, ,   207.1, ,   117.9, ,    92.9, ,   104.3, ,  1120.4, ,   184.8, ,   267.3, ,   248.0, ,   418.0, ,
+2011,    62.4, ,    70.7, ,    79.6, ,   114.9, ,   132.3, ,    68.0, ,   211.0, ,   147.4, ,   112.7, ,    37.7, , -9999.9,M, -9999.9,M, -9999.9,M,   237.4, ,   326.8, ,   426.5, , -9999.9,M,

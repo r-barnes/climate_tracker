@@ -1,5 +1,5 @@
-1142160,CRESTON                  ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1142160,CRESTON                  ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1142160,CRESTON                  ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1142160,CRESTON                  ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1912, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    26.6, ,    68.7, ,    32.9, ,    27.9, ,    34.9, ,    99.4, ,    39.6, , -9999.9,M, -9999.9,M, -9999.9,M,   128.3, ,   162.2, ,
@@ -101,3 +101,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   105.4, ,    33.9, ,    43.6, ,    25.2, ,    39.6, ,    80.6, ,    11.9, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   268.7, ,   108.5, , -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    67.1, ,    56.2, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2010,    65.9, ,    22.9, , -9999.9,M, -9999.9,M,    74.1, ,   109.5, ,    34.3, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   145.1, , -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M, -9999.9,M,    71.3, ,   105.3, ,    76.6, ,    54.2, , -9999.9,M,     9.4, ,     5.5, ,    40.4, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   253.2, , -9999.9,M, -9999.9,M,

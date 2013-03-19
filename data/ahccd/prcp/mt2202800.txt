@@ -1,5 +1,5 @@
-2202800,NORMAN WELLS A           ,NT  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-2202800,NORMAN WELLS A           ,NT  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+2202800,NORMAN WELLS             ,NT  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+2202800,NORMAN WELLS             ,NT  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1943, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    41.6, ,    75.0, ,    82.2, ,    13.2, ,    14.8, ,    11.5, ,    14.3, , -9999.9,M, -9999.9,M, -9999.9,M,   198.9, ,    39.4, ,
@@ -69,4 +69,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,    24.3, ,     7.6, ,    16.3, ,    20.8, ,    12.8, ,    16.2, ,    36.0, ,    39.5, ,    36.8, ,    40.6, ,    47.3, ,    21.3, ,   319.4, ,    50.8, ,    49.9, ,    91.6, ,   124.6, ,
 2008,    15.8, ,     9.2, ,    16.0, ,    52.4, ,    34.8, ,    49.9, ,    48.9, ,    88.6, ,    32.6, ,    36.4, ,    22.6, ,    19.3, ,   426.5, ,    46.3, ,   103.2, ,   187.4, ,    91.6, ,
 2009,    26.6, ,    19.2, ,    15.2, ,    12.8, ,    11.7, ,    88.3, ,    89.1, ,    78.4, ,    23.8, ,    28.2, ,    18.0, ,    42.4, ,   453.6, ,    65.1, ,    39.6, ,   255.8, ,    69.9, ,
-2010,    18.9, ,    19.9, ,     2.8, , -9999.9,M,    28.4, ,    63.5, , -9999.9,M, -9999.9,M, -9999.9,M,    27.2, ,    84.5, ,    33.9, , -9999.9,M,    81.2, , -9999.9,M, -9999.9,M, -9999.9,M,
+2010,    18.9, ,    19.9, ,     2.8, ,    16.8, ,    28.4, ,    63.5, ,    41.4, ,    44.5, ,    21.3, ,    27.2, ,    84.5, ,    33.9, ,   403.1, ,    81.2, ,    48.0, ,   149.4, ,   133.0, ,
+2011,    39.0, ,    44.4, ,     2.3, ,    21.3, ,    30.3, ,    13.9, ,    89.0, ,    56.4, ,    32.1, ,    27.8, ,    18.4, ,    40.2, ,   415.2, ,   117.4, ,    53.9, ,   159.3, ,    78.4, ,

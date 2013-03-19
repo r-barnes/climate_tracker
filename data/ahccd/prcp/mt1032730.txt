@@ -1,5 +1,5 @@
-1032730,ESTEVAN POINT            ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1032730,ESTEVAN POINT            ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1032730,ESTEVAN POINT            ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1032730,ESTEVAN POINT            ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1924,   406.6, ,   402.0, ,    69.6, ,   275.2, ,    69.8, ,    27.7, ,    51.7, ,   119.0, ,   169.2, ,   424.0, ,   326.1, ,   413.5, ,  2754.4, , -9999.9,M,   414.6, ,   198.3, ,   919.3, ,
@@ -89,3 +89,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   417.3, ,   330.1, ,   288.2, ,   119.6, ,    99.5, ,    89.6, ,   105.1, ,   216.0, ,    38.3, ,   347.4, ,   512.7, ,   318.0, ,  2881.7, , -9999.9,M,   507.3, ,   410.6, ,   898.4, ,
 2009,   474.8, ,   204.8, ,   274.0, ,   152.3, ,   161.0, ,    65.0, ,    23.0, ,    58.7, ,   277.6, ,   250.5, ,   734.0, ,   174.0, ,  2849.6, ,   997.5, ,   587.3, ,   146.7, ,  1262.1, ,
 2010,   437.6, ,   243.9, ,   363.8, ,   302.3, ,   146.2, ,   111.3, ,     5.5, ,    60.5, ,   263.2, ,   445.4, ,   377.8, ,   519.1, ,  3276.6, ,   855.5, ,   812.3, ,   177.3, ,  1086.4, ,
+2011,   372.4, ,   321.5, ,   380.4, ,   269.3, ,   200.9, ,    70.8, ,    91.1, ,    76.2, ,   307.6, ,   286.1, ,   432.2, ,   342.5, ,  3150.8, ,  1213.0, ,   850.5, ,   238.1, ,  1025.9, ,

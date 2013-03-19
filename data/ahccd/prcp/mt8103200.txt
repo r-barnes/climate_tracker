@@ -1,5 +1,5 @@
-8103200,MONCTON A                ,NB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-8103200,MONCTON A                ,NB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+8103200,MONCTON                  ,NB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+8103200,MONCTON                  ,NB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1898,   177.1, ,   100.8, ,    86.9, ,   100.8, ,    47.7, ,    54.5, ,    59.2, ,   163.4, ,    46.0, ,    96.0, ,   151.6, ,    93.4, ,  1177.3, , -9999.9,M,   235.4, ,   277.0, ,   293.6, ,
@@ -114,4 +114,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,   105.2, ,    43.4, ,    79.7, ,   116.2, ,    92.9, ,   117.0, ,    94.9, ,    66.3, ,    83.0, ,    46.0, ,   162.6, ,   189.5, ,  1196.7, ,   259.2, ,   288.8, ,   278.2, ,   291.6, ,
 2008,   159.8, ,   160.7, ,   175.4, ,    52.6, ,    92.0, ,   110.1, ,    67.6, ,   122.5, ,   133.1, ,    80.3, ,   133.9, ,   187.9, ,  1476.0, ,   510.0, ,   320.0, ,   300.2, ,   347.3, ,
 2009,    91.5, ,   127.4, ,   114.4, ,    90.2, ,    85.9, ,   130.4, ,   139.9, ,   198.4, ,    93.1, ,   229.9, ,    69.2, ,   145.0, ,  1515.4, ,   406.9, ,   290.5, ,   468.7, ,   392.2, ,
-2010,   125.6, ,    98.2, ,   140.9, ,    57.8, ,    44.2, ,   152.6, ,   125.0, ,    35.1, , -9999.9,M,   137.7, ,   245.2, ,   211.3, , -9999.9,M,   368.8, ,   242.8, ,   312.7, , -9999.9,M,
+2010,   125.6, ,    98.2, ,   140.9, ,    57.8, ,    44.2, ,   152.6, ,   125.0, ,    35.1, ,   165.4, ,   137.7, ,   245.2, ,   211.3, ,  1538.8, ,   368.8, ,   242.8, ,   312.7, ,   548.2, ,
+2011,   212.2, ,   184.5, ,    72.0, ,    86.7, ,   176.0, ,    82.2, ,   194.5, ,   131.6, ,    21.3, ,   218.7, ,   113.0, ,   127.2, ,  1619.9, ,   607.9, ,   334.6, ,   408.3, ,   353.0, ,

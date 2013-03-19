@@ -1,5 +1,5 @@
-6115811,ORILLIA BRAIN            ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6115811,ORILLIA BRAIN            ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6115811,ORILLIA BRAIN            ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6115811,ORILLIA BRAIN            ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1871, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    33.6, ,    71.8, ,    17.9, ,    28.6, ,    53.4, ,    49.0, ,   110.8, ,    83.1, , -9999.9,M, -9999.9,M, -9999.9,M,   118.4, ,   213.2, ,
@@ -142,3 +142,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   206.8, ,   148.2, , -9999.9,M,    55.7, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2009,   105.5, ,    98.8, ,    54.3, ,   178.3, ,    61.8, ,    85.2, ,    95.6, ,   156.5, ,    29.1, ,    97.9, ,    54.6, ,   120.1, ,  1137.9, , -9999.9,M,   294.3, ,   337.4, ,   181.7, ,
 2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    68.5, ,   185.1, ,   122.2, ,   106.9, ,   101.4, ,    48.0, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   414.2, , -9999.9,M,
+2011, -9999.9,M, -9999.9,M, -9999.9,M,   115.3, ,    75.5, ,    95.9, ,   142.4, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

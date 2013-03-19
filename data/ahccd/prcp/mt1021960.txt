@@ -1,5 +1,5 @@
-1021960,CORTES ISLAND TIBER BAY  ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1021960,CORTES ISLAND TIBER BAY  ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1021960,CORTES ISLAND TIBER BAY  ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1021960,CORTES ISLAND TIBER BAY  ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1919, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    56.4, ,    24.5, ,    18.7, ,    29.3, ,    72.8, ,   188.0, ,   167.2, , -9999.9,M, -9999.9,M, -9999.9,M,    99.6, ,   290.0, ,
@@ -94,3 +94,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   168.5, ,    55.7, ,    99.8, ,    40.6, ,    74.1, ,    52.5, ,    45.6, ,   115.1, ,    17.4, ,   192.6, ,   173.8, ,   124.0, ,  1159.8, ,   380.1, ,   214.5, ,   213.3, ,   383.8, ,
 2009,   110.8, ,    71.3, ,    87.6, ,    34.7, ,    82.2, ,    28.9, ,    40.5, ,    11.7, ,   149.3, ,   199.5, ,   306.7, ,   120.0, ,  1243.2, ,   306.0, ,   204.5, ,    81.1, ,   655.5, ,
 2010,   195.4, ,   117.0, ,    96.2, ,   135.9, ,    95.3, ,    35.9, ,     5.3, ,    38.7, ,    97.4, ,    94.8, ,   161.2, ,   290.5, ,  1363.4, ,   432.5, ,   327.3, ,    79.8, ,   353.4, ,
+2011,   184.4, ,   161.7, ,   191.3, ,    41.9, ,   111.4, ,    37.5, ,    75.3, ,    41.3, ,   144.1, ,   100.4, ,   142.6, ,   103.1, ,  1335.0, ,   636.5, ,   344.6, ,   154.1, ,   387.1, ,

@@ -1,5 +1,5 @@
-5031320,INDIAN BAY               ,MB  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-5031320,INDIAN BAY               ,MB  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+5031320,INDIAN BAY               ,MB  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+5031320,INDIAN BAY               ,MB  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1915, -9999.9,M, -9999.9,M, -9999.9,M,    14.7, ,    26.3, ,   127.4, ,    43.9, ,    15.7, ,    82.7, ,    35.4, ,    57.6, ,    23.6, , -9999.9,M, -9999.9,M, -9999.9,M,   186.9, ,   175.7, ,
@@ -98,3 +98,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    96.3, , -9999.9,M,    70.8, ,   138.2, , -9999.9,M,    37.8, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2010, -9999.9,M,    24.4, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   142.0, ,    64.3, , -9999.9,M,    24.5, ,    44.4, ,    34.1, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011,    50.0, ,     2.5, ,    10.1, ,    79.5, ,    84.3, ,    57.4, ,    64.3, ,    26.3, ,    93.5, ,    23.3, ,    15.2, ,    19.0, ,   525.4, ,    86.7, ,   173.8, ,   148.0, ,   132.0, ,

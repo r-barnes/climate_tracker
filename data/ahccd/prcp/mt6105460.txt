@@ -1,5 +1,5 @@
-6105460,MORRISBURG               ,ON  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6105460,MORRISBURG               ,ON  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6105460,MORRISBURG               ,ON  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6105460,MORRISBURG               ,ON  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1913, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    16.9, ,    78.7, ,    63.6, ,    55.9, ,   164.6, ,    94.2, ,    42.6, , -9999.9,M, -9999.9,M, -9999.9,M,   159.3, ,   314.8, ,
@@ -100,3 +100,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    99.9, ,   113.9, ,   125.6, ,    86.5, ,    69.0, ,   113.5, ,   138.2, ,    64.5, ,    56.9, ,   100.9, ,    93.8, , -9999.9,M, -9999.9,M,   382.9, ,   281.1, ,   316.2, ,   251.7, ,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

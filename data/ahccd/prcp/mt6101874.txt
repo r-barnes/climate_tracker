@@ -1,5 +1,5 @@
-6101874,CORNWALL                 ,ON  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6101874,CORNWALL                 ,ON  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6101874,CORNWALL                 ,ON  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6101874,CORNWALL                 ,ON  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1951,    63.5, ,    76.3, ,   127.2, ,   119.7, ,    49.7, ,   109.7, ,    93.4, ,    56.8, ,    68.5, ,    43.8, ,    95.6, ,    71.0, ,   975.2, , -9999.9,M,   296.6, ,   259.9, ,   208.0, ,
@@ -62,3 +62,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   106.1, ,   114.1, ,    99.9, ,    68.2, ,    82.5, ,    92.5, ,    88.5, ,   112.0, ,    69.4, ,   120.5, ,    86.9, ,   155.3, ,  1195.8, ,   382.7, ,   250.5, ,   293.0, ,   276.8, ,
 2009,   111.1, ,    30.4, ,    25.3, ,    94.2, ,   108.9, ,    55.0, ,   114.6, ,    86.0, ,    63.5, ,   102.4, ,    41.9, ,   124.9, ,   958.2, ,   296.8, ,   228.4, ,   255.7, ,   207.8, ,
 2010,    72.5, ,    51.3, ,    37.5, ,    58.3, ,    48.0, ,   160.2, ,    61.1, ,   137.8, ,   204.6, ,   135.3, ,    81.0, ,    68.0, ,  1115.6, ,   248.7, ,   143.8, ,   359.1, ,   421.0, ,
+2011,    56.5, ,    96.6, ,    70.6, ,   163.6, ,   152.5, ,    41.6, ,    74.3, ,   112.9, ,    88.8, ,    84.0, ,    65.3, ,    76.1, ,  1082.8, ,   221.1, ,   386.7, ,   228.8, ,   238.2, ,

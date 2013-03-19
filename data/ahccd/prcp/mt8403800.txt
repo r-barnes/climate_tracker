@@ -1,5 +1,5 @@
-8403800,STEPHENVILLE A           ,NL  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-8403800,STEPHENVILLE A           ,NL  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+8403800,STEPHENVILLE             ,NL  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+8403800,STEPHENVILLE             ,NL  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1935,   148.0, ,   192.0, ,   103.6, ,    42.5, ,    58.7, ,    50.8, ,   170.8, ,   170.8, ,   106.2, ,   108.1, ,   181.8, ,    86.2, ,  1419.3, , -9999.9,M,   204.8, ,   392.5, ,   396.0, ,
@@ -78,3 +78,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   156.8, ,   183.1, ,   112.3, ,    26.6, ,   101.9, ,   123.3, ,    33.3, ,   161.8, ,    79.7, ,   117.1, ,   122.4, ,   207.3, ,  1425.7, ,   464.6, ,   240.8, ,   318.5, ,   319.1, ,
 2009,   163.2, ,   156.5, ,    62.6, ,    98.0, ,   144.1, ,    91.8, ,   170.9, ,   219.2, ,    87.3, ,   119.5, ,   157.2, ,   108.7, ,  1578.9, ,   526.9, ,   304.7, ,   481.9, ,   364.0, ,
 2010,    86.0, ,    83.0, ,    33.1, ,    41.5, ,   107.7, ,   159.2, ,   136.1, ,    64.3, ,   112.6, ,   194.8, ,    69.8, , -9999.9,M, -9999.9,M,   277.8, ,   182.3, ,   359.6, ,   377.2, ,
+2011,   182.7, ,   241.8, ,   131.6, ,   109.3, ,   100.2, ,    62.6, ,   117.3, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   341.1, , -9999.9,M, -9999.9,M,

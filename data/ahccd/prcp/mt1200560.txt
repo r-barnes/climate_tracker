@@ -1,5 +1,5 @@
-1200560,ATLIN                    ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1200560,ATLIN                    ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1200560,ATLIN                    ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1200560,ATLIN                    ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1906,    36.2, ,    18.7, ,     0.4, ,     9.5, ,     7.9, ,    49.4, ,    44.7, ,    22.3, ,    25.5, ,    41.0, ,    66.3, ,    22.2, ,   343.9, , -9999.9,M,    17.8, ,   116.3, ,   132.7, ,
@@ -107,3 +107,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    40.0, ,    16.6, ,    14.5, ,    16.5, ,    11.9, ,    16.7, ,    39.7, ,    29.1, ,    13.4, ,    55.3, ,    31.5, ,    31.8, ,   317.0, ,    86.1, ,    42.8, ,    85.5, ,   100.3, ,
 2009,    52.0, ,    17.6, ,    13.9, ,    11.3, ,    17.5, ,    19.8, ,     6.8, ,    60.3, ,    70.5, ,    57.8, , -9999.9,M,     7.6, , -9999.9,M,   101.4, ,    42.6, ,    86.9, , -9999.9,M,
 2010,    54.2, ,     9.2, ,    13.9, ,     1.1, ,    15.2, ,    21.8, ,    11.8, ,    50.3, ,    74.3, ,    58.9, ,    39.6, ,    41.9, ,   392.3, ,    71.1, ,    30.3, ,    83.8, ,   172.8, ,
+2011,    41.0, ,    21.1, ,     4.6, ,     0.6, ,    33.4, ,    17.0, ,     8.5, ,    72.3, ,    70.9, ,    26.8, ,    49.3, ,    23.8, ,   369.2, ,   104.0, ,    38.6, ,    97.8, ,   147.0, ,

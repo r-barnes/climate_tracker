@@ -1,5 +1,5 @@
-5060606,CHURCHILL UA             ,MB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-5060606,CHURCHILL UA             ,MB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+5060606,CHURCHILL                ,MB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+5060606,CHURCHILL                ,MB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1932,     1.6, ,     4.2, ,     8.9, ,    47.3, ,     9.0, ,    47.4, ,   152.3, ,    33.0, ,    35.6, ,    47.0, ,    42.6, ,    10.6, ,   439.6, , -9999.9,M,    65.3, ,   232.7, ,   125.2, ,
@@ -80,4 +80,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,    25.7, ,    25.9, ,    38.4, ,    11.9, ,    37.4, ,    43.0, ,    34.8, ,    66.8, ,    83.2, ,    55.0, ,    37.4, , -9999.9,M, -9999.9,M,    85.1, ,    87.8, ,   144.7, ,   175.6, ,
 2008, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
-2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2010, -9999.9,M, -9999.9,M,    23.1, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    88.3, ,   110.4, ,   101.8, ,    31.8, ,   140.5, ,    47.9, ,   158.8, , -9999.9,M, -9999.9,M, -9999.9,M,   300.5, ,   220.3, ,

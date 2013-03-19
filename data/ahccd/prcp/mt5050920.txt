@@ -1,5 +1,5 @@
-5050920,FLIN FLON                ,MB  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-5050920,FLIN FLON                ,MB  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+5050920,FLIN FLON                ,MB  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+5050920,FLIN FLON                ,MB  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1927, -9999.9,M, -9999.9,M, -9999.9,M,    36.5, ,    15.7, ,    13.7, ,   103.0, ,    65.5, ,    86.3, ,    16.1, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   182.2, , -9999.9,M,
@@ -86,3 +86,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    24.7, ,    18.5, ,    22.4, ,     3.4, ,     5.1, ,    41.3, ,   131.9, ,    26.4, ,    30.3, ,    25.9, ,    26.9, ,    16.1, ,   372.9, ,    70.6, ,    30.9, ,   199.6, ,    83.2, ,
 2009,    38.1, ,    26.6, ,    32.0, ,     2.7, ,    44.6, ,    81.9, ,    77.5, ,    50.4, ,    15.6, ,    30.7, ,    10.6, ,    22.5, ,   433.2, ,    80.8, ,    79.3, ,   209.8, ,    57.0, ,
 2010,    36.0, ,    19.8, ,    22.7, ,    29.8, ,    83.4, ,    15.8, ,   133.0, ,   135.8, ,    77.6, ,    52.4, ,    14.4, ,    29.3, ,   650.0, ,    78.3, ,   135.8, ,   284.7, ,   144.4, ,
+2011,    47.7, ,    18.5, ,     7.7, ,     9.9, ,    42.4, ,    87.3, ,   147.8, ,   141.3, ,    15.6, ,    64.8, ,    22.7, ,    31.1, ,   636.8, ,    95.6, ,    60.0, ,   376.4, ,   103.1, ,

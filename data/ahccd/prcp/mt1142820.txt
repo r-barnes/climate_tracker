@@ -1,5 +1,5 @@
-1142820,FAUQUIER                 ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1142820,FAUQUIER                 ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1142820,FAUQUIER                 ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1142820,FAUQUIER                 ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1913, -9999.9,M,     7.1, ,    15.8, ,    29.9, ,    63.7, ,    98.7, ,    66.5, ,    70.5, ,    58.6, ,    58.1, ,    49.0, ,     8.4, , -9999.9,M, -9999.9,M,   109.4, ,   235.7, ,   165.8, ,
@@ -100,3 +100,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    43.5, ,    40.7, ,    38.4, ,    53.0, ,    50.8, ,    69.8, ,    46.0, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   176.9, ,   142.2, , -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M, -9999.9,M,    89.4, ,    66.7, ,   102.3, ,    93.1, ,   152.7, ,     8.0, ,    29.8, ,    84.0, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   258.4, ,   253.7, , -9999.9,M,

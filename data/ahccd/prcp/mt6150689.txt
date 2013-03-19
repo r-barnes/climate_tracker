@@ -1,5 +1,5 @@
-6150689,BELLEVILLE               ,ON  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6150689,BELLEVILLE               ,ON  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6150689,BELLEVILLE               ,ON  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6150689,BELLEVILLE               ,ON  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1921,    30.8, ,    39.2, ,   122.3, ,    41.9, ,    87.0, ,    89.8, ,   149.7, ,    52.6, ,    64.4, ,    88.4, ,    45.5, ,    55.8, ,   867.2, , -9999.9,M,   251.2, ,   292.1, ,   198.2, ,
@@ -91,4 +91,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,    57.5, ,    31.8, ,    42.0, ,   108.4, ,    65.9, ,    31.9, ,    62.3, ,    44.9, ,    27.9, ,    67.0, ,    84.5, ,   141.9, ,   765.8, ,   210.3, ,   216.3, ,   139.1, ,   179.4, ,
 2008, -9999.9,M, -9999.9,M,   116.0, ,    84.1, ,    68.3, ,   105.3, ,   114.6, ,   115.2, ,    78.2, ,    89.7, ,   125.3, ,   119.9, , -9999.9,M, -9999.9,M,   268.3, ,   335.1, ,   293.1, ,
 2009,    61.3, ,    64.9, , -9999.9,M,   109.7, ,    93.4, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   246.1, , -9999.9,M, -9999.9,M, -9999.9,M,
-2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2010,    64.9, ,    48.9, , -9999.9,M,    28.7, ,    48.1, ,   174.6, , -9999.9,M,    49.9, ,   102.3, ,    62.1, ,   138.3, ,    82.2, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   302.7, ,
+2011, -9999.9,M,    50.2, ,   135.5, ,   131.8, ,   102.6, ,    85.1, ,   121.5, ,   122.4, ,    97.4, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   370.0, ,   329.0, , -9999.9,M,

@@ -1,5 +1,5 @@
-1016940,SAANICHTON CDA           ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1016940,SAANICHTON CDA           ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1016940,SAANICHTON               ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1016940,SAANICHTON               ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1914, -9999.9,M, -9999.9,M,    35.6, ,    45.4, ,     8.6, ,    58.3, ,     3.9, ,     4.4, ,    55.0, ,    98.1, ,   217.3, ,    27.2, , -9999.9,M, -9999.9,M,    89.6, ,    66.6, ,   370.5, ,
@@ -99,3 +99,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   104.4, ,    57.5, ,    66.8, ,    81.4, ,    21.5, ,    29.8, ,    11.6, ,    41.3, ,    21.3, ,    62.0, ,   143.0, ,   117.0, ,   757.7, ,   402.3, ,   169.7, ,    82.8, ,   226.3, ,
 2009,    73.8, ,    44.3, ,    60.3, ,    45.2, ,    62.9, ,     8.8, ,    14.0, ,    21.9, ,    58.6, ,   162.9, ,   307.8, ,    99.0, ,   959.6, ,   235.0, ,   168.4, ,    44.7, ,   529.4, ,
 2010,   180.5, ,    64.4, ,    80.9, ,    59.1, ,    59.4, ,    30.1, ,     1.1, ,    32.9, ,   122.2, ,    80.1, ,   104.2, ,   180.2, ,   995.2, ,   343.9, ,   199.4, ,    64.2, ,   306.5, ,
+2011,   164.7, ,    85.3, ,   107.8, ,    76.6, ,    81.5, ,    15.9, ,    24.1, ,    14.0, ,    49.6, ,    58.2, ,   144.9, ,    66.0, ,   888.6, ,   430.1, ,   265.9, ,    54.0, ,   252.8, ,

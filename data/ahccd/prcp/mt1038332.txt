@@ -1,5 +1,5 @@
-1038332,UCLUELET KENNEDY CAMP    ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1038332,UCLUELET KENNEDY CAMP    ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1038332,UCLUELET KENNEDY CAMP    ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1038332,UCLUELET KENNEDY CAMP    ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1958,   759.3, ,   416.9, ,   306.3, ,   213.6, ,    31.1, ,    25.2, ,     0.6, ,   105.1, ,   315.0, ,   322.7, ,   475.9, ,   561.7, ,  3533.4, , -9999.9,M,   551.1, ,   130.8, ,  1113.6, ,
@@ -55,3 +55,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   479.4, ,   342.4, ,   334.9, ,   115.1, ,   119.3, ,   106.7, ,   121.8, ,   259.1, ,    68.3, ,   375.0, ,   496.6, ,   370.2, ,  3188.9, ,  1343.9, ,   569.3, ,   487.6, ,   940.0, ,
 2009,   524.5, ,   209.0, ,   336.0, ,   125.8, ,   225.3, ,    60.3, ,    58.1, ,    62.1, ,   284.1, ,   336.2, ,   807.2, ,   196.9, ,  3225.5, ,  1103.8, ,   687.1, ,   180.5, ,  1427.5, ,
 2010,   512.4, ,   338.6, ,   362.1, ,   335.1, ,   227.6, ,   136.6, ,     3.8, ,    86.7, ,   316.6, ,   445.1, ,   418.9, ,   624.1, ,  3807.6, ,  1047.9, ,   924.8, ,   227.2, ,  1180.5, ,
+2011,   473.4, ,   388.1, ,   571.4, ,   253.0, ,   248.0, ,    71.6, ,   113.7, ,    61.6, ,   286.4, ,   364.0, ,   407.5, ,   444.2, ,  3682.9, ,  1485.5, ,  1072.5, ,   246.9, ,  1057.9, ,

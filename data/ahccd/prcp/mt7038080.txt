@@ -1,5 +1,5 @@
-7038080,SHEENBORO                ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7038080,SHEENBORO                ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7038080,SHEENBORO                ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7038080,SHEENBORO                ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1915, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    61.3, ,   233.4, ,    43.2, ,    33.3, ,    45.8, ,    79.7, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   122.3, ,
@@ -98,3 +98,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    59.5, ,    47.4, ,    91.6, ,    65.0, ,    83.2, , -9999.9,M, -9999.9,M,    78.5, ,    81.6, ,    48.1, ,    38.2, ,    86.0, , -9999.9,M,   230.0, ,   239.8, , -9999.9,M,   167.9, ,
 2009,    35.4, ,    39.3, ,    48.9, ,    67.5, ,    97.4, ,    75.9, ,   122.0, ,    84.7, ,    38.2, ,    89.5, ,    53.6, ,    74.0, ,   826.3, ,   160.7, ,   213.8, ,   282.5, ,   181.3, ,
 2010,    57.9, ,    22.2, ,     0.0, ,    47.1, ,    72.0, ,    74.6, ,   117.2, ,    79.7, ,   136.1, ,    61.7, ,    42.0, , -9999.9,M, -9999.9,M,   154.2, ,   119.1, ,   271.6, ,   239.8, ,
+2011, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   113.1, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

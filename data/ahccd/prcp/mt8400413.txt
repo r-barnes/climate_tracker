@@ -1,5 +1,5 @@
-8400413,BAY D'ESPOIR GEN STN     ,NL  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-8400413,BAY D'ESPOIR GEN STN     ,NL  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+8400413,BAY D'ESPOIR GEN STN     ,NL  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+8400413,BAY D'ESPOIR GEN STN     ,NL  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1968, -9999.9,M,   125.0, ,   192.5, ,    76.6, ,   191.6, ,   183.3, ,    82.9, ,   169.5, ,    39.0, ,   113.0, ,   125.2, ,   207.0, , -9999.9,M, -9999.9,M,   460.8, ,   435.7, ,   277.2, ,
@@ -45,3 +45,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   165.5, ,   167.4, ,   184.5, ,    42.2, ,    96.3, ,    76.0, ,    78.3, ,   182.7, ,   153.9, ,   107.0, ,   138.2, ,   149.8, ,  1541.7, ,   578.9, ,   323.0, ,   337.0, ,   399.1, ,
 2009,    70.4, ,   125.5, ,    78.9, ,   134.5, ,   110.1, ,   129.5, , -9999.9,M, -9999.9,M, -9999.9,M,   118.5, ,   222.5, ,   208.3, , -9999.9,M,   345.8, ,   323.5, , -9999.9,M, -9999.9,M,
 2010,   112.5, ,    65.4, ,    16.3, ,    12.6, ,   142.5, ,   158.6, , -9999.9,M,    16.8, ,   279.5, ,   212.4, ,    49.6, , -9999.9,M, -9999.9,M,   386.2, ,   171.4, , -9999.9,M,   541.5, ,
+2011,   148.9, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

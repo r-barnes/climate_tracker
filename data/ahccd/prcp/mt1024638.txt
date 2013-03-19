@@ -1,5 +1,5 @@
-1024638,LITTLE QUALICUM HATCHERY ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1024638,LITTLE QUALICUM HATCHERY ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1024638,LITTLE QUALICUM HATCHERY ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1024638,LITTLE QUALICUM HATCHERY ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1924,   247.5, ,   321.3, ,    26.9, ,    51.5, ,    11.4, ,    28.9, ,    12.8, ,    22.7, ,   168.5, ,   248.4, ,   224.8, ,    74.8, ,  1439.6, , -9999.9,M,    89.8, ,    64.4, ,   641.7, ,
@@ -89,3 +89,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   150.4, ,    41.3, ,    66.7, ,    40.9, ,    22.1, ,    57.0, ,    19.1, ,    39.0, ,    24.1, ,    92.8, ,   133.0, ,    50.0, ,   736.3, ,   391.2, ,   129.7, ,   115.1, ,   249.9, ,
 2009,    26.7, ,    43.2, ,    19.6, ,    37.1, ,    67.7, ,    15.3, ,    22.3, ,    26.6, ,    62.1, ,   156.1, ,   348.5, ,    73.4, ,   898.7, ,   119.8, ,   124.5, ,    64.3, ,   566.7, ,
 2010, -9999.9,M,   115.4, , -9999.9,M,    96.7, ,    72.3, ,    28.2, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M,   129.0, ,   228.8, ,    60.9, ,    69.2, ,    40.3, ,    54.6, ,     7.4, ,    96.8, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   358.9, ,   102.3, , -9999.9,M,

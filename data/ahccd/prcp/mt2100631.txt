@@ -1,5 +1,5 @@
-2100631,HAINES JUNCTION YTG      ,YT  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-2100631,HAINES JUNCTION YTG      ,YT  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+2100631,HAINES JUNCTION YTG      ,YT  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+2100631,HAINES JUNCTION YTG      ,YT  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1945,    39.5, ,     9.3, ,     9.4, ,    11.7, ,    20.1, ,    38.0, ,    27.5, ,     1.6, ,    93.9, ,    63.9, ,    28.0, ,    13.3, ,   356.4, , -9999.9,M,    41.3, ,    67.1, ,   185.8, ,
@@ -65,6 +65,7 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2005,    34.5, ,     8.7, ,     3.9, ,     0.5, ,     5.7, ,    74.0, ,    30.7, ,    24.4, ,    37.9, ,    44.5, ,    88.5, ,     8.8, ,   362.2, ,   174.6, ,    10.2, ,   129.1, ,   171.0, ,
 2006,     5.4, ,    12.7, ,    11.8, ,     2.7, ,    25.2, ,    39.4, ,    44.3, ,    34.7, ,    33.0, ,    30.1, ,    21.3, ,    59.3, ,   320.0, ,    27.0, ,    39.7, ,   118.4, ,    84.4, ,
 2007,    27.7, ,    36.4, ,     3.2, ,     0.0, ,     3.7, ,    20.6, ,    12.9, ,     7.8, ,     0.0, ,     5.6, ,     0.0, ,     8.1, ,   126.1, ,   123.4, ,     6.9, ,    41.3, ,     5.6, ,
-2008,     8.8, ,    17.9, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    22.5, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    34.8, , -9999.9,M, -9999.9,M, -9999.9,M,
+2008,     8.8, ,    17.9, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    34.8, , -9999.9,M, -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

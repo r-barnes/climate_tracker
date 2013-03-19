@@ -1,5 +1,5 @@
-6075425,MOOSONEE UA              ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6075425,MOOSONEE UA              ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6075425,MOOSONEE                 ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6075425,MOOSONEE                 ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1892, -9999.9,M, -9999.9,M,    34.6, ,    25.1, ,    36.2, ,    19.6, ,    34.3, ,    55.2, ,    53.9, , -9999.9,M,    24.3, ,     9.7, , -9999.9,M, -9999.9,M,    95.9, ,   109.1, , -9999.9,M,
@@ -121,3 +121,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008, -9999.9,M, -9999.9,M, -9999.9,M,    36.9, ,   120.2, ,    88.9, ,   117.5, ,    61.6, ,    92.8, ,    60.3, ,    85.4, ,    54.4, , -9999.9,M, -9999.9,M, -9999.9,M,   268.0, ,   238.6, ,
 2009,    18.1, ,    36.8, ,    76.3, ,    89.9, , -9999.9,M,    58.5, ,   112.2, ,    98.9, ,    88.0, ,    60.4, ,    65.1, ,    46.1, , -9999.9,M,   109.3, , -9999.9,M,   269.5, ,   213.4, ,
 2010,    41.5, ,    39.5, ,    26.7, ,    26.2, ,    52.9, ,    27.4, ,   154.4, ,    69.9, ,    97.7, ,    35.7, ,   143.6, ,   248.8, ,   964.3, ,   127.1, ,   105.8, ,   251.8, ,   277.0, ,
+2011,    39.4, ,   101.5, ,    20.7, ,    81.5, ,    61.2, ,    57.6, ,    45.2, ,    66.9, ,    85.5, ,    50.1, , -9999.9,M,    53.8, , -9999.9,M,   389.7, ,   163.4, ,   169.7, , -9999.9,M,

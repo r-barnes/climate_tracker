@@ -1,5 +1,5 @@
-7025440,NICOLET                  ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7025440,NICOLET                  ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7025440,NICOLET                  ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7025440,NICOLET                  ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1914,   156.3, ,    69.5, ,    93.5, ,    56.9, ,    44.1, ,    92.3, ,    83.2, ,    73.9, ,    92.2, ,    74.7, ,   108.1, ,    77.3, ,  1022.0, , -9999.9,M,   194.4, ,   249.4, ,   275.0, ,
@@ -99,3 +99,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    78.5, ,   127.3, ,   130.2, ,    41.8, ,    56.0, ,   119.4, ,   161.7, ,    94.3, ,    87.2, ,    97.7, ,    73.8, ,   108.9, ,  1176.8, ,   376.3, ,   228.0, ,   375.4, ,   258.8, ,
 2009,   123.4, ,    74.5, ,    44.8, ,    67.0, ,    87.9, ,   141.9, ,   180.6, ,    74.5, ,    81.8, ,    89.1, ,    82.8, ,   128.1, ,  1176.3, ,   306.8, ,   199.6, ,   397.0, ,   253.6, ,
 2010,    95.5, ,    44.5, ,    21.7, ,    70.6, ,    40.3, ,    97.3, ,    78.7, ,    35.9, ,   177.8, ,   108.1, ,   128.7, ,    93.8, ,   992.8, ,   268.0, ,   132.6, ,   211.9, ,   414.6, ,
+2011,    28.7, ,    81.6, ,    86.9, ,   109.4, ,   133.5, , -9999.9,M,   125.0, ,   145.0, ,   114.4, ,    94.1, , -9999.9,M, -9999.9,M, -9999.9,M,   204.1, ,   329.8, , -9999.9,M, -9999.9,M,

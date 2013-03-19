@@ -1,5 +1,5 @@
-8502800,NAIN A                   ,NL  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-8502800,NAIN A                   ,NL  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+8502800,NAIN                     ,NL  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+8502800,NAIN                     ,NL  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1939, -9999.9,M,    42.3, ,    46.0, ,    18.4, ,    39.7, ,    43.7, ,    79.1, ,   169.5, ,    78.6, ,    53.6, ,    86.4, ,   163.8, , -9999.9,M, -9999.9,M,   104.2, ,   292.4, ,   218.6, ,
@@ -73,4 +73,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,   118.4, ,   212.6, ,   130.3, ,    31.7, ,    46.9, ,    87.2, ,    57.8, ,    85.6, ,   183.3, ,    78.4, ,    78.2, ,    20.3, ,  1130.6, ,   371.7, ,   208.8, ,   230.6, ,   339.9, ,
 2008,    49.2, ,    62.9, ,    55.8, ,    78.9, ,   104.5, ,    52.1, ,   198.1, ,    53.4, ,    46.3, ,   104.2, ,   130.1, ,    97.4, ,  1032.9, ,   132.4, ,   239.2, ,   303.6, ,   280.6, ,
 2009,   117.7, ,    49.9, ,    69.8, ,    57.2, ,    40.6, ,    99.6, ,   113.3, ,    98.4, ,    43.6, ,    79.3, ,    70.1, ,   165.8, ,  1005.3, ,   265.1, ,   167.6, ,   311.3, ,   193.0, ,
-2010,   145.9, ,   132.1, ,    45.0, ,   220.1, ,    84.8, ,   129.0, ,   101.5, ,    57.6, ,    21.7, , -9999.9,M,    48.3, ,    83.9, , -9999.9,M,   443.8, ,   349.9, ,   288.2, , -9999.9,M,
+2010,   145.9, ,   132.1, ,    45.0, ,   220.1, ,    84.8, ,   129.0, ,   101.5, ,    57.6, ,    21.7, ,   100.2, ,    48.3, ,    83.9, ,  1170.2, ,   443.8, ,   349.9, ,   288.2, ,   170.2, ,
+2011,    84.6, ,    16.3, ,    93.7, ,    64.3, ,    63.0, ,    89.9, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   184.9, ,   220.9, , -9999.9,M, -9999.9,M,

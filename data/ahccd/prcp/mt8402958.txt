@@ -1,5 +1,5 @@
-8402958,PLUM POINT               ,NL  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-8402958,PLUM POINT               ,NL  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+8402958,PLUM POINT               ,NL  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+8402958,PLUM POINT               ,NL  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1972, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   108.7, ,   140.8, ,   101.2, ,   119.7, ,    91.4, ,    82.4, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   312.3, ,
@@ -41,3 +41,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    88.5, ,   123.8, ,   138.7, ,    41.8, ,    54.7, ,   104.8, ,    87.2, ,    70.1, ,    95.5, ,    65.4, ,   106.2, ,   150.2, ,  1126.8, ,   280.3, ,   235.2, ,   262.0, ,   267.1, ,
 2009,   162.4, ,    92.4, ,    74.4, ,   114.4, ,    71.7, ,    93.0, ,   156.4, ,    73.9, ,    93.4, ,    97.0, ,   136.3, ,   117.2, ,  1282.6, ,   405.0, ,   260.5, ,   323.4, ,   326.8, ,
 2010,   143.8, ,   104.1, ,    32.0, ,    60.8, ,   140.1, ,   100.7, ,   179.0, ,    57.6, ,   104.2, ,   250.9, ,    84.6, ,    97.1, ,  1354.8, ,   365.0, ,   232.9, ,   337.2, ,   439.7, ,
+2011,   161.4, ,   138.7, ,   162.5, ,   129.6, ,   142.9, ,   126.1, ,   162.7, ,    65.0, ,   132.2, ,   152.2, ,   113.7, ,    80.7, ,  1567.6, ,   397.3, ,   435.0, ,   353.8, ,   398.1, ,

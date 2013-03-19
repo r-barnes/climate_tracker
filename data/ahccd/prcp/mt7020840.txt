@@ -1,5 +1,5 @@
-7020840,BROME                    ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7020840,BROME                    ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7020840,BROME                    ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7020840,BROME                    ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1877,    59.3, , -9999.9,M, -9999.9,M,    76.6, ,    52.4, ,    73.1, ,    97.5, ,   143.9, ,    64.8, ,   102.8, , -9999.9,M,    72.9, , -9999.9,M, -9999.9,M, -9999.9,M,   314.5, , -9999.9,M,
@@ -136,3 +136,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    66.2, ,   107.1, ,    64.6, ,    90.3, ,   111.5, ,   183.6, ,   181.6, ,   143.2, ,    95.4, ,   133.1, ,    91.8, ,   162.6, ,  1431.0, ,   359.3, ,   266.4, ,   508.5, ,   320.3, ,
 2009,   120.7, ,   122.3, ,    80.8, ,    87.7, , -9999.9,M, -9999.9,M,   115.2, ,    72.2, ,    83.5, ,   117.5, ,   150.9, ,   127.4, , -9999.9,M,   405.7, , -9999.9,M, -9999.9,M,   351.8, ,
 2010,   109.1, ,    88.4, ,    79.4, ,   102.4, ,    61.5, ,   222.0, ,   139.1, ,   176.7, ,   196.1, ,   172.0, ,   109.4, ,   175.8, ,  1631.9, ,   324.9, ,   243.3, ,   537.8, ,   477.6, ,
+2011,   101.2, ,   121.0, ,   147.1, ,   164.0, ,   190.0, ,    88.8, ,   152.4, ,   269.7, ,   243.3, ,   149.8, , -9999.9,M, -9999.9,M, -9999.9,M,   398.1, ,   501.1, ,   510.9, , -9999.9,M,

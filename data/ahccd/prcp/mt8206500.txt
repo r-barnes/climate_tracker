@@ -1,5 +1,5 @@
-8206500,YARMOUTH A               ,NS  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-8206500,YARMOUTH A               ,NS  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+8206500,YARMOUTH                 ,NS  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+8206500,YARMOUTH                 ,NS  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1880,   143.8, ,   177.0, ,   103.2, ,    94.5, ,   122.6, ,    19.2, ,   105.0, ,    51.1, ,    98.7, ,   111.5, ,    91.6, ,   101.6, ,  1219.9, , -9999.9,M,   320.4, ,   175.3, ,   301.8, ,
@@ -132,4 +132,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,   188.9, ,   127.6, ,    97.2, ,   140.2, ,    60.2, ,    50.0, ,    50.7, ,   147.2, ,    86.6, ,   105.1, ,   142.1, ,   152.8, ,  1348.6, ,   455.0, ,   297.6, ,   247.9, ,   333.8, ,
 2008,   124.1, ,   219.1, ,   164.1, ,    56.9, ,   106.9, ,    42.2, ,    51.0, ,    54.0, ,   160.7, ,   114.3, ,   130.2, ,   227.9, ,  1451.3, ,   496.0, ,   327.9, ,   147.2, ,   405.1, ,
 2009,   146.0, ,   107.5, ,   120.8, ,   178.0, ,   126.6, ,   133.8, ,   124.1, ,   168.3, ,    58.9, ,   165.5, ,   100.4, ,   184.1, ,  1614.0, ,   481.4, ,   425.3, ,   426.2, ,   324.8, ,
-2010,   152.6, ,   142.7, ,   101.2, ,    26.8, ,    60.2, ,    87.1, , -9999.9,M, -9999.9,M,    61.9, ,   138.0, ,   275.0, ,   195.9, , -9999.9,M,   479.4, ,   188.2, , -9999.9,M,   474.9, ,
+2010,   152.6, ,   142.7, ,   101.2, ,    26.8, ,    60.2, ,    87.1, ,   121.4, ,    39.5, ,    61.9, ,   138.0, ,   275.0, ,   195.9, ,  1402.1, ,   479.4, ,   188.2, ,   247.9, ,   474.9, ,
+2011,   149.1, ,   157.7, ,    51.4, ,   128.5, ,   119.5, ,    82.8, ,   163.7, ,    72.9, ,    63.0, ,   220.7, ,   160.6, ,   162.0, ,  1531.8, ,   502.6, ,   299.3, ,   319.4, ,   444.4, ,

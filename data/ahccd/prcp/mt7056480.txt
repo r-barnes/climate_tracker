@@ -1,5 +1,5 @@
-7056480,RIMOUSKI                 ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7056480,RIMOUSKI                 ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7056480,RIMOUSKI                 ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7056480,RIMOUSKI                 ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1877,   119.6, ,    94.2, ,   112.8, ,    51.4, ,    59.4, ,    80.1, ,    42.2, ,   116.0, ,    70.2, ,    67.7, ,   104.8, ,    47.8, ,   966.4, , -9999.9,M,   223.7, ,   238.4, ,   242.7, ,
@@ -136,3 +136,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    68.0, ,    92.5, ,   166.4, ,    93.5, ,    64.6, ,   111.1, ,    85.9, ,   122.0, ,   102.6, ,    93.1, ,    63.3, ,   128.6, ,  1191.5, ,   235.4, ,   324.5, ,   318.9, ,   258.9, ,
 2009,   121.7, ,    77.4, ,    73.3, ,   120.5, ,    81.6, ,    56.6, ,   142.4, ,    60.7, ,    64.6, ,   101.3, ,    77.0, ,   146.6, ,  1123.7, ,   327.6, ,   275.4, ,   259.7, ,   243.0, ,
 2010,    45.6, ,    66.9, ,    55.4, ,    59.9, ,    92.2, ,   116.0, ,    66.0, ,    34.2, ,   280.4, ,   125.3, ,    93.3, ,   154.4, ,  1189.5, ,   259.1, ,   207.5, ,   216.2, ,   498.9, ,
+2011,    95.3, , -9999.9,M,   121.6, ,   105.3, ,   150.1, , -9999.9,M,    78.0, ,    92.8, ,    87.8, ,    33.2, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   377.0, , -9999.9,M, -9999.9,M,

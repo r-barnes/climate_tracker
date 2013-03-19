@@ -1,5 +1,5 @@
-1173210,GOLDEN A                 ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1173210,GOLDEN A                 ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1173210,GOLDEN                   ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1173210,GOLDEN                   ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1908, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    30.1, ,    31.3, ,    11.4, ,    25.9, ,    45.1, ,    46.4, ,    24.9, , -9999.9,M, -9999.9,M, -9999.9,M,    72.8, ,   117.3, ,
@@ -105,3 +105,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    32.7, ,    27.7, ,     6.4, ,    29.3, ,    23.4, ,    50.9, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   127.3, ,    59.1, , -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    47.0, , -9999.9,M, -9999.9,M, -9999.9,M,    72.3, ,    50.5, ,    37.0, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2010,    28.6, ,     2.9, ,    23.2, ,    15.1, ,    20.2, ,    49.3, ,    13.4, ,    44.8, ,    60.8, ,    14.7, ,    50.3, ,    42.8, ,   366.2, ,    68.5, ,    58.5, ,   107.6, ,   125.8, ,
+2011,    90.0, ,    53.7, ,    47.6, ,    19.9, ,    56.7, ,    48.2, ,    73.5, ,    23.6, ,    33.9, ,    65.1, ,    75.5, ,    27.0, ,   614.8, ,   186.6, ,   124.2, ,   145.3, ,   174.4, ,

@@ -1,5 +1,5 @@
-7035160,MONT LAURIER             ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7035160,MONT LAURIER             ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7035160,MONT LAURIER             ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7035160,MONT LAURIER             ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1920, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   106.0, ,   121.6, ,    43.2, ,   100.1, ,    75.0, ,   127.9, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   218.3, ,
@@ -93,3 +93,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    65.8, ,    81.2, ,    92.4, ,    49.9, ,    85.3, ,   126.9, ,   118.3, ,   110.7, ,    76.8, ,   102.8, ,    46.6, ,   125.0, ,  1081.9, ,   259.9, ,   227.6, ,   355.9, ,   226.3, ,
 2009,    60.4, ,    55.5, ,    43.9, ,    60.3, ,    62.1, ,   138.7, ,   133.4, ,    75.4, ,    40.1, ,    95.8, ,    46.2, ,    67.3, ,   879.1, ,   240.9, ,   166.3, ,   347.5, ,   182.1, ,
 2010,    71.9, ,    34.8, ,    11.3, ,    58.4, ,    45.7, ,    63.1, ,   103.8, ,   102.1, ,   198.1, ,    52.4, ,    83.4, ,    91.8, ,   916.9, ,   174.0, ,   115.4, ,   269.0, ,   333.9, ,
+2011,    49.4, ,    77.3, ,    50.6, ,    78.1, ,    91.1, ,    97.3, ,    93.5, ,    72.1, ,    60.2, ,    75.2, , -9999.9,M, -9999.9,M, -9999.9,M,   218.6, ,   219.8, ,   262.8, , -9999.9,M,

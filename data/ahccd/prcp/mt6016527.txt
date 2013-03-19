@@ -1,5 +1,5 @@
-6016527,PICKLE LAKE A            ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6016527,PICKLE LAKE A            ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6016527,PICKLE LAKE              ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6016527,PICKLE LAKE              ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1933, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   111.1, ,    43.9, ,    79.9, ,    79.8, ,    38.7, ,    37.1, ,    48.1, , -9999.9,M, -9999.9,M, -9999.9,M,   234.8, ,   155.6, ,
@@ -79,4 +79,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,    66.5, ,    33.6, ,    46.5, ,    52.7, ,   109.5, ,   152.0, ,    95.0, ,   134.3, ,   172.3, ,    92.7, ,    62.0, ,    93.3, ,  1110.4, ,   154.3, ,   208.7, ,   381.3, ,   327.0, ,
 2008,    57.3, ,    45.1, ,    51.5, ,   128.3, ,    72.4, ,   117.1, ,   127.9, ,    41.1, ,    90.4, ,    66.0, ,   106.5, ,    51.8, ,   955.4, ,   195.7, ,   252.1, ,   286.1, ,   263.0, ,
 2009,    64.4, ,    61.7, ,    78.4, ,    59.5, ,   127.6, ,   154.8, ,   106.1, ,   175.5, ,    69.2, ,    71.9, ,    52.9, ,    36.9, ,  1058.9, ,   177.8, ,   265.5, ,   436.4, ,   194.0, ,
-2010,    42.9, ,    14.6, ,    43.5, ,    33.1, ,   106.9, ,    41.9, ,   161.8, ,   142.5, ,    89.3, ,    46.2, ,    88.6, , -9999.9,M, -9999.9,M,    94.5, ,   183.5, ,   346.2, ,   224.1, ,
+2010,    42.9, ,    14.6, ,    43.5, ,    33.1, ,   106.9, ,    41.9, ,   161.8, ,   142.5, ,    89.3, ,    46.2, ,    88.6, ,    42.0, ,   853.3, ,    94.5, ,   183.5, ,   346.2, ,   224.1, ,
+2011,    44.5, ,    37.3, ,    49.8, ,    48.3, ,    35.1, ,    77.2, ,   102.8, ,    95.3, ,    64.5, ,    29.8, ,    50.1, ,    51.1, ,   685.8, ,   123.8, ,   133.1, ,   275.3, ,   144.4, ,

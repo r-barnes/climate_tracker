@@ -1,5 +1,5 @@
-4086000,PELLY                    ,SK  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-4086000,PELLY                    ,SK  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+4086000,PELLY                    ,SK  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+4086000,PELLY                    ,SK  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1952,    29.5, ,    19.3, ,    16.1, ,     2.9, ,    40.3, ,    72.5, ,    38.2, ,    28.1, ,    40.5, ,    16.2, ,     7.4, ,     8.9, ,   320.0, , -9999.9,M,    59.4, ,   138.9, ,    64.1, ,
@@ -61,3 +61,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    29.0, ,    16.0, ,    34.3, ,    17.5, ,    42.8, ,   102.5, , -9999.9,M,    69.1, ,    16.2, , -9999.9,M,    31.4, ,    47.0, , -9999.9,M,    86.0, ,    94.6, , -9999.9,M, -9999.9,M,
 2009,    21.1, ,    25.3, ,    34.0, ,    62.3, ,    33.6, ,    90.5, ,    58.2, ,   134.0, ,    20.7, ,    70.3, ,     0.2, ,    21.3, ,   571.6, ,    93.4, ,   129.9, ,   282.7, ,    91.2, ,
 2010,    61.3, ,    25.3, ,     5.3, ,    84.0, ,   105.0, ,   165.5, ,   182.2, ,   128.1, ,    78.6, ,    50.9, ,    41.9, ,    45.9, ,   974.0, ,   107.9, ,   194.3, ,   475.7, ,   171.5, ,
+2011,    37.6, ,    32.9, ,    33.0, ,     8.2, ,    45.7, ,    83.3, ,   111.2, ,    83.1, ,    19.6, ,    37.3, , -9999.9,M,    12.5, , -9999.9,M,   116.4, ,    86.9, ,   277.6, , -9999.9,M,

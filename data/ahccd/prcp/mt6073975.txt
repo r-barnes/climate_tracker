@@ -1,5 +1,5 @@
-6073975,KAPUSKASING A            ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6073975,KAPUSKASING A            ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6073975,KAPUSKASING              ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6073975,KAPUSKASING              ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1918,    47.9, ,    34.0, , -9999.9,M, -9999.9,M,    75.9, ,    98.4, ,    92.4, ,    47.4, ,   218.9, ,    51.0, ,    82.8, ,    49.2, , -9999.9,M, -9999.9,M, -9999.9,M,   238.2, ,   352.8, ,
@@ -94,4 +94,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,    48.4, ,    24.0, ,    60.1, ,    94.4, ,   122.3, ,    47.2, ,   114.7, ,    73.9, ,   193.5, ,    93.9, ,    88.8, ,   100.9, ,  1062.1, ,   124.3, ,   276.8, ,   235.8, ,   376.1, ,
 2008,    87.4, ,    35.9, ,    34.1, ,    69.6, ,   107.6, ,   120.4, ,   115.9, ,    56.5, ,    58.5, ,    48.1, ,    70.1, ,    82.9, ,   887.0, ,   224.2, ,   211.4, ,   292.8, ,   176.7, ,
 2009,    30.9, ,    55.4, ,    43.3, ,    91.3, ,    85.0, ,   106.8, ,   195.2, ,    89.8, ,    41.6, ,    46.8, ,    46.0, ,    52.4, ,   884.5, ,   169.1, ,   219.6, ,   391.8, ,   134.5, ,
-2010,    32.7, ,    32.4, ,    19.8, ,    35.5, ,    48.5, ,    53.8, ,   102.0, , -9999.9,M, -9999.9,M, -9999.9,M,    75.5, ,    47.6, , -9999.9,M,   117.4, ,   103.8, , -9999.9,M, -9999.9,M,
+2010,    32.7, ,    32.4, ,    19.8, ,    35.5, ,    48.5, ,    53.8, ,   102.0, ,    95.5, ,   179.5, ,    50.8, ,    75.5, ,    47.6, ,   773.6, ,   117.4, ,   103.8, ,   251.3, ,   305.8, ,
+2011,    53.1, ,    34.3, ,    53.0, ,   129.4, ,    48.3, ,    93.0, ,    67.3, ,    95.1, ,    79.1, ,    53.9, ,    84.8, ,    66.3, ,   857.5, ,   134.9, ,   230.7, ,   255.4, ,   217.8, ,

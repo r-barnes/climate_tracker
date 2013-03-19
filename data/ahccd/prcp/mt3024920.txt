@@ -1,5 +1,5 @@
-3024920,OLDS                     ,AB  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-3024920,OLDS                     ,AB  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+3024920,OLDS                     ,AB  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+3024920,OLDS                     ,AB  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1914, -9999.9,M, -9999.9,M, -9999.9,M,     8.0, ,    23.8, ,    96.0, ,    34.2, ,    23.1, ,    67.0, ,    39.6, ,    28.8, ,    24.8, , -9999.9,M, -9999.9,M, -9999.9,M,   153.3, ,   135.4, ,
@@ -99,3 +99,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    94.3, ,    72.2, ,    65.7, ,    11.1, ,    26.2, ,     9.0, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   103.0, ,
+2011,    43.4, ,    18.0, ,    27.1, ,    36.4, ,    90.4, ,   105.4, ,    68.9, ,    46.6, ,     7.4, ,     6.0, ,    16.7, ,    25.9, ,   492.2, ,    70.4, ,   153.9, ,   220.9, ,    30.2, ,

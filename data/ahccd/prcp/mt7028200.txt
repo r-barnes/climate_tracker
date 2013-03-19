@@ -1,5 +1,5 @@
-7028200,SOREL                    ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7028200,SOREL                    ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7028200,SOREL                    ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7028200,SOREL                    ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1914, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    82.2, ,    53.6, ,   126.7, ,    80.8, ,    85.2, ,   111.5, ,    83.1, , -9999.9,M, -9999.9,M, -9999.9,M,   262.5, ,   277.5, ,
@@ -99,3 +99,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   115.4, ,   137.5, ,   122.7, ,    87.6, ,    67.7, ,   116.9, ,   175.7, ,   108.8, ,    67.5, ,   112.0, ,   114.2, ,   161.2, ,  1387.3, ,   419.9, ,   278.0, ,   401.4, ,   293.8, ,
 2009,   118.1, ,    80.8, ,    39.0, ,    77.1, ,   103.6, ,   150.1, ,   181.9, ,    66.3, ,    58.5, ,    94.3, ,    53.1, ,   170.0, ,  1192.7, ,   360.1, ,   219.6, ,   398.3, ,   205.9, ,
 2010,   112.2, ,    54.9, ,    29.1, ,    95.8, ,    62.7, ,   106.7, ,   112.9, ,   115.9, ,   198.8, ,   100.1, ,   135.8, ,   129.1, ,  1254.0, ,   337.1, ,   187.6, ,   335.5, ,   434.7, ,
+2011,    39.6, ,   127.9, ,   144.6, ,   135.7, , -9999.9,M,   117.5, ,    93.6, ,   199.6, ,    86.4, ,   104.5, , -9999.9,M, -9999.9,M, -9999.9,M,   296.7, , -9999.9,M,   410.8, , -9999.9,M,

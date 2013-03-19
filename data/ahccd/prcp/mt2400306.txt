@@ -1,5 +1,5 @@
-2400306,ALERT UA                 ,NU  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-2400306,ALERT UA                 ,NU  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+2400306,ALERT                    ,NU  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+2400306,ALERT                    ,NU  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1950, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,     3.4, ,     2.8, ,    15.3, ,    26.7, ,     8.6, ,     9.0, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    50.6, ,
@@ -63,3 +63,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    15.0, ,    17.7, ,     4.3, ,     9.4, ,     4.1, ,    10.1, ,     5.8, ,    23.0, ,    77.5, ,    41.8, ,    20.0, ,    12.1, ,   240.7, ,    71.1, ,    17.8, ,    38.8, ,   139.3, ,
 2009,    12.9, ,     9.0, ,     9.3, ,    11.9, ,    29.1, ,    17.6, ,     2.7, ,     2.0, ,    37.5, ,    32.5, ,    16.7, ,     9.6, ,   190.7, ,    33.9, ,    50.3, ,    22.3, ,    86.7, ,
 2010,    12.3, ,     5.6, ,    14.4, ,     9.4, ,    26.2, ,     3.9, ,    36.6, ,    34.4, ,    27.6, ,     9.9, ,    30.1, ,    23.3, ,   233.7, ,    27.5, ,    49.9, ,    74.9, ,    67.6, ,
+2011,    27.8, ,     7.6, ,    44.3, ,    18.3, ,    11.7, ,     6.0, ,     0.8, ,    36.8, ,    15.4, ,    39.9, ,    34.8, ,     5.9, ,   249.2, ,    58.7, ,    74.3, ,    43.6, ,    90.1, ,

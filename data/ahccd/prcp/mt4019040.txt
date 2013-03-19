@@ -1,5 +1,5 @@
-4019040,YELLOW GRASS             ,SK  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-4019040,YELLOW GRASS             ,SK  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+4019040,YELLOW GRASS             ,SK  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+4019040,YELLOW GRASS             ,SK  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1912,     0.3, , -9999.9,M,     6.1, , -9999.9,M,   101.8, ,    17.0, ,    56.7, ,    29.6, ,    26.3, ,     7.0, ,     6.1, ,    39.7, , -9999.9,M, -9999.9,M, -9999.9,M,   103.3, ,    39.4, ,
@@ -101,3 +101,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008, -9999.9,M, -9999.9,M,    28.8, ,    14.2, ,    14.3, ,    83.1, , -9999.9,M,    49.9, ,    41.9, ,    47.6, ,    19.3, ,    40.0, , -9999.9,M, -9999.9,M,    57.3, , -9999.9,M,   108.8, ,
 2009,    87.1, ,    39.6, ,    22.9, ,    53.5, ,    17.5, ,    53.3, ,    80.3, ,   105.9, ,    41.8, ,    53.0, ,    10.8, ,    42.2, ,   607.9, ,   166.8, ,    93.8, ,   239.6, ,   105.6, ,
 2010,    59.2, ,     4.0, ,     0.7, ,    42.1, ,   134.2, ,    78.3, ,    67.1, ,    93.1, ,    55.3, ,    14.7, ,    47.1, ,    18.3, ,   614.1, ,   105.5, ,   177.0, ,   238.5, ,   117.0, ,
+2011,    42.2, ,    22.1, ,    22.8, ,    39.0, ,   155.7, ,   207.7, ,    20.3, ,   123.5, ,    22.6, ,    40.4, ,    22.1, ,     8.3, ,   726.7, ,    82.6, ,   217.5, ,   351.5, ,    85.1, ,

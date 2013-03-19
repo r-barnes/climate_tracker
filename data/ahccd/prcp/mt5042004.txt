@@ -1,5 +1,5 @@
-5042004,NEEPAWA MURRAY 6 SOUTHWES,MB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-5042004,NEEPAWA MURRAY 6 SOUTHWES,MB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+5042004,NEEPAWA MURRAY           ,MB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+5042004,NEEPAWA MURRAY           ,MB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1881,     4.8, ,    83.4, ,    24.5, ,    29.3, ,   128.5, ,   200.3, ,    71.4, ,    33.0, ,   111.1, ,    35.4, ,    45.2, ,     6.3, ,   773.3, , -9999.9,M,   182.3, ,   304.7, ,   191.7, ,
@@ -132,3 +132,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,     0.0, ,     0.0, ,     0.0, ,     9.5, ,    42.5, ,   133.2, ,   115.2, , -9999.9,M,    40.6, ,    52.5, , -9999.9,M, -9999.9,M, -9999.9,M,     0.0, ,    52.0, , -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

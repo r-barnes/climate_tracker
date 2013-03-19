@@ -1,5 +1,5 @@
-1062544,DRYAD POINT              ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1062544,DRYAD POINT              ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1062544,DRYAD POINT              ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1062544,DRYAD POINT              ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1933, -9999.9,M, -9999.9,M, -9999.9,M,   107.4, ,   134.0, ,   177.6, ,   137.0, ,    48.4, ,   369.4, ,   412.5, ,   494.4, ,   390.9, , -9999.9,M, -9999.9,M, -9999.9,M,   363.0, ,  1276.2, ,
@@ -79,4 +79,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,   427.4, ,   304.8, ,   538.5, ,   273.8, ,   268.4, ,   234.8, ,   282.3, ,   188.9, ,   170.8, ,   448.5, ,   305.3, , -9999.9,M, -9999.9,M,  1098.1, ,  1080.7, ,   706.0, ,   924.6, ,
 2008, -9999.9,M,   257.7, ,   198.4, ,   154.4, ,   159.4, ,   156.6, ,   205.2, ,   232.4, ,   105.9, ,   338.4, ,   544.5, ,   337.3, , -9999.9,M, -9999.9,M,   512.2, ,   594.1, ,   988.8, ,
 2009,   255.5, ,   107.3, ,   258.3, ,   224.8, ,   190.6, ,   181.8, ,    17.4, ,   128.7, ,   234.9, ,   409.3, ,   499.3, ,    60.5, ,  2568.3, ,   700.2, ,   673.7, ,   327.9, ,  1143.5, ,
-2010,   182.6, ,   153.1, ,   274.2, ,   186.3, ,    95.2, ,   140.6, ,    28.5, ,   176.0, ,   310.8, ,   462.6, ,   244.3, ,   241.5, ,  2495.7, ,   396.1, ,   555.7, ,   345.1, ,  1017.8, ,
+2010,   182.6, ,   153.1, ,   274.2, ,   186.3, ,    95.2, ,   140.6, ,    28.5, ,   176.0, ,   310.9, ,   462.6, ,   244.3, ,   241.5, ,  2495.8, ,   396.1, ,   555.7, ,   345.1, ,  1017.8, ,
+2011,   388.1, ,   296.6, ,   207.6, ,   188.0, ,   136.4, ,   109.2, ,   240.9, ,   145.6, ,   405.3, ,   314.5, ,   365.7, ,   451.2, ,  3249.0, ,   926.2, ,   531.9, ,   495.6, ,  1085.5, ,

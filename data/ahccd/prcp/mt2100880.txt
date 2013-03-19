@@ -1,5 +1,5 @@
-2100880,PELLY RANCH              ,YT  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-2100880,PELLY RANCH              ,YT  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+2100880,PELLY RANCH              ,YT  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+2100880,PELLY RANCH              ,YT  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1952,    47.0, ,     5.2, ,     6.2, ,     2.6, ,     7.6, ,     8.1, ,    45.3, ,    21.2, ,    25.4, ,     3.6, ,    18.4, ,    32.3, ,   222.8, , -9999.9,M,    16.5, ,    74.6, ,    47.3, ,
@@ -58,6 +58,7 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2005,    25.6, ,    15.5, ,     3.1, ,     1.6, ,    36.6, ,    54.3, ,    88.3, ,    24.2, ,    30.8, ,    38.5, ,    41.8, ,     5.9, ,   366.2, ,    64.2, ,    41.3, ,   166.8, ,   111.1, ,
 2006,    23.8, ,     4.3, ,    12.5, ,     5.2, ,    21.9, ,    33.5, ,    44.8, ,    42.1, ,    13.8, ,    15.7, ,    13.0, ,    25.0, ,   255.6, ,    34.0, ,    39.6, ,   120.4, ,    42.5, ,
 2007,    19.3, ,     7.7, ,    29.6, ,    13.1, ,     4.2, ,    34.2, ,    47.2, ,    26.9, ,    61.0, ,    24.3, ,    18.8, ,    31.8, ,   318.2, ,    52.0, ,    46.9, ,   108.3, ,   104.1, ,
-2008,    21.8, ,     9.8, ,     2.4, ,    19.4, ,    16.1, ,    25.0, ,    71.9, ,   110.4, ,    32.3, ,    25.0, , -9999.9,M,    16.4, , -9999.9,M,    63.4, ,    37.9, ,   207.3, , -9999.9,M,
+2008,    21.8, ,     9.8, ,     2.4, ,    19.4, ,    16.1, ,    25.0, , -9999.9,M,   110.4, ,    32.3, ,    25.0, , -9999.9,M,    16.4, , -9999.9,M,    63.4, ,    37.9, , -9999.9,M, -9999.9,M,
 2009,    32.3, ,    16.2, ,    23.7, ,    13.5, ,    14.8, ,    24.8, ,    12.7, ,   104.9, ,    16.3, ,    17.0, ,    26.2, ,    12.5, ,   314.8, ,    64.9, ,    52.0, ,   142.3, ,    59.4, ,
 2010,    18.6, ,     2.6, ,     7.0, ,     4.4, ,    11.0, ,    40.3, ,    93.2, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    33.7, ,    22.5, , -9999.9,M, -9999.9,M,
+2011, -9999.9,M,    26.2, ,     2.7, ,     5.1, ,    24.1, ,   103.2, ,   106.7, ,    57.3, ,    15.7, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    31.9, ,   267.2, , -9999.9,M,

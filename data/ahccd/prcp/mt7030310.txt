@@ -1,5 +1,5 @@
-7030310,ARUNDEL                  ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7030310,ARUNDEL                  ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7030310,ARUNDEL                  ,QC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7030310,ARUNDEL                  ,QC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1914,    96.2, ,    60.4, ,    61.2, ,    44.4, ,    24.1, ,    61.6, ,    59.1, ,   105.3, ,    61.5, ,   119.3, ,   108.3, ,    93.8, ,   895.1, , -9999.9,M,   129.7, ,   226.0, ,   289.1, ,
@@ -99,3 +99,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    92.7, ,   109.2, ,   142.6, ,    61.8, ,   101.4, ,   137.7, , -9999.9,M,    83.9, ,   112.3, ,   108.8, ,    85.1, ,   185.2, , -9999.9,M,   380.7, ,   305.8, , -9999.9,M,   306.2, ,
 2009,   106.8, , -9999.9,M,    54.4, ,   108.2, ,    93.4, ,    79.8, , -9999.9,M,   119.4, ,    73.1, ,    97.4, ,    34.3, ,    95.8, , -9999.9,M, -9999.9,M,   256.0, , -9999.9,M,   204.8, ,
 2010,   100.4, ,    31.6, ,    17.2, ,    81.8, ,    51.2, ,    82.8, , -9999.9,M, -9999.9,M,   192.5, ,    66.0, ,   123.3, ,    91.4, , -9999.9,M,   227.7, ,   150.2, , -9999.9,M,   381.8, ,
+2011, -9999.9,M,    87.9, , -9999.9,M,    91.0, ,    97.9, ,   166.0, , -9999.9,M,   211.8, , -9999.9,M,   123.8, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,

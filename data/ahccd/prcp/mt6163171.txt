@@ -1,5 +1,5 @@
-6163171,HALIBURTON 3             ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6163171,HALIBURTON 3             ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6163171,HALIBURTON               ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6163171,HALIBURTON               ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1883, -9999.9,M, -9999.9,M, -9999.9,M,    32.8, ,    86.9, ,   130.3, ,    80.5, ,    80.8, ,    64.5, , -9999.9,M, -9999.9,M,    49.4, , -9999.9,M, -9999.9,M, -9999.9,M,   291.5, , -9999.9,M,
@@ -130,3 +130,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   142.9, ,    80.2, ,   136.2, ,    69.8, ,   126.4, ,   160.7, ,   106.3, ,    69.4, ,   110.1, ,    88.6, ,   134.5, ,   193.2, ,  1418.3, ,   351.8, ,   332.4, ,   336.4, ,   333.3, ,
 2009,    76.5, ,    65.3, ,    54.3, ,   151.6, ,   131.9, ,    64.3, ,   119.6, ,   165.6, ,    96.3, ,   141.0, ,    75.2, ,   184.2, ,  1325.8, ,   335.0, ,   337.8, ,   349.4, ,   312.5, ,
 2010,    84.0, ,    46.0, ,    14.8, , -9999.9,M,    96.2, ,   163.4, ,   120.7, ,    93.3, ,   184.0, ,    80.0, ,   100.0, ,    44.7, , -9999.9,M,   314.1, , -9999.9,M,   377.3, ,   364.1, ,
+2011,    72.5, ,    62.7, ,   107.3, ,    98.2, ,    88.0, ,    96.9, ,    47.3, ,    81.6, ,    83.6, ,   102.0, ,   105.7, ,   120.8, ,  1066.5, ,   179.9, ,   293.5, ,   225.9, ,   291.2, ,

@@ -1,5 +1,5 @@
-1166R45,SALMON ARM A             ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1166R45,SALMON ARM A             ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1166R45,SALMON ARM               ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1166R45,SALMON ARM               ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1911, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    50.0, ,    30.8, ,    10.5, ,     0.5, ,   118.5, ,   104.8, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   129.6, ,
@@ -102,3 +102,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    70.5, ,    37.3, ,    16.8, ,    16.3, ,    60.8, ,    40.0, ,    23.7, ,    55.1, ,    15.2, ,    81.7, ,    50.0, ,    77.3, ,   544.7, ,   220.8, ,    93.8, ,   118.8, ,   146.9, ,
 2009,    66.6, ,    48.8, ,     5.4, ,    21.5, ,    49.8, ,    16.8, ,    23.1, ,    34.9, ,    18.3, ,   109.4, ,    36.8, ,    30.1, ,   461.4, ,   192.7, ,    76.7, ,    74.8, ,   164.5, ,
 2010,    13.0, ,     2.3, ,    28.1, ,    30.6, ,    48.5, ,    49.3, ,    31.9, ,    33.9, ,    73.7, ,    27.9, ,    61.8, ,    50.7, ,   451.7, ,    45.5, ,   107.2, ,   115.1, ,   163.3, ,
+2011,    74.3, ,    39.3, ,    64.7, ,    31.5, ,    65.9, ,    75.3, ,   100.4, ,    29.5, ,    22.5, ,    66.0, ,    38.8, ,    49.9, ,   658.3, ,   164.4, ,   162.0, ,   205.3, ,   127.4, ,

@@ -1,5 +1,5 @@
-1175122,MICA DAM                 ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1175122,MICA DAM                 ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1175122,MICA DAM                 ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1175122,MICA DAM                 ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1962,   240.0, ,    63.2, ,    77.7, ,    77.2, ,    47.6, ,    96.6, ,    51.4, ,   112.4, ,    58.3, ,   136.4, ,   214.4, ,   322.8, ,  1498.2, , -9999.9,M,   202.4, ,   260.5, ,   409.2, ,
@@ -51,3 +51,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008, -9999.9,M,   117.1, ,    63.3, ,    45.4, ,    51.8, ,    45.1, ,    95.3, ,   124.3, ,    43.1, ,   103.2, ,   140.8, ,   142.0, , -9999.9,M, -9999.9,M,   160.6, ,   264.6, ,   287.0, ,
 2009,   158.1, ,    36.2, ,   163.9, ,    67.4, ,    57.9, ,    64.0, ,    22.9, ,    45.6, ,    83.6, ,   129.2, ,   234.4, , -9999.9,M, -9999.9,M,   336.3, ,   289.2, ,   132.6, ,   447.1, ,
 2010, -9999.9,M,    13.7, ,    51.4, ,    39.2, ,    31.2, ,    58.7, ,    68.2, ,    69.3, ,   122.8, ,    61.3, ,   127.1, ,    99.2, , -9999.9,M, -9999.9,M,   121.7, ,   196.2, ,   311.2, ,
+2011,   237.8, ,   118.2, ,    98.0, ,    72.9, ,    56.0, ,    69.3, ,   124.7, ,    36.4, ,    75.8, ,   191.4, ,   179.7, ,   120.0, ,  1380.1, ,   455.1, ,   226.9, ,   230.3, ,   446.9, ,

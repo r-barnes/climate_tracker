@@ -1,5 +1,5 @@
-4048520,WASECA                   ,SK  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-4048520,WASECA                   ,SK  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+4048520,WASECA                   ,SK  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+4048520,WASECA                   ,SK  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1908,     7.5, ,    17.9, ,    17.8, ,     5.2, ,    33.5, ,   197.9, ,    40.6, ,    60.2, ,    19.3, ,    24.0, ,     8.9, ,     2.9, ,   435.6, , -9999.9,M,    56.5, ,   298.7, ,    52.1, ,
@@ -105,3 +105,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008, -9999.9,M, -9999.9,M,    10.2, ,    68.8, ,    17.8, ,    51.3, ,   100.0, , -9999.9,M,    11.2, ,    14.3, ,    13.9, ,    23.6, , -9999.9,M, -9999.9,M,    96.8, , -9999.9,M,    39.3, ,
 2009,    22.8, ,    10.0, ,    10.1, ,     9.2, ,    17.8, , -9999.9,M,    81.6, ,    26.3, ,    13.9, ,    53.9, ,     2.1, ,    13.4, , -9999.9,M,    56.5, ,    37.1, , -9999.9,M,    69.9, ,
 2010,     6.0, ,     1.8, ,    16.1, ,    72.5, ,   123.4, ,    53.1, ,    71.7, ,    43.4, ,    49.5, ,    30.7, , -9999.9,M,    16.3, , -9999.9,M,    21.2, ,   212.0, ,   168.2, , -9999.9,M,
+2011,    28.7, , -9999.9,M,    13.9, ,    22.8, ,     5.0, ,   120.1, , -9999.9,M, -9999.9,M,     2.3, ,    13.6, ,     8.5, ,     5.4, , -9999.9,M, -9999.9,M,    41.7, , -9999.9,M,    24.4, ,

@@ -1,5 +1,5 @@
-1100120,AGASSIZ CDA              ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1100120,AGASSIZ CDA              ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1100120,AGASSIZ                  ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1100120,AGASSIZ                  ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1890,   102.7, ,   129.3, ,   173.2, ,    90.1, ,    54.8, ,   158.8, ,    80.9, ,    40.7, ,    23.6, ,   315.8, ,    95.8, ,   253.2, ,  1519.0, , -9999.9,M,   318.1, ,   280.5, ,   435.3, ,
@@ -123,3 +123,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008, -9999.9,M,   108.2, ,   144.3, ,    91.9, ,    84.2, ,    81.2, ,    59.2, ,   236.4, ,    29.8, ,   124.8, ,   225.5, ,   171.0, , -9999.9,M, -9999.9,M,   320.4, ,   376.8, ,   380.1, ,
 2009,   266.3, ,    91.4, ,   148.7, ,   101.8, ,   190.2, ,    34.1, ,    32.2, ,    49.4, ,   104.7, ,   239.2, ,   410.7, ,   105.0, ,  1773.8, ,   528.7, ,   440.7, ,   115.7, ,   754.6, ,
 2010,   218.2, ,    91.0, ,   147.1, ,   115.2, ,   122.6, ,   116.7, ,    10.3, ,    50.3, ,   221.4, ,   129.7, ,   211.0, ,   273.3, ,  1706.9, ,   414.3, ,   384.9, ,   177.3, ,   562.1, ,
+2011,   401.6, ,   170.2, ,   209.9, ,   203.1, ,   175.5, ,   105.2, ,    59.8, ,    33.9, ,   146.6, ,   172.6, ,   259.8, ,   106.4, ,  2044.9, ,   845.2, ,   588.6, ,   198.9, ,   579.0, ,

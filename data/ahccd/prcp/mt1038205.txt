@@ -1,5 +1,5 @@
-1038205,TOFINO A                 ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1038205,TOFINO A                 ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1038205,TOFINO                   ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1038205,TOFINO                   ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1942, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    77.4, ,     8.6, ,    79.2, ,   353.9, ,   397.7, ,   495.4, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   830.8, ,
@@ -71,3 +71,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   459.5, ,   325.2, ,   295.5, ,   121.3, ,    99.9, ,    77.6, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,  1252.7, ,   516.6, , -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   220.7, ,   300.4, ,   756.5, ,   153.5, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,  1277.7, ,
 2010,   477.2, ,   294.1, ,   351.3, ,   293.5, ,   178.2, ,   130.6, ,     6.8, ,    61.7, ,   264.8, ,   416.5, ,   399.0, ,   575.8, ,  3449.4, ,   924.8, ,   823.0, ,   199.0, ,  1080.3, ,
+2011,   435.4, ,   355.5, ,   433.4, ,   244.3, ,   206.2, ,    47.8, ,    70.3, ,    64.3, ,   256.9, ,   312.3, ,   386.3, ,   357.0, ,  3169.7, ,  1366.7, ,   883.9, ,   182.3, ,   955.5, ,

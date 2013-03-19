@@ -1,5 +1,5 @@
-1031353,CAPE SCOTT               ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1031353,CAPE SCOTT               ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1031353,CAPE SCOTT               ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1031353,CAPE SCOTT               ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1921, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    34.1, ,   223.5, ,   346.7, ,   366.0, ,   311.0, ,   141.5, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,  1023.7, ,
@@ -92,3 +92,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   139.9, ,   228.5, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   290.4, ,   362.6, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2011,   384.1, ,   249.4, ,   263.0, ,   194.9, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   492.3, , -9999.9,M,   996.1, , -9999.9,M, -9999.9,M, -9999.9,M,

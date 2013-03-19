@@ -1,5 +1,5 @@
-7022160,DRUMMONDVILLE            ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-7022160,DRUMMONDVILLE            ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+7022160,DRUMMONDVILLE            ,QC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+7022160,DRUMMONDVILLE            ,QC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1914,   172.3, ,    78.1, ,   109.8, ,    78.4, ,    21.8, ,   116.6, ,    22.5, ,   110.9, ,    73.9, ,    69.5, ,   122.0, ,   155.6, ,  1131.5, , -9999.9,M,   210.0, ,   250.0, ,   265.4, ,
@@ -99,3 +99,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    91.2, ,    99.0, ,    98.8, ,    76.8, ,    67.5, ,   121.4, ,   154.2, ,   152.1, ,    75.7, ,    75.4, ,    64.5, ,   178.8, ,  1255.3, ,   367.2, ,   243.1, ,   427.7, ,   215.6, ,
 2009,   122.8, ,    65.4, ,    34.2, ,    53.4, ,   111.3, ,   156.8, ,   170.7, ,    88.1, ,    64.0, ,    74.1, ,    93.3, ,   119.3, ,  1153.3, ,   367.0, ,   198.8, ,   415.6, ,   231.4, ,
 2010,    98.6, ,    66.2, ,    30.5, ,    88.5, ,    61.7, ,   124.2, ,   122.5, ,    82.8, ,   157.1, ,   135.4, ,   122.7, ,   108.9, ,  1199.0, ,   284.0, ,   180.8, ,   329.5, ,   415.1, ,
+2011,    41.3, ,   123.6, ,   100.2, ,   104.2, ,   181.1, ,   105.6, ,    82.5, ,   206.7, ,   153.0, ,    90.2, , -9999.9,M, -9999.9,M, -9999.9,M,   273.8, ,   385.5, ,   394.9, , -9999.9,M,

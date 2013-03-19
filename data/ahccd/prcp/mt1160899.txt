@@ -1,5 +1,5 @@
-1160899,BLUE RIVER A             ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1160899,BLUE RIVER A             ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1160899,BLUE RIVER               ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1160899,BLUE RIVER               ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1929,    33.2, ,    20.5, ,    53.1, ,    14.7, ,    50.0, ,   143.5, ,    66.0, ,    35.4, ,    32.9, ,    55.1, ,    28.2, ,   116.8, ,   649.5, , -9999.9,M,   117.8, ,   244.9, ,   116.2, ,
@@ -84,3 +84,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   114.0, ,    78.6, ,    58.8, ,    39.8, ,    54.1, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   152.7, , -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    80.6, ,   161.0, ,   143.0, ,    90.3, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   384.6, ,
 2010,   100.8, ,    42.8, ,    62.6, ,    40.3, ,    58.3, ,   113.8, ,    43.6, ,    66.9, ,   107.6, ,    90.0, ,   109.8, ,    55.2, ,   891.6, ,   233.9, ,   161.2, ,   224.3, ,   307.3, ,
+2011,   195.2, ,   102.8, ,    88.2, ,    48.1, ,    89.4, ,   117.8, ,   198.2, ,    39.2, ,    66.0, ,   152.4, ,   164.1, ,    76.9, ,  1338.3, ,   353.3, ,   225.7, ,   355.2, ,   382.4, ,

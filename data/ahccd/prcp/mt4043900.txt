@@ -1,5 +1,5 @@
-4043900,KINDERSLEY A             ,SK  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-4043900,KINDERSLEY A             ,SK  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+4043900,KINDERSLEY               ,SK  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+4043900,KINDERSLEY               ,SK  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1942, -9999.9,M, -9999.9,M, -9999.9,M,    35.1, ,     9.1, ,   101.2, ,    60.6, ,    33.6, ,    66.6, ,    10.3, ,    11.0, ,    11.9, , -9999.9,M, -9999.9,M, -9999.9,M,   195.4, ,    87.9, ,
@@ -71,3 +71,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    44.6, ,    37.3, ,    14.0, ,    57.4, ,    36.8, ,    73.9, ,    78.3, ,    42.7, ,     4.3, ,    17.3, ,     6.0, ,    37.3, ,   449.9, ,   105.9, ,   108.2, ,   195.0, ,    27.6, ,
 2009,    19.7, ,    19.7, ,    12.2, ,     9.3, ,     7.1, ,    45.5, ,    80.1, ,    29.0, ,    14.8, ,    20.8, ,     4.7, ,    28.2, ,   291.1, ,    76.6, ,    28.6, ,   154.6, ,    40.4, ,
 2010,    11.2, ,     8.5, ,     3.7, ,    68.8, ,    73.3, ,   117.8, ,    83.6, ,   104.9, ,    33.6, ,     4.5, ,    27.7, ,    13.0, ,   550.3, ,    47.8, ,   145.7, ,   306.3, ,    65.8, ,
+2011,    61.2, ,    23.6, ,    30.2, ,    11.0, ,    36.9, ,    66.1, ,   103.9, ,    68.9, ,    19.6, ,    11.3, ,    24.8, ,    22.4, ,   479.9, ,    97.8, ,    78.2, ,   238.9, ,    55.6, ,

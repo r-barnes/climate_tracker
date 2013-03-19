@@ -1,5 +1,5 @@
-3012205,EDMONTON INT'L A         ,AB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-3012205,EDMONTON INT'L A         ,AB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+3012205,EDMONTON                 ,AB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+3012205,EDMONTON                 ,AB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1883,    34.6, ,    17.8, ,    36.7, ,     3.3, ,    15.2, ,    50.3, ,    58.6, ,     6.5, ,     0.0, ,    31.0, ,     5.6, ,     6.2, ,   266.0, , -9999.9,M,    55.3, ,   115.5, ,    36.6, ,
@@ -129,4 +129,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,    18.0, ,    31.0, ,    11.4, ,    45.0, ,    88.7, ,    92.6, ,    54.8, ,    43.3, ,    34.2, ,     3.7, ,    18.1, ,    24.6, ,   465.3, ,    65.3, ,   145.0, ,   190.7, ,    56.0, ,
 2008,    22.0, ,    14.3, ,    15.3, ,    61.7, ,    54.9, ,    49.6, ,    40.2, ,    30.6, ,    25.2, ,    13.3, ,     7.1, ,    33.6, ,   367.8, ,    61.0, ,   131.9, ,   120.4, ,    45.6, ,
 2009,    24.4, ,    22.5, ,    33.4, ,    23.2, ,    21.5, ,    19.5, ,    69.0, ,    33.6, ,     6.9, ,    35.0, ,    14.5, ,    53.7, ,   357.4, ,    80.5, ,    78.1, ,   122.2, ,    56.5, ,
-2010,    13.6, ,     5.8, ,     7.5, ,    45.1, ,   117.4, ,    84.1, ,   153.7, ,    43.6, , -9999.9,M, -9999.9,M,    20.0, ,    31.1, , -9999.9,M,    73.1, ,   170.0, ,   281.4, , -9999.9,M,
+2010,    13.6, ,     5.8, ,     7.5, ,    45.1, ,   117.4, ,    84.1, ,   153.7, ,    43.6, ,    44.1, ,    11.3, ,    20.0, ,    31.1, ,   577.2, ,    73.1, ,   170.0, ,   281.4, ,    75.4, ,
+2011,    75.5, ,    27.1, ,    24.2, ,    23.7, ,    19.0, ,   135.1, ,   157.1, ,    14.4, ,     6.7, ,    12.7, ,    27.7, ,    15.9, ,   539.1, ,   133.7, ,    66.9, ,   306.5, ,    47.2, ,

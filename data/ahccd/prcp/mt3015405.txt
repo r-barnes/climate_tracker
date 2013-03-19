@@ -1,5 +1,5 @@
-3015405,RANFURLY 2NW             ,AB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-3015405,RANFURLY 2NW             ,AB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+3015405,RANFURLY                 ,AB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+3015405,RANFURLY                 ,AB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1905,     8.5, ,     0.0, ,    16.1, ,    45.4, ,    40.6, ,   101.3, ,    53.0, ,    96.7, ,    70.9, ,    30.9, ,    18.3, ,     2.5, ,   484.1, , -9999.9,M,   102.1, ,   251.0, ,   120.1, ,
@@ -108,3 +108,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008, -9999.9,M, -9999.9,M,    11.3, ,    56.2, ,    30.0, ,    55.7, ,    56.0, ,    96.6, ,    30.9, , -9999.9,M,     9.8, ,    39.2, , -9999.9,M, -9999.9,M,    97.5, ,   208.3, , -9999.9,M,
 2009,    43.3, ,    13.1, ,    46.6, ,    18.5, ,    11.8, ,    39.5, ,    35.8, ,    42.9, ,    14.6, ,    41.4, ,     6.9, ,    49.5, ,   363.8, ,    95.5, ,    76.8, ,   118.2, ,    62.8, ,
 2010,    22.8, ,     9.0, ,    17.6, ,    61.3, ,   105.4, ,    62.4, ,   114.5, ,    57.6, ,    48.3, ,    18.4, ,    20.2, ,    46.8, ,   584.2, ,    81.3, ,   184.2, ,   234.5, ,    86.9, ,
+2011,    74.9, ,    35.9, ,    32.2, ,    16.4, ,     6.1, ,   118.9, ,   140.7, ,    48.8, ,     4.3, ,     5.4, ,    13.9, ,     9.9, ,   507.4, ,   157.5, ,    54.7, ,   308.4, ,    23.6, ,

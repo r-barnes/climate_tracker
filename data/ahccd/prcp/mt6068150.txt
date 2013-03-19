@@ -1,5 +1,5 @@
-6068150,SUDBURY A                ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6068150,SUDBURY A                ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6068150,SUDBURY                  ,ON  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6068150,SUDBURY                  ,ON  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1921, -9999.9,M, -9999.9,M, -9999.9,M,    90.2, ,    71.4, ,    76.3, ,    90.5, ,    35.4, ,   121.6, ,    35.9, , -9999.9,M,   128.2, , -9999.9,M, -9999.9,M, -9999.9,M,   202.2, , -9999.9,M,
@@ -92,3 +92,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   120.1, ,    78.7, ,    54.0, ,    64.3, ,    99.1, ,    77.6, ,   110.3, ,   142.1, ,    94.4, , -9999.9,M,    88.6, ,   217.4, , -9999.9,M,   297.1, ,   217.3, ,   330.0, , -9999.9,M,
 2009,    79.7, ,   112.1, ,    74.9, ,   141.6, ,    94.0, ,    71.6, ,   122.9, ,   100.4, ,    68.3, ,   157.2, ,    44.7, ,    96.3, ,  1163.8, ,   409.3, ,   310.6, ,   294.9, ,   270.1, ,
 2010,    44.2, ,    39.4, ,     2.2, ,    59.5, ,    34.6, ,    92.2, ,    28.4, ,   115.8, ,   155.8, ,    54.0, ,    67.1, ,    87.8, ,   781.0, ,   179.9, ,    96.3, ,   236.4, ,   276.9, ,
+2011,    88.7, ,    53.7, ,    75.4, ,   140.7, ,    59.0, ,   107.8, ,    28.0, ,    70.2, ,    66.6, ,   114.8, ,    92.8, ,    93.1, ,   991.0, ,   230.3, ,   275.2, ,   206.0, ,   274.3, ,

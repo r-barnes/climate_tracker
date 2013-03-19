@@ -1,5 +1,5 @@
-1067742,STEWART A                ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1067742,STEWART A                ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1067742,STEWART                  ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1067742,STEWART                  ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1911,   266.0, ,   123.3, ,   244.6, ,   156.5, ,    60.9, ,    60.6, ,    80.8, ,    99.4, ,    89.3, ,   168.2, ,   278.7, ,   319.4, ,  1947.5, , -9999.9,M,   461.9, ,   240.8, ,   536.1, ,
@@ -102,3 +102,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   131.8, ,   231.5, ,   107.9, ,   121.7, ,   108.5, ,    89.3, ,   108.2, ,   227.9, ,   102.3, ,   401.5, ,   213.2, ,   175.2, ,  2018.8, ,   464.1, ,   338.0, ,   425.4, ,   717.0, ,
 2009,   356.8, ,   125.2, ,   149.2, ,    57.9, ,    75.1, ,    42.1, ,    47.5, ,    99.1, , -9999.9,M,   189.9, ,   245.4, ,    23.7, , -9999.9,M,   657.2, ,   282.3, ,   188.7, , -9999.9,M,
 2010,    98.4, ,    44.5, ,   170.6, ,    49.4, ,    32.7, ,   110.9, ,    53.8, ,    92.7, ,   258.7, ,   402.0, ,   209.0, ,    47.3, ,  1570.0, ,   166.6, ,   252.6, ,   257.5, ,   869.7, ,
+2011,   203.0, ,   169.1, ,    56.8, ,    50.9, ,    71.3, ,    42.7, ,    86.3, ,   222.8, ,   436.0, ,   334.8, ,   301.0, ,   246.8, ,  2221.7, ,   419.3, ,   179.1, ,   351.9, ,  1071.9, ,

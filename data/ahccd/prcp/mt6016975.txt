@@ -1,5 +1,5 @@
-6016975,RED LAKE A               ,ON  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-6016975,RED LAKE A               ,ON  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+6016975,RED LAKE                 ,ON  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+6016975,RED LAKE                 ,ON  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1939,    12.5, ,    27.5, ,     4.8, ,     2.5, ,    23.6, ,   152.0, ,    31.9, ,    71.5, ,    57.6, ,    36.2, ,    21.7, ,    13.7, ,   455.6, , -9999.9,M,    30.9, ,   255.4, ,   115.5, ,
@@ -73,4 +73,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,    39.9, ,    34.3, ,    37.7, ,    39.2, ,   126.6, ,   134.8, ,   138.7, ,   121.9, ,   145.0, ,   100.7, ,    82.4, ,    76.2, ,  1077.5, ,   128.5, ,   203.5, ,   395.5, ,   328.1, ,
 2008,    22.1, ,    42.2, ,    43.7, ,    72.1, ,    48.8, ,   122.3, ,   209.6, ,    35.3, ,    81.5, ,    68.1, ,   100.0, ,    47.0, ,   892.8, ,   140.5, ,   164.6, ,   367.3, ,   249.6, ,
 2009,    44.9, ,    49.8, ,    55.3, ,    37.4, ,   119.9, ,   139.4, ,   175.9, ,   172.2, ,    33.5, ,    45.7, ,    26.8, ,    20.1, ,   920.9, ,   141.7, ,   212.6, ,   487.5, ,   105.9, ,
-2010,    29.4, ,    14.9, ,    22.8, ,    67.2, ,   166.2, ,   123.3, ,   212.5, , -9999.9,M,   105.9, ,    60.3, ,   104.6, ,    59.8, , -9999.9,M,    64.4, ,   256.2, , -9999.9,M,   270.8, ,
+2010,    29.4, ,    14.9, ,    22.8, ,    67.2, ,   166.2, ,   123.3, ,   212.5, ,   213.7, ,   105.9, ,    60.3, ,   104.6, ,    59.8, ,  1180.6, ,    64.4, ,   256.2, ,   549.5, ,   270.8, ,
+2011,    44.5, ,    30.9, ,    82.3, ,    61.5, ,   110.8, ,   113.2, ,    41.8, ,    84.2, ,    78.0, ,   111.3, ,    52.8, ,    51.4, ,   862.7, ,   135.2, ,   254.6, ,   239.2, ,   242.1, ,

@@ -1,5 +1,5 @@
-1168880,WESTWOLD                 ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1168880,WESTWOLD                 ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1168880,WESTWOLD                 ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1168880,WESTWOLD                 ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1921, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    28.5, ,    55.1, ,    13.3, ,    26.1, ,    23.6, ,     9.2, ,    34.5, ,    25.0, , -9999.9,M, -9999.9,M, -9999.9,M,    94.5, ,    67.3, ,
@@ -91,4 +91,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,    27.7, ,    11.7, ,    15.7, ,     5.3, ,    11.0, ,    96.6, ,    27.2, ,    14.1, ,    50.9, ,    51.2, ,    17.8, ,    25.2, ,   354.3, , -9999.9,M,    32.0, ,   137.9, ,   119.9, ,
 2008, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
 2009, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
-2010, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,
+2010,    18.7, ,     9.3, ,    19.0, ,    15.7, ,    65.9, ,    97.9, ,    40.6, ,    39.4, ,    72.2, ,    17.4, ,    26.1, ,     5.7, ,   427.9, , -9999.9,M,   100.6, ,   177.9, ,   115.6, ,
+2011,    31.1, ,    14.0, ,    25.6, ,    12.5, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    50.8, , -9999.9,M, -9999.9,M, -9999.9,M,

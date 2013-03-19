@@ -1,5 +1,5 @@
-4063755,KEY LAKE                 ,SK  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-4063755,KEY LAKE                 ,SK  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+4063755,KEY LAKE                 ,SK  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+4063755,KEY LAKE                 ,SK  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1977,    17.7, ,    14.4, ,    30.9, ,    38.9, ,   103.5, ,    67.6, ,   135.9, ,   102.8, ,    46.1, ,     2.4, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   173.3, ,   306.3, , -9999.9,M,
@@ -36,3 +36,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008, -9999.9,M, -9999.9,M,    39.0, ,    75.0, ,    10.7, ,    43.3, ,    87.9, ,    73.6, ,    46.2, ,    17.9, ,    51.1, ,    23.7, , -9999.9,M, -9999.9,M,   124.7, ,   204.8, ,   115.2, ,
 2009,    16.3, ,    29.6, ,    53.4, ,    32.3, ,    15.5, ,    98.9, ,    52.2, ,    73.9, ,    48.2, ,    29.2, ,    24.1, ,    17.9, ,   491.6, ,    69.6, ,   101.3, ,   225.0, ,   101.6, ,
 2010,    20.7, ,     4.9, ,    19.2, ,    31.1, ,    31.5, ,    14.4, ,    48.5, ,   117.3, ,    50.8, ,    23.7, ,    16.5, ,    21.7, ,   400.3, ,    43.5, ,    81.9, ,   180.2, ,    90.9, ,
+2011,    29.8, ,    17.0, ,    14.2, ,    13.8, ,    39.4, ,    37.7, ,    61.5, ,    58.1, ,    19.1, ,    17.1, ,    26.8, ,    35.3, ,   369.6, ,    68.5, ,    67.3, ,   157.2, ,    62.9, ,

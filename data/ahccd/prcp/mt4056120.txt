@@ -1,5 +1,5 @@
-4056120,PILGER                   ,SK  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-4056120,PILGER                   ,SK  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+4056120,PILGER                   ,SK  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+4056120,PILGER                   ,SK  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1913,    45.9, ,    45.1, ,    28.0, ,     4.0, ,    16.0, ,    94.1, ,   151.2, ,   117.0, ,    48.5, ,    14.0, ,    20.0, ,     1.0, ,   584.7, , -9999.9,M,    47.9, ,   362.3, ,    82.5, ,
@@ -100,3 +100,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    21.6, ,    10.7, ,    17.7, ,    25.1, ,    14.3, ,    59.8, ,   102.1, ,    45.8, ,    18.0, ,    36.7, ,    21.8, ,    38.1, ,   411.8, ,    62.2, ,    57.1, ,   207.8, ,    76.5, ,
 2009,    20.5, ,    12.8, ,     6.7, ,    22.7, ,    27.3, ,    53.6, ,    84.3, ,   121.6, ,    59.6, , -9999.9,M, -9999.9,M,    12.5, , -9999.9,M,    71.4, ,    56.6, ,   259.5, , -9999.9,M,
 2010,    32.8, ,    17.0, ,    11.7, ,   132.2, ,   108.3, ,   182.0, ,    97.0, ,    65.9, ,    91.9, ,    19.8, ,    37.3, ,    11.1, ,   807.0, ,    62.3, ,   252.1, ,   344.9, ,   149.1, ,
+2011,    31.1, ,    40.3, ,    24.0, ,    15.5, ,    20.3, ,    83.7, ,    65.2, ,    23.6, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,    82.5, ,    59.8, ,   172.5, , -9999.9,M,

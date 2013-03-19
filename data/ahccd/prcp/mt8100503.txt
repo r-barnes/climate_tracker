@@ -1,5 +1,5 @@
-8100503,BATHURST A               ,NB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-8100503,BATHURST A               ,NB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+8100503,BATHURST                 ,NB  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+8100503,BATHURST                 ,NB  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1884,    19.2, , -9999.9,M,    26.2, ,    56.1, ,    81.8, ,    33.4, ,   141.4, ,    20.4, ,    38.0, ,    37.3, ,    73.0, ,   112.8, , -9999.9,M, -9999.9,M,   164.1, ,   195.2, ,   148.2, ,
@@ -128,4 +128,5 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2007,   119.1, ,    42.7, ,    99.8, ,    68.5, ,    75.9, ,   122.4, ,   116.1, ,    99.0, ,    87.8, ,    74.5, ,   203.9, ,   108.0, ,  1217.4, ,   241.8, ,   244.2, ,   337.4, ,   366.1, ,
 2008,   137.1, ,   200.9, ,   149.1, ,    65.4, ,    79.3, ,   125.3, ,   156.6, ,   130.7, ,   127.8, ,   195.2, ,   145.8, ,   171.8, ,  1685.0, ,   446.0, ,   293.7, ,   412.6, ,   468.8, ,
 2009,   107.6, ,   119.5, ,    75.4, ,   122.5, ,   113.4, ,   141.1, ,   137.2, ,    26.1, ,    51.0, ,   170.2, ,   100.9, ,   105.6, ,  1270.5, ,   398.9, ,   311.3, ,   304.3, ,   322.1, ,
-2010,   109.4, ,   108.5, ,   101.4, ,    57.9, ,    89.8, ,   103.4, ,    66.2, ,    35.5, , -9999.9,M, -9999.9,M,   106.1, , -9999.9,M, -9999.9,M,   323.5, ,   249.1, ,   205.1, , -9999.9,M,
+2010,   109.4, ,   108.5, ,   101.4, ,    57.9, ,    89.8, ,   103.4, ,    66.2, ,    35.5, ,   179.8, ,   124.2, ,   106.1, ,   184.6, ,  1266.8, ,   323.5, ,   249.1, ,   205.1, ,   410.1, ,
+2011,   122.4, ,   165.4, ,   110.0, ,    85.3, ,   180.6, ,   110.8, ,    87.3, ,   168.9, ,    86.8, ,    82.6, ,    42.0, ,   143.4, ,  1385.5, ,   472.3, ,   375.9, ,   367.1, ,   211.5, ,

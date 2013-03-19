@@ -1,5 +1,5 @@
-1012573,DUNCAN KELVIN CREEK      ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1012573,DUNCAN KELVIN CREEK      ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1012573,DUNCAN KELVIN CREEK      ,BC  ,station joined    , Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1012573,DUNCAN KELVIN CREEK      ,BC  ,station jointe    , Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1926,   141.8, ,   152.5, ,    31.8, ,    56.2, ,    68.5, , -9999.9,M, -9999.9,M, -9999.9,M,    38.8, ,   171.7, ,   174.5, ,   260.9, , -9999.9,M, -9999.9,M,   156.4, , -9999.9,M,   385.0, ,
@@ -87,3 +87,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   205.6, ,    81.3, ,    78.8, ,    54.7, ,    26.2, ,    51.4, ,    23.5, ,    49.7, ,    31.1, ,    83.8, ,   175.8, ,   177.7, ,  1039.6, ,   617.5, ,   159.7, ,   124.7, ,   290.6, ,
 2009,    70.2, ,    63.0, ,   119.2, ,    50.2, ,    78.9, ,    15.9, ,     8.5, ,    22.3, ,    76.3, ,   170.7, ,   489.6, ,   135.9, ,  1300.6, ,   310.9, ,   248.2, ,    46.7, ,   736.6, ,
 2010,   299.2, ,   136.1, ,   167.0, ,   123.5, ,   116.8, ,    28.1, ,     1.6, ,    31.4, ,   124.7, ,   139.1, ,   179.2, ,   324.6, ,  1671.5, ,   571.2, ,   407.4, ,    61.1, ,   443.1, ,
+2011,   205.2, ,   170.2, ,   243.3, ,    92.9, ,    89.4, ,    15.7, ,    14.3, ,     8.7, ,    71.5, ,    89.5, ,   225.3, ,   128.8, ,  1354.7, ,   700.0, ,   425.6, ,    38.7, ,   386.3, ,

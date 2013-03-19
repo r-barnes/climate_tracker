@@ -1,5 +1,5 @@
-1143900,KASLO                    ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-1143900,KASLO                    ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+1143900,KASLO                    ,BC  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+1143900,KASLO                    ,BC  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1912, -9999.9,M, -9999.9,M,    10.9, ,    26.9, ,    38.1, ,    31.8, ,   111.3, ,    48.9, ,    33.3, ,    80.6, ,   134.6, ,    37.9, , -9999.9,M, -9999.9,M,    75.9, ,   192.0, ,   248.5, ,
@@ -101,3 +101,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,    96.1, , -9999.9,M,    48.8, ,    39.5, ,    37.0, ,    59.1, ,    27.8, ,    94.9, ,    30.5, ,    85.6, ,    89.5, ,    82.3, , -9999.9,M, -9999.9,M,   125.4, ,   181.8, ,   205.6, ,
 2009,    79.3, ,    33.9, ,    83.1, ,    33.7, , -9999.9,M,    65.8, ,    70.9, ,    29.9, ,    44.2, ,   129.5, ,   100.5, ,    67.8, , -9999.9,M,   195.4, , -9999.9,M,   166.7, ,   274.3, ,
 2010,    81.6, ,    29.4, , -9999.9,M,    55.8, ,    57.2, ,    66.6, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   178.8, , -9999.9,M, -9999.9,M, -9999.9,M,
+2011,   143.1, ,    95.4, ,   117.9, ,    84.8, ,    45.9, ,    97.5, ,    71.9, ,    26.6, ,    27.7, , -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M, -9999.9,M,   248.6, ,   196.0, , -9999.9,M,

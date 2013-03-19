@@ -1,5 +1,5 @@
-8401700,GANDER INT'L A           ,NL  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2010
-8401700,GANDER INT'L A           ,NL  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2010
+8401700,GANDER                   ,NL  ,station not joined, Monthly total of daily adjusted precipitation, mm, Updated to December 2011
+8401700,GANDER                   ,NL  ,station pas jointe, Total mensuel des chutes de précipitations quotidiennes ajustées, mm, Mise à jour jusqu à décembre 2011
 Year,     Jan, ,     Feb, ,     Mar, ,     Apr, ,     May, ,     Jun, ,     Jul, ,     Aug, ,     Sep, ,     Oct, ,     Nov, ,     Dec, ,  Annual, ,  Winter, ,  Spring, ,  Summer, ,  Autumn
 An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil, ,    Août, ,    Sept, ,     Oct, ,     Nov, ,     Déc, ,  Annuel, ,   Hiver, ,Printemp, ,     Eté, , Automne
 1937, -9999.9,M,   112.4, ,   181.5, ,    71.9, ,    88.1, ,    65.4, ,    44.8, ,    78.9, ,    82.0, ,    85.3, ,   126.1, ,   217.5, , -9999.9,M, -9999.9,M,   341.5, ,   189.1, ,   293.4, ,
@@ -76,3 +76,4 @@ An  ,    Janv, ,     Fév, ,    Mars, ,     Avr, ,     Mai, ,    Juin, ,    Juil,
 2008,   161.2, ,   123.3, ,   251.4, ,    39.3, ,    95.0, ,   126.3, ,   104.9, ,   172.8, ,    77.3, ,    98.3, ,   161.9, ,   156.4, ,  1568.2, ,   537.5, ,   385.7, ,   404.0, ,   337.5, ,
 2009,    99.9, ,   193.6, ,   118.4, ,   101.1, ,   100.7, ,    94.7, ,   125.0, ,   212.2, ,    93.7, ,   247.8, ,   169.4, ,   161.9, ,  1718.2, ,   449.9, ,   320.1, ,   431.9, ,   510.9, ,
 2010,   136.5, ,   195.5, ,   131.3, ,    99.3, ,   200.8, ,   170.2, ,   157.0, ,    47.4, ,   255.7, ,   114.1, ,    88.0, ,   279.1, ,  1875.0, ,   493.9, ,   431.4, ,   374.7, ,   457.9, ,
+2011,   237.7, ,   220.5, ,   156.5, ,    89.6, ,   105.1, ,   156.5, ,   187.8, ,    69.6, ,    87.2, ,   285.0, ,    59.5, ,    68.7, ,  1723.7, ,   737.4, ,   351.2, ,   413.9, ,   431.7, ,
