@@ -43,19 +43,19 @@ Specifically, 5 missing data points causes a 0.1&deg;F Tmax error, 0.1&deg;F Tmi
 
 **Tmin**
 
-![](percent_daily_tmin.png)
+![](img/percent_daily_tmin.png)
 
 **Prcp (Daily-Average)**
 
-![](percent_daily_prcp.png)
+![](img/percent_daily_prcp.png)
 
 **Prcp (Monthly-Average)**
 
-![](percent_daily_prcp_percen.png)
+![](img/percent_daily_prcp_percen.png)
 
 **Prcp (Total Accumulation Difference)**
 
-![](percent_daily_prcp_accum.png)
+![](img/percent_daily_prcp_accum.png)
 
 Climate Period Admissibility
 ============================
@@ -187,7 +187,8 @@ The data is taken for the period from 1900-2009 and represents 80 climate period
 29 92 92 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 100 100 100 
 30 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 
 </pre>
-<h3>Prcp</h3>
+
+**Prcp**
 <pre>
     0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 
  0  1  6  8 10 11 12 13 14 15 15 16 16 16 17 17 17 17 18 18 19 19 20 20 21 22 23 24 24 26 31 36 100 
