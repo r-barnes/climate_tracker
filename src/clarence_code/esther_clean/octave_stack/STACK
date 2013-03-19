@@ -1,0 +1,21 @@
+DATA PROCESSING DONE
+--------------------
+rearrange_data
+
+Xll2pl
+	ll2pl
+
+makequad
+	REMOVE fitquad (it can be included as a subroutine in makequad)
+
+triquad
+
+pl2ll
+
+
+
+
+MOVIE MAKING
+------------
+avitcquadmap/avitclinmap
+	geoinit

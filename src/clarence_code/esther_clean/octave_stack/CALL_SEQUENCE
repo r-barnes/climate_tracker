@@ -1,0 +1,37 @@
+load prcp;
+load tavg;
+mnpgeo=prcp(:,1:2);
+mntgeo=tavg(:,1:2);
+
+mnpdata=prcp(:,3);
+mntdata=tavg(:,3);
+
+%Convert data from raw format
+%mnpgeo=rearrange_data(mnpraw);
+%mntgeo=rearrange_data(mntraw);
+
+%Convert to a projected coordinate system.
+mnpxy=sphere_to_plane(mnpgeo, 'lambert',43,47,30,-90);
+mntxy=sphere_to_plane(mntgeo,'lambert',43,47,30,-90);
+mnpxy=[mnpxy,mnpdata];
+mntxy=[mntxy,mntdata];
+
+%Convert to a series of surfaces.
+%Here each column is a year, each row a coefficient.
+mnpquad=makequad(mnpxy);
+mntquad=makequad(mntxy);
+
+%Convert to a trajectory for a specific combination of P,T:
+%mnquad2442=triquad(mnpquad, mntquad, [7;52]);
+
+%Convert back to lat/lon from the scaled coordinates.
+%mnquad2442x = mnquad2442(1,:);
+%mnquad2442y = mnquad2442(2,:);
+%[mnquad2442lat, mnquad2442lon] = pl2ll(mnquad2442x, mnquad2442y, 'lambert');
+
+%Create the animation.
+%avitcquadmap(mnpquad, mntquad, mnquad2442lat, mnquad2442lon, 'MN' ,'lambert' )
+avitcquadmap(mnpquad, mntquad, [], [], 'MN' ,'lambert' );
+
+
+%Possible open source mapping: http://www.eos.ubc.ca/~rich/map.html

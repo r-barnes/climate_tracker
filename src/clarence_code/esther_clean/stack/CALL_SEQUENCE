@@ -1,0 +1,30 @@
+%Data is assume to be in YEAR LATITUDE LONGITUDE VALUE format
+load prcp;
+load tavg;
+
+mnpgeo=prcp;
+mntgeo=tavg;
+
+%Convert to a projected coordinate system.
+mnpxy=Xll2pl(mnpgeo, 'lambert');
+mntxy=Xll2pl(mntgeo,'lambert');
+
+%Convert to a series of surfaces.
+%Here each column is a year, each row a coefficient.
+[mnpquad,pyears]=makequad(mnpxy);
+[mntquad,tyears]=makequad(mntxy);
+
+%Convert to a trajectory for a specific combination of P,T:
+mnquad2442=triquad(mnpquad, mntquad, [24;40]);
+
+%Convert back to lat/lon from the scaled coordinates.
+mnquad2442x = mnquad2442(1,:);
+mnquad2442y = mnquad2442(2,:);
+[mnquad2442lat, mnquad2442lon] = pl2ll(mnquad2442x, mnquad2442y, 'lambert');
+
+%Create the animation.
+avitcquadmap(pyears, mnpquad, mntquad, mnquad2442lat, mnquad2442lon, {'MN','WI','IO','ND','SD'} ,'lambert' )
+%avitcquadmap(mnpquad, mntquad, [], [], 'MN' ,'lambert' );
+
+
+%Possible open source mapping: http://www.eos.ubc.ca/~rich/map.html
