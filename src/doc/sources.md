@@ -237,7 +237,7 @@ D:
 CDCD.EXE
 </pre>
 
-The CDCD's **STATION.ALL** file can be decoded with [this code](cdcd_all_station_decode.c) code which is based on [this](ext_doc/cdcd_descriptor.doc) file descriptor sent to me in a personal communication from Caroline Barnes, Data Specialist at the Weather and Environmental Monitoring subdivision of the Meteorological Service of Canada.</p>
+The CDCD's **STATION.ALL** file can be decoded with [this code](cdcd_all_station_decode.c) code which is based on [this](ext_doc/cdcd_descriptor.doc) file descriptor sent to me in a personal communication from Caroline Barnes, Data Specialist at the Weather and Environmental Monitoring subdivision of the Meteorological Service of Canada.
 
 The result of the above code can then be processed with this command:
 
@@ -249,6 +249,12 @@ Which can then be processed with [this](ranged_histogram.py) ranged histogram co
 ![Ranged Histogram of AHCCD Station Availability for Manitoba/Alberta](img/cdcd_manitoba.png)
 
 Note that the above is based entirely on the start and end dates of data availability. There may be months, years, or decades missing in the middle.
+
+Further Notes
+-------------
+In addition to the [reference information](ext_doc/cdcd_descriptor.doc) provided to me by the CDCD, I have built my [own corrected documentation](my_doc/cdcd_guide.pdf).
+
+Statio nnumbers are based on a location scheme explained by [this map](ext_doc/Climatological_Districts.pdf).
 
 US First Order Summary of the Day
 =================================
