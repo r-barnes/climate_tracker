@@ -1,16 +1,20 @@
-<html>
-<body>
-<h1>Monthly Admissibility</h1>
-<a href="ushcn_daily_percent.c">This</a> code performs this task.</p>
-<p>The following graphs represent a relation between missing data points and their statiscal effect on average values for data elements. The graphs are formed by running through the us_daily data, culling incomplete months, and, for each month, shuffling the month's daily values using the Knuth-Fisher-Yates method.</p>
+Monthly Admissibility
+=====================
+[This code](ushcn_daily_percent.c) performs this task.
 
-<p>From here, we define the Daily-Average as follows. The first X, X+1, X+2, &hellip; of points of the month are averaged (call this Data<sub>some missing</sub>) and then an absolute percent difference is found between the Xth averages and the average for the complete data set for the month (call this Data<sub>complete</sub>). The resulting differences for each month (Jan, Feb, Mar, &hellip;) are then averaged over all available months (Jan, Feb, &hellip;) resulting in the following graphs. Specifically, the calculation performed on each month is <span style="font-weight:bold">M=Abs((<span style="text-decoration: overline">Data</span><sub>complete</sub>-<span style="text-decoration: overline">Data</span><sub>some missing</sub>)/<span style="text-decoration: overline">Data</span><sub>complete</sub>)</span>; M is then averaged over the number of months M was found for.</p>
+The following graphs represent a relation between missing data points and their statiscal effect on average values for data elements. The graphs are formed by running through the us_daily data, culling incomplete months, and, for each month, shuffling the month's daily values using the Knuth-Fisher-Yates method.
 
-<p>For temperature the percent difference isn't helpful as a 2&deg; variation is of equal importance (we assume) at 20&deg; as it is at 80&deg;. Therefore, we find the average absolute difference. This is found by averaging the first X, X+1, X+2, &hellip; points and then finding the absolute difference between these and the sum for the entire month. The resulting value is then averaged across the months we have data for.</p>
+From here, we define the Daily-Average as follows. The first X, X+1, X+2, &hellip; of points of the month are averaged (call this _DataMissing_) and then an absolute percent difference is found between the Xth averages and the average for the complete data set for the month (call this _DataComplete_). The resulting differences for each month (Jan, Feb, Mar, &hellip;) are then averaged over all available months (Jan, Feb, &hellip;) resulting in the following graphs. Specifically, the calculation performed on each month is
 
-<p>For rainfall, we may sum the first X, X+1, X+2, &hellip; points and then find the absolute difference between these and the entire month as well as the percent difference (Monthly-Percent) between these and the entire month. The resulting value is then averaged across the months we have data for.</p>
+M=Abs(_DataComplete_-_DataMissing_)/_DataComplete_
 
-<p>The following graphs everything:</p>
+M is then averaged over the number of months M was found for.
+
+For temperature the percent difference isn't helpful as a 2&deg; variation is of equal importance (we assume) at 20&deg; as it is at 80&deg;. Therefore, we find the average absolute difference. This is found by averaging the first X, X+1, X+2, &hellip; points and then finding the absolute difference between these and the sum for the entire month. The resulting value is then averaged across the months we have data for.
+
+For rainfall, we may sum the first X, X+1, X+2, &hellip; points and then find the absolute difference between these and the entire month as well as the percent difference (Monthly-Percent) between these and the entire month. The resulting value is then averaged across the months we have data for.
+
+The following graphs everything:
 <pre>
 set xlabel "# of Missing Points"
 set ylabel "Average Abs-Difference Of\nPartial From Complete-Month Accumulation (inches)"
@@ -28,66 +32,91 @@ plot "tmin" u 1:2 w lines t "Jan",
 "tmin" u 1:12 w lines t "Nov",
 "tmin" u 1:13 w lines t "Dec"
 </pre>
-<p>As expected, the graphs show that missing days cause a much larger difference for percipitation data versus temperature data. Tmin and Tmax track each other closely.</p>
-<p>Specifically, 5 missing data points causes a 0.1&deg;F Tmax error, 0.1&deg;F Tmin error, and 0.4in (15%) Prcp error.</p>
-<p style="text-align:center;font-weight:bold;">
-Tmax
-<br><img src="percent_daily_tmax.png">
-<br>Tmin
-<br><img src="percent_daily_tmin.png">
-<br>Prcp (Daily-Average)
-<br><img src="percent_daily_prcp.png">
-<br>Prcp (Monthly-Average)
-<br><img src="percent_daily_prcp_percen.png">
-<br>Prcp (Total Accumulation Difference)
-<br><img src="percent_daily_prcp_accum.png">
-</p>
-<hr>
-<h1>Climate Period Admissibility</h1>
-<p><a href="ushcn_monthly_percent.c">This</a> code performs this task.</p>
-<p>A climate period (a 30-year average) is considered admissible for a given station if is true that there a sufficient number of months (Jan, Feb, Mar, &hellip;) with a sufficient number of days. More concretely, let us say that a month is only admissible if fewer than 6 days are missing; let us also say that a climate period may only be missing three months. Then, if we have 27 Januarys, 27 Februarys, &c. the period is admissible. A July cannot make up for a lost January.</p>
-<p>What then is the effect of a missing month in a climate period?</p>
-<p>We find the daily average temperature for a month and then compare the 27-year, 28-year, &hellip; averages of these against the 30-year average.</p>
-<p>We find the total precipitation accumulation for a month (with prorating) and then compare the 27-year, 28-year, &hellip; averages of these against the 30-year average.</p>
-<p style="text-align:center;font-weight:bold;">
-Tmax (Daily Average)
-<br><img src="percent_monthly_tmax.png">
-<br>Tmin (Daily Average)
-<br><img src="percent_monthly_tmin.png">
-<br>Prcp (Percentage)
-<br><img src="percent_monthly_prcp.png">
-<br>Prcp (Accumulation)
-<br><img src="percent_monthly_prcp_accum.png">
-</p>
-<hr>
-<h1>Climate Period Admissibility</h1>
-<p>The follow charts show the percent of climate periods which are admissible for a given day/month cut-off definition (fewer than X days missing from each month, and fewer than Y months (Jan, Feb, &hellip; considered separately) missing per climate period (30-yr period)). The total number of climate periods which would be available would be the number of stations multiplied by the number of 30-year periods the data covers.</p>
-<p>
-<br>For each coop,
-<br>I look at each element.
-<br>For each element,
-<br>I look at all the indicated climate periods.
-<br>For each climate period,
-<br>I move through that climate period,
-<br>and count the number of admissible months (fewer than D days missing).
-<br>Having moved through the period,
-<br>I move through the definitions of admissible periods (fewer than M months missing for each month Jan, Feb, etc.).
-<br>And, if a period qualifies for the definition currently under consideration,
-<br>I increment that month-day definition counter.
 
-<br>Having done all this, I realise that the month-day counter is aggregated over climate periods and coops.
-<br>Therefore, I divide the counter by the number of climate periods and coops.
+As expected, the graphs show that missing days cause a much larger difference for percipitation data versus temperature data. Tmin and Tmax track each other closely.
 
-<br>To obtain a percentage, I divide by the number of climate periods through which I moved.
-<br>This algorithm is encapsulated in <a href="ushcn_daily_day_month_quality.c">this</a> code.
-</p>
-<h2>Admissibility Charts</h2>
-<p>X-axis is number of days that are allowed missing. &lt;= this number of days must be missing in a month for it to qualify.
-<br>Y-axis is the number of months that are allowed missing from a climate period; here, 30 years. &lt;= this number of months must be missing from a period for it to qualify.
-<br>Z-axis is the percent of total stations (here, 1218) which qualified during the period in question.
-<br>The data is taken for the period from 1900-2009 and represents 80 climate periods.
-</p>
-<h3>Tmax</h3>
+Specifically, 5 missing data points causes a 0.1&deg;F Tmax error, 0.1&deg;F Tmin error, and 0.4in (15%) Prcp error.
+
+**Tmax**
+
+![](img/percent_daily_tmax.png)
+
+**Tmin**
+
+![](percent_daily_tmin.png)
+
+**Prcp (Daily-Average)**
+
+![](percent_daily_prcp.png)
+
+**Prcp (Monthly-Average)**
+
+![](percent_daily_prcp_percen.png)
+
+**Prcp (Total Accumulation Difference)**
+
+![](percent_daily_prcp_accum.png)
+
+Climate Period Admissibility
+============================
+[This code](ushcn_monthly_percent.c) performs this task.
+
+A climate period (a 30-year average) is considered admissible for a given station if is true that there a sufficient number of months (Jan, Feb, Mar, &hellip;) with a sufficient number of days. More concretely, let us say that a month is only admissible if fewer than 6 days are missing; let us also say that a climate period may only be missing three months. Then, if we have 27 Januarys, 27 Februarys, &c. the period is admissible. A July cannot make up for a lost January.
+
+What then is the effect of a missing month in a climate period?
+
+We find the daily average temperature for a month and then compare the 27-year, 28-year, &hellip; averages of these against the 30-year average.
+
+We find the total precipitation accumulation for a month (with prorating) and then compare the 27-year, 28-year, &hellip; averages of these against the 30-year average.
+
+**Tmax (Daily Average)**
+
+![](img/percent_monthly_tmax.png)
+
+**Tmin (Daily Average)**
+
+![](img/percent_monthly_tmin.png)
+
+**Prcp (Percentage)**
+
+![](img/percent_monthly_prcp.png)
+
+**Prcp (Accumulation)**
+
+![](img/percent_monthly_prcp_accum.png)
+
+Climate Period Admissibility
+============================
+
+The follow charts show the percent of climate periods which are admissible for a given day/month cut-off definition (fewer than X days missing from each month, and fewer than Y months (Jan, Feb, &hellip; considered separately) missing per climate period (30-yr period)). The total number of climate periods which would be available would be the number of stations multiplied by the number of 30-year periods the data covers.
+
+ * For each coop,
+ * I look at each element.
+ * For each element,
+ * I look at all the indicated climate periods.
+ * For each climate period,
+ * I move through that climate period,
+ * and count the number of admissible months (fewer than D days missing).
+ * Having moved through the period,
+ * I move through the definitions of admissible periods (fewer than M months missing for each month Jan, Feb, etc.).
+ * And, if a period qualifies for the definition currently under consideration,
+ * I increment that month-day definition counter.
+
+Having done all this, I realise that the month-day counter is aggregated over climate periods and coops. Therefore, I divide the counter by the number of climate periods and coops. To obtain a percentage, I divide by the number of climate periods through which I moved.
+
+This algorithm is encapsulated in [this code](ushcn_daily_day_month_quality.c)
+
+Admissibility Charts
+--------------------
+X-axis is number of days that are allowed missing. &lt;= this number of days must be missing in a month for it to qualify.
+
+Y-axis is the number of months that are allowed missing from a climate period; here, 30 years. &lt;= this number of months must be missing from a period for it to qualify.
+
+Z-axis is the percent of total stations (here, 1218) which qualified during the period in question.
+
+The data is taken for the period from 1900-2009 and represents 80 climate periods.
+
+**Tmax**
 <pre>
     0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 
  0  1  5  7  8 10 11 13 14 15 16 17 17 18 19 19 20 20 20 21 21 21 21 22 22 22 22 22 22 23 28 34 100 
@@ -122,7 +151,8 @@ Tmax (Daily Average)
 29 92 92 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 100 100 100 
 30 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 
 </pre>
-<h3>Tmin</h3>
+
+**Tmin**
 <pre>
     0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 
  0  1  4  6  9 10 11 13 14 15 16 17 18 18 19 20 20 20 21 21 22 22 22 22 22 22 23 23 23 23 29 34 100 
@@ -192,5 +222,3 @@ Tmax (Daily Average)
 29 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 93 100 100 100 
 30 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 
 </pre>
-</body>
-</html>
