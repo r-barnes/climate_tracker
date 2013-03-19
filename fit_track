@@ -1,0 +1,12 @@
+#!/bin/bash
+/usr/bin/whoami > temp/iamthis
+
+export PATH="/usr/lib64/qt-3.3/bin:/usr/kerberos/bin:/opt/intel_fc_80/bin:/local/ups/prd/ups/v4_7_1/Linux-2/bin:/home/ugrad/rbarnes/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/local/linux/pkg/tecplot10/bin:/usr/opt/condor/bin"
+
+echo "Searching for surface \"$2\""
+
+cat matlab_stack/CALL_TRACK | sed -e "s/SURFACE_PATH/..\/products\/$2.matlab_fitted/" -e "s/SAVE_TRACK/..\/products\/$1.track_fitted/" -e "s/POINT_Y/$3/" -e "s/POINT_X/$4/" -e "s/LOWER_Y/$7/" -e "s/UPPER_Y/$8/" -e "s/CENTER_X/$5/" -e "s/CENTER_Y/$6/" -e "s/SURF/$9/" > temp/$1.matlab_track_commands
+
+unset DISPLAY
+cd matlab_stack
+matlab < ../temp/$1.matlab_track_commands
