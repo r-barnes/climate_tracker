@@ -27,7 +27,7 @@
 		}
 
 		if(!file_exists("temp/$stations.$season.temp")){
-			exec("./do_monthly_temp -L 1890 -P temp/$stations.$season $mstr -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.avg -c data/ahccd/temp/TempStations.csv", $output, $ret);
+			exec("./do_monthly_temp -L 1890 -U 2011 -P temp/$stations.$season $mstr -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.avg -c data/ahccd/temp/TempStations.csv", $output, $ret);
 //			exec("./do_gdd -L 1890 -P temp/$stations.$season $mstr -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
 //			exec("./do_hdd -L 1890 -P temp/$stations.$season $mstr -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
 			if($ret!=0){
@@ -37,7 +37,7 @@
 		}
 
 		if(!file_exists("temp/$stations.$season.prcp")){
-			exec("./do_monthly_prcp -L 1890 -P temp/$stations.$season $mstr -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.pcp -c data/ahccd/prcp/PrcpStations.csv", $output, $ret);
+			exec("./do_monthly_prcp -L 1890 -U 2011 -P temp/$stations.$season $mstr -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.pcp -c data/ahccd/prcp/PrcpStations.csv", $output, $ret);
 			if($ret!=0)
 				return false;
 		}
