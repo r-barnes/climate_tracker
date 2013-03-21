@@ -91,7 +91,7 @@ function station_unhighlighted(e){
 var TrackFilter = new OpenLayers.Filter.Comparison({
 	type: OpenLayers.Filter.Comparison.LESS_THAN_OR_EQUAL_TO,
 	property: "when",
-	value: 2010,
+	value: 2011,
 });
 
 TrackFilterStrategy = new OpenLayers.Strategy.Filter({filter: TrackFilter});
@@ -441,10 +441,10 @@ function centerUS(){
 	map.setCenter(new OpenLayers.LonLat(-98.58333,39.833333),4);
 }
 
-var map_year=2010;
+var map_year=2011;
 function change_map_year(year){
 	year=parseInt(year);
-	if(!(1900<=year && year<=2010)) return;
+	if(!(1900<=year && year<=2011)) return;
 	map_year=year;
 	$('year_range_value').innerHTML=map_year;
 	$j('#year_range').slider( "value", map_year );
@@ -465,9 +465,9 @@ function animator(){
 		window.clearInterval(animate_pid);
 		animate_pid=window.setInterval(animator,animate_speed*1000);
 	}
-	if(year>2010 && $('animateloop').checked)
+	if(year>2011 && $('animateloop').checked)
 		year=1900;
-	else if (year>2010 && !$('animateloop').checked){
+	else if (year>2011 && !$('animateloop').checked){
 		window.clearInterval(animate_pid);
 		$j("#animate_submit").removeClass("down");
 		return;
@@ -710,8 +710,8 @@ function init(){
 	//Map Year
 	$j('#year_range').slider({
 		min:1900,
-		max:2010,
-		value: 2010,
+		max:2011,
+		value: 2011,
 		slide: function( event, ui ) {
 			change_map_year(ui.value)
 		}
@@ -723,8 +723,8 @@ function init(){
 	$j('#vrange_slider').slider({
 		range: true,
 		min:1900,
-		max:2010,
-		values: [1900, 2010],
+		max:2011,
+		values: [1900, 2011],
 		slide: function( event, ui ) {
 			change_velocity_min(ui.values[0]);
 			change_velocity_max(ui.values[1]);
