@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -q -n +5 Temperature_Stations.csv Precipitation_Stations.csv | cut -d ',' -f 1,2,3,8,9,10 | sort -s -k 1,4 | awk -F ',' '{print $4"\t"$5"\t"$3"\t"$2", "$1" ("$6*3.2808399" ft)"}' | awk '!x[$3]++' | sed 's/ ,/,/' > formatted_stations.dat
+tail -q -n +5 temp/TempStations.csv prcp/PrcpStations.csv | cut -d ',' -f 1,2,3,8,9,10 | sort -s -k 1,4 | awk -F ',' '{print $4"\t"$5"\t"$3"\t"$2", "$1" ("$6*3.2808399" ft)"}' | awk '!x[$3]++' | sed 's/ ,/,/' > formatted_stations.dat
