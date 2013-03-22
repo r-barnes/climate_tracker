@@ -147,7 +147,6 @@
 <ul>
 	<li><a href="station_extract.c">station_extract.c</a>: Extracts station information</li>
 	<li><a href="csv_data.c">csv_data.c</a>: Extracts data to quasi-csv format</li>
-	<li><a href="monthly_climate_matlab.cpp">monthly_climate_matlab.cpp</a>: Converts monthly data to Matlab format for Esther's code.</li>
 </ul>
 </body>
 </html>
