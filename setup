@@ -10,3 +10,9 @@ cd ../..
 echo -e "lat\tlon\ttitle\tdescription"        >  stations.dat
 cat data/ahccd/formatted_stations.dat         >> stations.dat
 cat data/ushcn_monthly/formatted_stations.dat >> stations.dat
+
+cd src/
+make
+cd ..
+mv src/do_monthly_prcp ./
+mv src/do_monthly_temp ./
