@@ -141,12 +141,5 @@
 	<li><a href="master_decoder.c">master_decoder.c</a></li>
 	<li><a href="master_decoder.h">master_decoder.h</a></li>
 </ul>
-
-<h1>Utilities</h1>
-<p>The following handy utilites are based on the Master Decoder.</p>
-<ul>
-	<li><a href="station_extract.c">station_extract.c</a>: Extracts station information</li>
-	<li><a href="csv_data.c">csv_data.c</a>: Extracts data to quasi-csv format</li>
-</ul>
 </body>
 </html>
