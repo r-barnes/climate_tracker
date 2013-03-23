@@ -12,356 +12,356 @@ surfproj = False #The projection is in units of meters, by default (http://pypro
 geod = pyproj.Geod(ellps='WGS84')
 
 def distances(lon1,lat1,lon2,lat2):
-	h,ba,distance_straight=geod.inv(lon1,lat1,lon2,lat2) #Angle is azimuth
-	fa,ba,distance_east=geod.inv(lon1,lat1,lon2,lat1)
-	fa,ba,distance_north=geod.inv(lon2,lat1,lon2,lat2)
-	distance_straight*=	0.00062137119				#Convert meters to kilometers
-	distance_east*=		0.00062137119
-	distance_north*=	0.00062137119
-	return distance_straight,h,distance_east,distance_north
+  h,ba,distance_straight=geod.inv(lon1,lat1,lon2,lat2) #Angle is azimuth
+  fa,ba,distance_east=geod.inv(lon1,lat1,lon2,lat1)
+  fa,ba,distance_north=geod.inv(lon2,lat1,lon2,lat2)
+  distance_straight*=  0.00062137119        #Convert meters to kilometers
+  distance_east*=    0.00062137119
+  distance_north*=  0.00062137119
+  return distance_straight,h,distance_east,distance_north
 
 #Fits elliptic paraboloids, hyperbolic paraboloids
 def surface_func(x, y, p):
-	return p[0]*x*x+p[1]*y*y+p[2]*x*y+p[3]*x+p[4]*y+p[5]
+  return p[0]*x*x+p[1]*y*y+p[2]*x*y+p[3]*x+p[4]*y+p[5]
 
 def dsurface_func(p, x, y, z):
-	return [x*x, y*y, x*y, x, y, [1]*len(x)]
+  return [x*x, y*y, x*y, x, y, [1]*len(x)]
 
 def residuals(p, x, y, z):
-	return surface_func(x,y,p)-z
+  return surface_func(x,y,p)-z
 
 def GetProjection(prcp,temp):
-	csvreader=csv.reader(open(prcp, 'r'), delimiter=' ')
-	latmin=float('inf')
-	latmax=-float('inf')
-	lonmin=float('inf')
-	lonmax=-float('inf')
+  csvreader=csv.reader(open(prcp, 'r'), delimiter=' ')
+  latmin=float('inf')
+  latmax=-float('inf')
+  lonmin=float('inf')
+  lonmax=-float('inf')
 
-	for row in csvreader:
-		if row[0]=='NaN':
-			continue
-		lat=float(row[1])
-		lon=float(row[2])
-		latmin=min(latmin,lat)
-		latmax=max(latmax,lat)
-		lonmin=min(lonmin,lon)
-		lonmax=max(lonmax,lon)
+  for row in csvreader:
+    if row[0]=='NaN':
+      continue
+    lat=float(row[1])
+    lon=float(row[2])
+    latmin=min(latmin,lat)
+    latmax=max(latmax,lat)
+    lonmin=min(lonmin,lon)
+    lonmax=max(lonmax,lon)
 
-	csvreader=csv.reader(open(temp, 'r'), delimiter=' ')
-	for row in csvreader:
-		if row[0]=='NaN':
-			continue
-		lat=float(row[1])
-		lon=float(row[2])
-		latmin=min(latmin,lat)
-		latmax=max(latmax,lat)
-		lonmin=min(lonmin,lon)
-		lonmax=max(lonmax,lon)
+  csvreader=csv.reader(open(temp, 'r'), delimiter=' ')
+  for row in csvreader:
+    if row[0]=='NaN':
+      continue
+    lat=float(row[1])
+    lon=float(row[2])
+    latmin=min(latmin,lat)
+    latmax=max(latmax,lat)
+    lonmin=min(lonmin,lon)
+    lonmax=max(lonmax,lon)
 
-	loncenter=(lonmin+lonmax)/2.0
-	latcenter=(latmin+latmax)/2.0
+  loncenter=(lonmin+lonmax)/2.0
+  latcenter=(latmin+latmax)/2.0
 
-	return pyproj.Proj(proj='lcc',lat_1=latmin,lat_2=latmax,lon_0=loncenter,lat_0=latcenter,ellps='WGS84')
+  return pyproj.Proj(proj='lcc',lat_1=latmin,lat_2=latmax,lon_0=loncenter,lat_0=latcenter,ellps='WGS84')
 
 def SurfaceFit(datafile):
-	csvreader=csv.reader(open(datafile, 'r'), delimiter=' ')
+  csvreader=csv.reader(open(datafile, 'r'), delimiter=' ')
 
-	data={}
-	for row in csvreader:
-		if row[0]=='NaN':
-			continue
-		year=int(row[0])
-		lat=float(row[1])
-		lon=float(row[2])
-		val=float(row[3])
-		if not data.has_key(year):		#Is year in dict? Years in data file must be sequential
-			data[year]={}
-			data[year]['lat']=[]
-			data[year]['lon']=[]
-			data[year]['val']=[]
-		data[year]['lat'].append(lat)
-		data[year]['lon'].append(lon)
-		data[year]['val'].append(val)
+  data={}
+  for row in csvreader:
+    if row[0]=='NaN':
+      continue
+    year=int(row[0])
+    lat=float(row[1])
+    lon=float(row[2])
+    val=float(row[3])
+    if not data.has_key(year):    #Is year in dict? Years in data file must be sequential
+      data[year]={}
+      data[year]['lat']=[]
+      data[year]['lon']=[]
+      data[year]['val']=[]
+    data[year]['lat'].append(lat)
+    data[year]['lon'].append(lon)
+    data[year]['val'].append(val)
 
-	plsq=[1,1,1,1,1,1];
-	for k,v in data.items():
-		if len(v['lat'])<6:				#Must have 6 pts to fit a 6-variable surface
-			del(data[k])
-			continue
-		v['lon']=scipy.array(v['lon'])
-		v['lat']=scipy.array(v['lat'])
-		v['val']=scipy.array(v['val'])
-		v['lon_min']=min(v['lon'])
-		v['lon_max']=max(v['lon'])
-		v['lat_min']=min(v['lat'])
-		v['lat_max']=max(v['lat'])
-		v['lon'],v['lat']=surfproj(v['lon'],v['lat'])	#Project to Lambert Conformal Conic surface
-		plsq,found=leastsq(residuals, plsq, args=(v['lon'], v['lat'], v['val']), Dfun=dsurface_func, col_deriv=1)
-		if found:
-			v['fit']=plsq
-		else:
-			print "Failed to do a fit!"
+  plsq=[1,1,1,1,1,1];
+  for k,v in data.items():
+    if len(v['lat'])<6:        #Must have 6 pts to fit a 6-variable surface
+      del(data[k])
+      continue
+    v['lon']=scipy.array(v['lon'])
+    v['lat']=scipy.array(v['lat'])
+    v['val']=scipy.array(v['val'])
+    v['lon_min']=min(v['lon'])
+    v['lon_max']=max(v['lon'])
+    v['lat_min']=min(v['lat'])
+    v['lat_max']=max(v['lat'])
+    v['lon'],v['lat']=surfproj(v['lon'],v['lat'])  #Project to Lambert Conformal Conic surface
+    plsq,found=leastsq(residuals, plsq, args=(v['lon'], v['lat'], v['val']), Dfun=dsurface_func, col_deriv=1)
+    if found:
+      v['fit']=plsq
+    else:
+      print "Failed to do a fit!"
 
-	return data
+  return data
 
 def t_eval(coor, coefp, coeft, p_target, t_target):
-	pval=surface_func(coor[0], coor[1], coefp)
-	tval=surface_func(coor[0], coor[1], coeft)
-	return [pval-p_target,tval-t_target]
+  pval=surface_func(coor[0], coor[1], coefp)
+  tval=surface_func(coor[0], coor[1], coeft)
+  return [pval-p_target,tval-t_target]
 
 def dsurf_dx(p, x, y):
-	return (2*p[0]*x+p[2]*y+p[3])*1609.344	#Convert Units/m to Units/mile
+  return (2*p[0]*x+p[2]*y+p[3])*1609.344  #Convert Units/m to Units/mile
 
 def dsurf_dy(p, x, y):
-	return (2*p[1]*y+p[2]*x+p[4])*1609.344	#Convert Units/m to Units/mile
+  return (2*p[1]*y+p[2]*x+p[4])*1609.344  #Convert Units/m to Units/mile
 
 def TrackPoint(lon,lat,prcp,temp,trackyear,in_reverse):
-	ymin=max(min(temp.keys()),min(prcp.keys()))
-	ymax=min(max(temp.keys()),max(prcp.keys()))
-	if not trackyear:
-		if in_reverse:
-			trackyear=ymax
-		else:
-			trackyear=ymin
-	elif not (ymin<=trackyear and trackyear<=ymax):
-		return False
+  ymin=max(min(temp.keys()),min(prcp.keys()))
+  ymax=min(max(temp.keys()),max(prcp.keys()))
+  if not trackyear:
+    if in_reverse:
+      trackyear=ymax
+    else:
+      trackyear=ymin
+  elif not (ymin<=trackyear and trackyear<=ymax):
+    return False
 
-	x,y=surfproj(lon,lat)
+  x,y=surfproj(lon,lat)
 
-	pval=surface_func(x,y,prcp[trackyear]['fit'])
-	tval=surface_func(x,y,temp[trackyear]['fit'])
+  pval=surface_func(x,y,prcp[trackyear]['fit'])
+  tval=surface_func(x,y,temp[trackyear]['fit'])
 
-	x0=[x,y]
-	year=[]
-	trackx=[]
-	tracky=[]
-	dx=[]
-	v=[]
+  x0=[x,y]
+  year=[]
+  trackx=[]
+  tracky=[]
+  dx=[]
+  v=[]
 
-	if in_reverse:
-		yrange=range(ymax,ymin-1,-1)
-	else:
-		yrange=range(ymin,ymax+1)
+  if in_reverse:
+    yrange=range(ymax,ymin-1,-1)
+  else:
+    yrange=range(ymin,ymax+1)
 
-	for y in yrange:
-		x0=fsolve(t_eval,x0,args=(prcp[y]['fit'],temp[y]['fit'],pval,tval))
-		year.append(y)
-		trackx.append(x0[0])
-		tracky.append(x0[1])
-		dx.append( {"prcpx":dsurf_dx(prcp[y]['fit'],x0[0],x0[1]),"prcpy":dsurf_dy(prcp[y]['fit'],x0[0],x0[1]),"tempx":dsurf_dx(temp[y]['fit'],x0[0],x0[1]),"tempy":dsurf_dy(temp[y]['fit'],x0[0],x0[1])} )
+  for y in yrange:
+    x0=fsolve(t_eval,x0,args=(prcp[y]['fit'],temp[y]['fit'],pval,tval))
+    year.append(y)
+    trackx.append(x0[0])
+    tracky.append(x0[1])
+    dx.append( {"prcpx":dsurf_dx(prcp[y]['fit'],x0[0],x0[1]),"prcpy":dsurf_dy(prcp[y]['fit'],x0[0],x0[1]),"tempx":dsurf_dx(temp[y]['fit'],x0[0],x0[1]),"tempy":dsurf_dy(temp[y]['fit'],x0[0],x0[1])} )
 
-	trackx,tracky=surfproj(trackx,tracky,inverse=True)
+  trackx,tracky=surfproj(trackx,tracky,inverse=True)
 
-	te=0
-	tn=0
-	tt=0
-	tc=0
-	
-	for y in range(ymin,ymax):
-		yr=y-ymin
-		d,h,de,dn=distances(trackx[yr],tracky[yr],trackx[yr+1],tracky[yr+1])
-		v.append( {"v":d,"ve":de,"vn":dn} )
-		print "Year (%d), Dist (%.2fT, %.2fd, %.2fE, %.2fN), Ang: (%.2fE, %.2fN), Temp: (%.2fE, %.2fN), D/Y: (%.2fE, %.2fN)" % (y,d,h,	d*scipy.sin(scipy.radians(h)), \
-										d*scipy.cos(scipy.radians(h)), \
-											scipy.sin(scipy.radians(h)), \
-											scipy.cos(scipy.radians(h)), \
-											de*dx[yr]['tempx'], \
-											dn*dx[yr]['tempy'], \
-											-scipy.sin(scipy.radians(h))*de*dx[yr]['tempx'], \
-											-scipy.cos(scipy.radians(h))*dn*dx[yr]['tempy'])
-		te+=-scipy.sin(scipy.radians(h))*de*dx[yr]['tempx']
-		tn+=-scipy.cos(scipy.radians(h))*dn*dx[yr]['tempy']
-		tt+=(-scipy.sin(scipy.radians(h))*dx[yr]['tempx']-scipy.cos(scipy.radians(h))*dx[yr]['tempy'])*d
-		tc+=1
-		#Angle is azimuth, so sin gives us x-displacement, cos gives y-displacement
+  te=0
+  tn=0
+  tt=0
+  tc=0
+  
+  for y in range(ymin,ymax):
+    yr=y-ymin
+    d,h,de,dn=distances(trackx[yr],tracky[yr],trackx[yr+1],tracky[yr+1])
+    v.append( {"v":d,"ve":de,"vn":dn} )
+    print "Year (%d), Dist (%.2fT, %.2fd, %.2fE, %.2fN), Ang: (%.2fE, %.2fN), Temp: (%.2fE, %.2fN), D/Y: (%.2fE, %.2fN)" % (y,d,h,  d*scipy.sin(scipy.radians(h)), \
+                    d*scipy.cos(scipy.radians(h)), \
+                      scipy.sin(scipy.radians(h)), \
+                      scipy.cos(scipy.radians(h)), \
+                      de*dx[yr]['tempx'], \
+                      dn*dx[yr]['tempy'], \
+                      -scipy.sin(scipy.radians(h))*de*dx[yr]['tempx'], \
+                      -scipy.cos(scipy.radians(h))*dn*dx[yr]['tempy'])
+    te+=-scipy.sin(scipy.radians(h))*de*dx[yr]['tempx']
+    tn+=-scipy.cos(scipy.radians(h))*dn*dx[yr]['tempy']
+    tt+=(-scipy.sin(scipy.radians(h))*dx[yr]['tempx']-scipy.cos(scipy.radians(h))*dx[yr]['tempy'])*d
+    tc+=1
+    #Angle is azimuth, so sin gives us x-displacement, cos gives y-displacement
 
-	print "Te: %.3f, Tn: %.3f, TT: %.3f" % (te,tn,tt)
-#	import pylab
-#	pylab.plot(trackx,tracky)
-#	pylab.show()
+  print "Te: %.3f, Tn: %.3f, TT: %.3f" % (te,tn,tt)
+#  import pylab
+#  pylab.plot(trackx,tracky)
+#  pylab.show()
 
-	return dx,pval,tval,year,trackx,tracky
+  return dx,pval,tval,year,trackx,tracky
 
 
 def GradientPoint(lon,lat,prcp,temp,year):
-	ymin=max(min(temp.keys()),min(prcp.keys()))
-	ymax=min(max(temp.keys()),max(prcp.keys()))
+  ymin=max(min(temp.keys()),min(prcp.keys()))
+  ymax=min(max(temp.keys()),max(prcp.keys()))
 
-	x,y=surfproj(lon,lat)
-	year=int(year)
-	if year<ymin:
-		year=ymin
-	elif year>ymax:
-		year=ymax
+  x,y=surfproj(lon,lat)
+  year=int(year)
+  if year<ymin:
+    year=ymin
+  elif year>ymax:
+    year=ymax
 
-	pvalx=dsurf_dx(prcp[year]['fit'],x,y)
-	pvaly=dsurf_dy(prcp[year]['fit'],x,y)
-	tvalx=dsurf_dx(temp[year]['fit'],x,y)
-	tvaly=dsurf_dy(temp[year]['fit'],x,y)
+  pvalx=dsurf_dx(prcp[year]['fit'],x,y)
+  pvaly=dsurf_dy(prcp[year]['fit'],x,y)
+  tvalx=dsurf_dx(temp[year]['fit'],x,y)
+  tvaly=dsurf_dy(temp[year]['fit'],x,y)
 
-	return pvalx,pvaly,tvalx,tvaly
+  return pvalx,pvaly,tvalx,tvaly
 
 
 
 
 if len(sys.argv)>1 and sys.argv[1]=='fit':
-	foutname=sys.argv[2]
-	surfproj=GetProjection(sys.argv[3],sys.argv[4])
-	prcp=SurfaceFit(sys.argv[3])
-	temp=SurfaceFit(sys.argv[4])
-	try:
-		fout=open(foutname,"wb")
-		cPickle.dump( {"prcp":prcp, "temp":temp, "proj":surfproj}, fout )
-		fout.close()
-	except:
-		print "Failed to open fitted surfaces output file!"
-		sys.exit(-1)
-	sys.exit(0)
+  foutname=sys.argv[2]
+  surfproj=GetProjection(sys.argv[3],sys.argv[4])
+  prcp=SurfaceFit(sys.argv[3])
+  temp=SurfaceFit(sys.argv[4])
+  try:
+    fout=open(foutname,"wb")
+    cPickle.dump( {"prcp":prcp, "temp":temp, "proj":surfproj}, fout )
+    fout.close()
+  except:
+    print "Failed to open fitted surfaces output file!"
+    sys.exit(-1)
+  sys.exit(0)
 
 elif len(sys.argv)>1 and (sys.argv[1]=='track' or sys.argv[1]=='backtrack'):
-	surface_file_name=sys.argv[2]
-	track_file_name=sys.argv[3]
-	track_hash=track_file_name.split("/")[1]
-#	prcp=SurfaceFit(sys.argv[3])
-#	temp=SurfaceFit(sys.argv[4])
-	if(sys.argv[1]=='track'):
-		in_reverse=False
-	elif(sys.argv[1]=='backtrack'):
-		in_reverse=True
+  surface_file_name=sys.argv[2]
+  track_file_name=sys.argv[3]
+  track_hash=track_file_name.split("/")[1]
+#  prcp=SurfaceFit(sys.argv[3])
+#  temp=SurfaceFit(sys.argv[4])
+  if(sys.argv[1]=='track'):
+    in_reverse=False
+  elif(sys.argv[1]=='backtrack'):
+    in_reverse=True
 
-	try:
-		fin=open(surface_file_name,"rb")
-		surfaces=cPickle.load(fin)
-		fin.close()
-	except:
-		print "Failed to unpickle surface data!"
-		sys.exit(-1)
-	prcp=surfaces['prcp']
-	temp=surfaces['temp']
-	surfproj=surfaces['proj']
-	
-	lon=sys.argv[4]
-	lat=sys.argv[5]
-	dx,pval,tval,year,trackx,tracky=TrackPoint(lon,lat,prcp,temp,False,in_reverse)
-	#Prepare JSON output
-	output=""
-	output+='{'
-	output+='"trackyear":' + str(min(year)) + ','
-	output+='"trackhash":"' + track_hash + '",'
-	output+='"trackprcp":' + str(pval) + ','
-	output+='"tracktemp":' + str(tval) + ','
-	output+='"in_reverse":' + str(in_reverse).lower() + ','
-	output+='"year":['	+ ','.join(map(lambda x:str(x),year))	+ '],'
-	output+='"lon":['	+ ','.join(map(lambda x:str(x),trackx)) + '],'
-	output+='"lat":['	+ ','.join(map(lambda x:str(x),tracky)) + ']'
-	output+='}'
-	try:
-		fout=open(track_file_name,"w")
-		fout.write(output)
-		fout.close()
-	except:
-		print "Failed to open track output file!"
-		sys.exit(-1)
-	sys.exit(0)
+  try:
+    fin=open(surface_file_name,"rb")
+    surfaces=cPickle.load(fin)
+    fin.close()
+  except:
+    print "Failed to unpickle surface data!"
+    sys.exit(-1)
+  prcp=surfaces['prcp']
+  temp=surfaces['temp']
+  surfproj=surfaces['proj']
+  
+  lon=sys.argv[4]
+  lat=sys.argv[5]
+  dx,pval,tval,year,trackx,tracky=TrackPoint(lon,lat,prcp,temp,False,in_reverse)
+  #Prepare JSON output
+  output=""
+  output+='{'
+  output+='"trackyear":' + str(min(year)) + ','
+  output+='"trackhash":"' + track_hash + '",'
+  output+='"trackprcp":' + str(pval) + ','
+  output+='"tracktemp":' + str(tval) + ','
+  output+='"in_reverse":' + str(in_reverse).lower() + ','
+  output+='"year":['  + ','.join(map(lambda x:str(x),year))  + '],'
+  output+='"lon":['  + ','.join(map(lambda x:str(x),trackx)) + '],'
+  output+='"lat":['  + ','.join(map(lambda x:str(x),tracky)) + ']'
+  output+='}'
+  try:
+    fout=open(track_file_name,"w")
+    fout.write(output)
+    fout.close()
+  except:
+    print "Failed to open track output file!"
+    sys.exit(-1)
+  sys.exit(0)
 elif len(sys.argv)>1 and sys.argv[1]=='gradient':
-	surface_file_name=sys.argv[2]
-	grad_file_name=sys.argv[3]
+  surface_file_name=sys.argv[2]
+  grad_file_name=sys.argv[3]
 
-	try:
-		fin=open(surface_file_name,"rb")
-		surfaces=cPickle.load(fin)
-		fin.close()
-	except:
-		print "Failed to unpickle surface data!"
-		sys.exit(-1)
-	prcp=surfaces['prcp']
-	temp=surfaces['temp']
-	surfproj=surfaces['proj']
-	
-	lon=sys.argv[4]
-	lat=sys.argv[5]
-	pvaldx,pvaldy,tvaldx,tvaldy=GradientPoint(lon,lat,prcp,temp,sys.argv[6])
-	#Prepare JSON output
-	output=""
-	output+='{'
-	output+='"pvaldx":' + str(pvaldx) + ','
-	output+='"pvaldy":"' + str(pvaldy) + '",'
-	output+='"tvaldx":' + str(tvaldx) + ','
-	output+='"tvaldy":' + str(tvaldy)
-	output+='}'
-	try:
-		fout=open(grad_file_name,"w")
-		fout.write(output)
-		fout.close()
-	except:
-		print "Failed to open track output file!"
-		sys.exit(-1)
-	sys.exit(0)	
+  try:
+    fin=open(surface_file_name,"rb")
+    surfaces=cPickle.load(fin)
+    fin.close()
+  except:
+    print "Failed to unpickle surface data!"
+    sys.exit(-1)
+  prcp=surfaces['prcp']
+  temp=surfaces['temp']
+  surfproj=surfaces['proj']
+  
+  lon=sys.argv[4]
+  lat=sys.argv[5]
+  pvaldx,pvaldy,tvaldx,tvaldy=GradientPoint(lon,lat,prcp,temp,sys.argv[6])
+  #Prepare JSON output
+  output=""
+  output+='{'
+  output+='"pvaldx":' + str(pvaldx) + ','
+  output+='"pvaldy":"' + str(pvaldy) + '",'
+  output+='"tvaldx":' + str(tvaldx) + ','
+  output+='"tvaldy":' + str(tvaldy)
+  output+='}'
+  try:
+    fout=open(grad_file_name,"w")
+    fout.write(output)
+    fout.close()
+  except:
+    print "Failed to open track output file!"
+    sys.exit(-1)
+  sys.exit(0)  
 
 
 
 elif len(sys.argv)>1 and sys.argv[1]=='show':
-	import matplotlib.pyplot
-	import mpl_toolkits.mplot3d.axes3d
-	import numpy
+  import matplotlib.pyplot
+  import mpl_toolkits.mplot3d.axes3d
+  import numpy
 
-	surface_file_name=sys.argv[2]
+  surface_file_name=sys.argv[2]
 
-	try:
-		fin=open(surface_file_name,"rb")
-		surfaces=cPickle.load(fin)
-		fin.close()
-	except:
-		print "Failed to unpickle surface data!"
-		sys.exit(-1)
-	prcp=surfaces['prcp']
-	temp=surfaces['temp']
+  try:
+    fin=open(surface_file_name,"rb")
+    surfaces=cPickle.load(fin)
+    fin.close()
+  except:
+    print "Failed to unpickle surface data!"
+    sys.exit(-1)
+  prcp=surfaces['prcp']
+  temp=surfaces['temp']
 
-	ymin=max(min(temp.keys()),min(prcp.keys()))
-	ymax=min(max(temp.keys()),max(prcp.keys()))
-	ycur=-1
+  ymin=max(min(temp.keys()),min(prcp.keys()))
+  ymax=min(max(temp.keys()),max(prcp.keys()))
+  ycur=-1
 
-	while(True):
-		inp=raw_input("(n)ext, (p)revious, (q)uit, or Year #: ")
-		if inp=="n":
-			if ycur==-1:
-				ycur=ymin
-			else:
-				ycur=min(ymax,ycur+1)
-		elif inp=="p":
-			ycur=max(ymin,ycur-1)
-		elif inp=="q":
-			break
-		elif inp.isdigit():
-			inp=int(inp)
-			ycur=min(ymax,max(ymin,inp))
-		else:
-			continue
+  while(True):
+    inp=raw_input("(n)ext, (p)revious, (q)uit, or Year #: ")
+    if inp=="n":
+      if ycur==-1:
+        ycur=ymin
+      else:
+        ycur=min(ymax,ycur+1)
+    elif inp=="p":
+      ycur=max(ymin,ycur-1)
+    elif inp=="q":
+      break
+    elif inp.isdigit():
+      inp=int(inp)
+      ycur=min(ymax,max(ymin,inp))
+    else:
+      continue
 
-		fig=matplotlib.pyplot.figure()
-		fig.canvas.set_window_title(str(ycur))
-		ax=mpl_toolkits.mplot3d.axes3d.Axes3D(fig)
+    fig=matplotlib.pyplot.figure()
+    fig.canvas.set_window_title(str(ycur))
+    ax=mpl_toolkits.mplot3d.axes3d.Axes3D(fig)
 
-		psurf=prcp[ycur]
-		tsurf=temp[ycur]
+    psurf=prcp[ycur]
+    tsurf=temp[ycur]
 
-		X=numpy.arange(psurf['lon_min'],psurf['lon_max'],0.25)
-		Y=numpy.arange(psurf['lat_min'],psurf['lat_max'],0.25)
-		X,Y=numpy.meshgrid(X,Y)
-		x,y=surfproj(X,Y)
+    X=numpy.arange(psurf['lon_min'],psurf['lon_max'],0.25)
+    Y=numpy.arange(psurf['lat_min'],psurf['lat_max'],0.25)
+    X,Y=numpy.meshgrid(X,Y)
+    x,y=surfproj(X,Y)
 
-		pZ=surface_func(x,y,psurf['fit'])
-		tZ=surface_func(x,y,tsurf['fit'])
+    pZ=surface_func(x,y,psurf['fit'])
+    tZ=surface_func(x,y,tsurf['fit'])
 
-		ax.plot_surface(X,Y,pZ)
-		ax.plot_surface(X,Y,tZ)
-		fig.show()
+    ax.plot_surface(X,Y,pZ)
+    ax.plot_surface(X,Y,tZ)
+    fig.show()
 
 else:
-	print "Syntax:"
-	print "\tctrack fit\t\tFILE_NAME\tPRECIP_DATA\tTEMP_DATA"
-	print "\tctrack track\t\tSURFACE_FILE_NAME\tTRACK_FILE_NAME LON LAT"
-	print "\tctrack backtrack\tSURFACE_FILE_NAME\tTRACK_FILE_NAME LON LAT"
-	print "\tctrack gradient\tGRAD_FILE_NAME\tGRAD_FILE_NAME LON LAT year\t"
-	print "\tctrack show\t\tSURFACE_FILE_NAME"
-	sys.exit(-1)
+  print "Syntax:"
+  print "\tctrack fit\t\tFILE_NAME\tPRECIP_DATA\tTEMP_DATA"
+  print "\tctrack track\t\tSURFACE_FILE_NAME\tTRACK_FILE_NAME LON LAT"
+  print "\tctrack backtrack\tSURFACE_FILE_NAME\tTRACK_FILE_NAME LON LAT"
+  print "\tctrack gradient\tGRAD_FILE_NAME\tGRAD_FILE_NAME LON LAT year\t"
+  print "\tctrack show\t\tSURFACE_FILE_NAME"
+  sys.exit(-1)
