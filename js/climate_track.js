@@ -574,7 +574,7 @@ function init(){
   var myLayout;
   myLayout = $j('body').layout({
 	  east__minSize:      100,
-    center__minWidth:   100,
+    center__minWidth:   500,
     east__showOverflowOnHover: true,
     stateManagement__enabled:	 true // automatic cookie load & save enabled by default
   });
