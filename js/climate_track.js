@@ -565,6 +565,21 @@ function ToggleFixBox(){
 //Initialise
 /////////////////////////////////
 function init(){
+  var stateResetSettings = {
+    east__size:       200,
+    east__initClosed:	true,
+    east__initHidden:	true,
+  };
+
+  var myLayout;
+  myLayout = $j('body').layout({
+	  east__minSize:      100,
+    center__minWidth:   100,
+    east__showOverflowOnHover: true,
+    stateManagement__enabled:	 true // automatic cookie load & save enabled by default
+  });
+  myLayout;
+
   map = new OpenLayers.Map('map',{projection: new OpenLayers.Projection("EPSG:4326")});
 
 /*  wms_north_america = new OpenLayers.Layer.WMS("North America","http://mrdata.usgs.gov/cgi-bin/mapserv?",
