@@ -566,7 +566,7 @@ function ToggleFixBox(){
 /////////////////////////////////
 function init(){
   var stateResetSettings = {
-    east__size:       200,
+    east__size:       300,
     east__initClosed:	true,
     east__initHidden:	true,
   };
