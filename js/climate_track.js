@@ -582,31 +582,10 @@ function init(){
 
   map = new OpenLayers.Map('map',{projection: new OpenLayers.Projection("EPSG:4326")});
 
-/*  wms_north_america = new OpenLayers.Layer.WMS("North America","http://mrdata.usgs.gov/cgi-bin/mapserv?",
-    {map: 'nam.map', layers: 'stprov'}, {singleTile: 'true', ratio: 1, isBaseLayer:false});
-  map.addLayer(wms_north_america);
-*/
   wms = new OpenLayers.Layer.WMS( "OpenLayers WMS", 
     "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic', isBaseLayer:true, enableLocalCache:true},
     {isBaseLayer:'true'} );
   map.addLayer(wms);
-
-/*
-  //Maps available from: http://mrdata.usgs.gov/mineral-resources/mrsds-us.html
-  var roads = new OpenLayers.Layer.WMS("Roads","http://mrdata.usgs.gov/cgi-bin/mapserv?",{map: 'usroads.map', transparent: 'true', layers: 'roads'}, {singleTile: 'true', ratio: 1});
-  roads.setVisibility(false);
-  map.addLayer(roads);
-
-  var waters = new OpenLayers.Layer.WMS("Rivers and Lakes","http://mrdata.usgs.gov/cgi-bin/mapserv?",{map: 'ushydro.map', transparent: 'true', layers: 'streams,lakes'}, {singleTile: 'true', ratio: 1});
-  waters.setVisibility(false);
-  waters.setOpacity(0.5);
-  map.addLayer(waters);
-
-  var fed_lands = new OpenLayers.Layer.WMS("Federal lands","http://mrdata.usgs.gov/cgi-bin/mapserv?",{map: 'fedland.map', transparent: 'true', layers: 'fedland,indland'}, {singleTile: 'true', ratio: 1});
-  fed_lands.setVisibility(false);
-  fed_lands.setOpacity(0.5);
-  map.addLayer(fed_lands);*/
-
 
   var station_style = new OpenLayers.StyleMap({
     "default": new OpenLayers.Style({
