@@ -140,7 +140,7 @@ function add_to_tracklist(track_name,lat,lon,warning){
 function remove_track(num){
   trackcount--;
   tracks.removeFeatures(tracklist[num]);
-  $('tracklist').removeChild($('track'+num));
+  $j('#track'+num).remove();
   $j('#tracknum').html(trackcount);
   track_hashes[num]=null;
 
@@ -248,39 +248,39 @@ function Track_Handler(request){
 
 function Grad_Handler(request){
   if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
-    $('trackprocessing').innerHTML="<img src=\"img/bad.gif\" width=\"16\" height=\"16\">";
+    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
     $j('#track_submit').removeClass("disabled");
     $j('#stations_submit').removeClass("disabled");
-    $('clear_fit').disabled=false;
+    $j('#clear_fit').prop('disabled',false);
     click.activate();
     return;
   }
 
   $j('#track_submit').removeClass("disabled");
   $j('#stations_submit').removeClass("disabled");
-  $('clear_fit').disabled=false;
+  $j('#clear_fit').prop('disabled',false);
   click.activate();
-  $('trackprocessing').innerHTML="<img src=\"img/good.gif\" width=\"16\" height=\"16\">";
+  $j('#trackprocessing').html('<img src="img/good.gif" width="16" height="16">');
 
   try{
     var grad_response=$j.parseJSON(request.responseText);
   } catch (err) {
-    $('trackprocessing').innerHTML="<img src=\"img/bad.gif\" width=\"16\" height=\"16\">";
+    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
     $j('#track_submit').removeClass("disabled");
     $j('#stations_submit').removeClass("disabled");
-    $('clear_fit').disabled=false;
+    $j('#clear_fit').prop('disabled',false);
     click.activate();
     return;
   }
 
-  $('grad_values').innerHTML="Pdx: " + grad_response[0].pvaldx + ", Pdy: " + grad_response[0].pvaldy + ", Tdx: " +  grad_response[0].tvaldx + ", Tdy: " + grad_response[0].tvaldy;
+  $j('#grad_values').html("Pdx: " + grad_response[0].pvaldx + ", Pdy: " + grad_response[0].pvaldy + ", Tdx: " +  grad_response[0].tvaldx + ", Tdy: " + grad_response[0].tvaldy);
 }
 
 
 
 function TrackHashLoad(){
-  if($('interesting_surfaces').value=="box"){
-    var hashes=$('track_hashes').value;
+  if($j('#interesting_surfaces').val()=="box"){
+    var hashes=$j('#track_hashes').val();
     hashes=hashes.split(",");
     for(i in hashes){
       var request = OpenLayers.Request.POST({
@@ -293,7 +293,7 @@ function TrackHashLoad(){
   } else {
     var request = OpenLayers.Request.POST({
       url: SERVER_URL,
-      params: {"type":"TrackHashLoad","hash":$('interesting_surfaces').value},
+      params: {"type":"TrackHashLoad","hash":$j('#interesting_surfaces').val()},
       headers: {"Content-Type": "text/plain"},
       callback: Track_Handler
     });
@@ -397,7 +397,7 @@ function ClearStations(){
   $j("#track_submit").addClass("disabled");
   $j("#track_submit").removeClass("down");
   click.deactivate();
-  $('fitprocessing').innerHTML="";
+  $j('#fitprocessing').html("");
   doSelect();
 }
 
@@ -416,7 +416,7 @@ function doGradient(){
 }
 
 function QuickSelect(){
-  var qslist=quick_stations[$('quickstations').value];
+  var qslist=quick_stations[$j('#quickstations').val()];
   selcontrol.unselectAll();
   for(i in stations.features)
     for(s in stations.features[i].cluster)
@@ -457,7 +457,7 @@ var animate_speed=1;
 var animate_pid=null;
 
 function animator(){
-  var new_animate_speed=parseFloat($('animatespeed').value);
+  var new_animate_speed=parseFloat($j('#animatespeed').val());
   var year=map_year+1;
   console.info(year);
   if(new_animate_speed!=animate_speed){
@@ -465,9 +465,9 @@ function animator(){
     window.clearInterval(animate_pid);
     animate_pid=window.setInterval(animator,animate_speed*1000);
   }
-  if(year>2011 && $('animateloop').checked)
+  if(year>2011 && $j('#animateloop').prop('checked'))
     year=1900;
-  else if (year>2011 && !$('animateloop').checked){
+  else if (year>2011 && !$j('#animateloop').prop('checked')){
     window.clearInterval(animate_pid);
     $j("#animate_submit").removeClass("down");
     return;
@@ -506,8 +506,8 @@ function undraw_velocity(){
 function calculate_velocity(){
   if (velocity_track==-1) return;
   tracklist[velocity_track][1].style.strokeColor="Black";
-  var velocity_min=parseInt($('velocity_min_num').innerHTML);
-  var velocity_max=parseInt($('velocity_max_num').innerHTML);
+  var velocity_min=parseInt($j('#velocity_min_num').html());
+  var velocity_max=parseInt($j('#velocity_max_num').html());
   old_colour=trackcolours[velocity_track%trackcolours.length];
   var speed_avg=0;
   var nspeed_avg=0;
@@ -529,9 +529,9 @@ function calculate_velocity(){
       tracklist[velocity_track][i].style.strokeOpacity=0.6;
     }
   }
-  $('velocity_avg').innerHTML="Avg: " + (speed_avg/segs/1.6).toFixed(2) + " miles";
-  $('velocity_avg').innerHTML+="&nbsp;&nbsp;N_Avg: " + (nspeed_avg/segs/1.6).toFixed(2) + " miles";
-  $('velocity_avg').innerHTML+="&nbsp;&nbsp;E_Avg: " + (espeed_avg/segs/1.6).toFixed(2) + " miles";
+  $j('#velocity_avg').html("Avg: " + (speed_avg/segs/1.6).toFixed(2) + " miles");
+  $j('#velocity_avg').append("&nbsp;&nbsp;N_Avg: " + (nspeed_avg/segs/1.6).toFixed(2) + " miles");
+  $j('#velocity_avg').append("&nbsp;&nbsp;E_Avg: " + (espeed_avg/segs/1.6).toFixed(2) + " miles");
 }
 
 function switch_velocity(track){
@@ -670,7 +670,6 @@ function init(){
         TrackParams.type="Track";
         TrackParams.callback=Track_Handler;
       }
-  //    TrackParams.season=$('which_season').value;
 
       TrackParams.surf=Fit_station_str;
       TrackParams.x=lonlat.lon;
