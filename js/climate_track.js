@@ -446,7 +446,7 @@ function change_map_year(year){
   year=parseInt(year);
   if(!(1900<=year && year<=2011)) return;
   map_year=year;
-  $('year_range_value').innerHTML=map_year;
+  $j('#year_range_value').html(map_year);
   $j('#year_range').slider( "value", map_year );
   document.title="Climate Tracker (" + map_year + ")";
   TrackFilter.value=map_year;
@@ -543,12 +543,12 @@ function switch_velocity(track){
 }
 
 function change_velocity_min(year){
-  $('velocity_min_num').innerHTML=year;
+  $j('#velocity_min_num').html(year);
   switch_velocity(velocity_track);
 }
 
 function change_velocity_max(year){
-  $('velocity_max_num').innerHTML=year;
+  $j('#velocity_max_num').html(year);
   switch_velocity(velocity_track);
 }
 
