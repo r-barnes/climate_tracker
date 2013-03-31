@@ -583,9 +583,31 @@ function init(){
   map = new OpenLayers.Map('map',{projection: new OpenLayers.Projection("EPSG:4326")});
 
   wms = new OpenLayers.Layer.WMS( "OpenLayers WMS", 
-    "http://vmap0.tiles.osgeo.org/wms/vmap0", {layers: 'basic', isBaseLayer:true, enableLocalCache:true},
-    {isBaseLayer:'true'} );
+    "http://vmap0.tiles.osgeo.org/wms/vmap0",
+    {layers: 'basic', isBaseLayer:true/*, enableLocalCache:true*/},
+    {isBaseLayer:'true'}
+  );
   map.addLayer(wms);
+
+  slabel = new OpenLayers.Layer.WMS( "State Labels", 
+    "http://vmap0.tiles.osgeo.org/wms/vmap0",
+    {transparent:true, layers: 'statelabel', enableLocalCache:true}
+  );
+  map.addLayer(slabel);
+
+  roads = new OpenLayers.Layer.WMS( "Roads", 
+    "http://vmap0.tiles.osgeo.org/wms/vmap0",
+    {transparent:true, layers: 'priroad,secroad' enableLocalCache:true}
+  );
+  roads.setVisibility(false);
+  map.addLayer(roads);
+
+  ctylabel = new OpenLayers.Layer.WMS( "City Label", 
+    "http://vmap0.tiles.osgeo.org/wms/vmap0",
+    {transparent:true, layers: 'ctylabel' enableLocalCache:true}
+  );
+  ctylabel.setVisibility(false);
+  map.addLayer(ctylabel);
 
   var station_style = new OpenLayers.StyleMap({
     "default": new OpenLayers.Style({
