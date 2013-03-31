@@ -125,7 +125,7 @@ function add_to_tracklist(track_name,lat,lon,warning){
   item+="<div id=\"track" + num + "\" style=\"float:left;width:100%;background-color:" + trackcolours[num%trackcolours.length] + "\">"
   item+="<a onclick=\"remove_track(" + num + ")\"><img src=\"img/trash.png\" width=\"16\" height=\"16\"></a>";
   if(warning)
-    item+="<img src=\"warning.png\" width=\"16\" height=\"16\"> ";
+    item+="<img src=\"img/warning.png\" width=\"16\" height=\"16\"> ";
   item+="<a onclick=\"switch_velocity(" + num + ")\"><img src=\"img/bounce_arrow.png\" width=\"16\" height=\"16\" title=\"Calculate Velocity\"></a>";
   item+=track_name+" (";
   item+=(lat).toFixed(2);
