@@ -50,15 +50,15 @@ function display_stations(){
     }
 
   if(document.getElementById("stationslist").options.length>0){
-    $('fit_submit').disabled=false;
-    $('clear_fit').disabled=false;
+    $j('#fit_submit').prop('disabled', false);
+    $j('#clear_fit').prop('disabled', false);
   } else {
-    $('fit_submit').disabled=true;
-    $('clear_fit').disabled=true;
+    $j('#fit_submit').prop('disabled', true);
+    $j('#clear_fit').prop('disabled', true);
   }
 
-  $('fitprocessing').innerHTML="";
-  $('stationnum').innerHTML=count;
+  $j('#fitprocessing').html("");
+  $j('#stationnum').html(count);
 }
 
 function onFeatureSelect(evt) {
@@ -76,13 +76,13 @@ function station_highlighted(e){
     hover_stations+="<li>"+e.feature.cluster[s].attributes.description+"</li>";
     hovercount++;
   }
-  $('hoverlist').innerHTML=hover_stations;
-  $('hovernum').innerHTML=hovercount;
+  $j('#hoverlist').html(hover_stations);
+  $j('#hovernum').html(hovercount);
 }
 
 function station_unhighlighted(e){
-  $('hoverlist').innerHTML="";
-  $('hovernum').innerHTML=0;
+  $j('#hoverlist').html("");
+  $j('#hovernum').html(0);
 }
 
 /////////////////////////////////
@@ -114,7 +114,7 @@ function do_track_hashes(){
   for(i in track_hashes)
     if(track_hashes[i]!=null)
       temp+=track_hashes[i]+",";
-  $('track_hashes').value=temp;
+  $j('#track_hashes').val(temp);
 }
 
 var trackcount=0;
@@ -131,8 +131,8 @@ function add_to_tracklist(track_name,lat,lon,warning){
   item+=(lat).toFixed(2);
   item+=", "+(lon).toFixed(2);
   item+=")</div>";
-  $('tracknum').innerHTML=trackcount;
-  $('tracklist').innerHTML+=item;
+  $j('#tracknum').html(trackcount);
+  $j('#tracklist').append(item);
 
   do_track_hashes();
 }
@@ -141,7 +141,7 @@ function remove_track(num){
   trackcount--;
   tracks.removeFeatures(tracklist[num]);
   $('tracklist').removeChild($('track'+num));
-  $('tracknum').innerHTML=trackcount;
+  $j('#tracknum').html(trackcount);
   track_hashes[num]=null;
 
   do_track_hashes();
@@ -201,7 +201,7 @@ function process_incoming_track(track_name,track_hash,years,lon,lat,in_reverse){
   var warning=false;
   if(maxdist>100){
     warning=true;
-    $('trackprocessing').innerHTML="<img src=\"warning.png\">";
+    $j('#trackprocessing').html('<img src="img/warning.png">');
   }
   tracklist.push(detrack);
   track_hashes.push(track_hash);
@@ -211,29 +211,29 @@ function process_incoming_track(track_name,track_hash,years,lon,lat,in_reverse){
 var Track_Params;
 var Track_time;
 function Track_Handler(request){
-  $('trackprocessing').title=(new Date().getTime()-Track_time)/1000;
+  $j('#trackprocessing').prop('title',(new Date().getTime()-Track_time)/1000);
   if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
-    $('trackprocessing').innerHTML="<img src=\"img/bad.gif\" width=\"16\" height=\"16\">";
+    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
     $j('#track_submit').removeClass("disabled");
     $j('#stations_submit').removeClass("disabled");
-    $('clear_fit').disabled=false;
+    $j('#clear_fit').prop('disabled',false);
     click.activate();
     return;
   }
 
   $j('#track_submit').removeClass("disabled");
   $j('#stations_submit').removeClass("disabled");
-  $('clear_fit').disabled=false;
+  $j('#clear_fit').prop('disabled',false);
   click.activate();
-  $('trackprocessing').innerHTML="<img src=\"img/good.gif\" width=\"16\" height=\"16\">";
+  $j('#trackprocessing').html('<img src="img/good.gif" width="16" height="16">');
 
   try{
     var track_response=$j.parseJSON(request.responseText);
   } catch (err) {
-    $('trackprocessing').innerHTML="<img src=\"img/bad.gif\" width=\"16\" height=\"16\">";
+    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
     $j('#track_submit').removeClass("disabled");
     $j('#stations_submit').removeClass("disabled");
-    $('clear_fit').disabled=false;
+    $j('#clear_fit').prop('disabled',false);
     click.activate();
     return;
   }
@@ -302,27 +302,27 @@ function TrackHashLoad(){
 
 var xurfaces_time;
 function FitSurfaces_Handler(request){
-  $('fitprocessing').title=(new Date().getTime()-FitSurfaces_time)/1000;
+  $j('#fitprocessing').prop('title',(new Date().getTime()-FitSurfaces_time)/1000);
   if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
-    $('fitprocessing').innerHTML="<img src=\"img/bad.gif\" width=\"16\" height=\"16\">";
+    $j('#fitprocessing').html("<img src=\"img/bad.gif\" width=\"16\" height=\"16\">");
     $j('#fit_submit').removeClass("disabled");
-    $('clear_fit').disabled=false;
+    $j('#clear_fit').prop('disabled',false);
     return;
   }
 
   Fit_station_str=request.responseText;
-  $('clear_fit').disabled=false;
+  $j('#clear_fit').prop('disabled',false);
   $j('#track_submit').removeClass("disabled");
   $j('#track_submit').addClass("down");
   doTrack();
-  $('fitprocessing').innerHTML="<img src=\"img/good.gif\" width=\"16\" height=\"16\">";
+  $j('#fitprocessing').html("<img src=\"img/good.gif\" width=\"16\" height=\"16\">");
 }
 
 function FitSurfaces(){
-  $('fit_submit').disabled=true;
-  $('clear_fit').disabled=true;
+  $j('#fit_submit').prop('disabled',true);
+  $j('#clear_fit').prop('disabled',true);
   click.deactivate();
-  $('fitprocessing').innerHTML="<img src=\"img/processing.gif\" width=\"16\" height=\"16\">";
+  $j('#fitprocessing').html("<img src=\"img/processing.gif\" width=\"16\" height=\"16\">");
 
   if(Fit_box!=null){
     tracks.removeFeatures([Fit_box]);
@@ -352,7 +352,7 @@ function FitSurfaces(){
   tracks.addFeatures([Fit_box]);
 
   FitSurfaces_time=new Date().getTime();
-  Fit_surf_params={"type":"FitSurfaces","data":Fit_station_str,"bounds":bounds.toString(),"surface_type":$('surface_type').value,"do_seasonal":$('do_seasonal').value};
+  Fit_surf_params={"type":"FitSurfaces","data":Fit_station_str,"bounds":bounds.toString(),"surface_type":$j('#surface_type').val(),"do_seasonal":$j('#do_seasonal').val()};
   var request = OpenLayers.Request.POST({
     url: SERVER_URL,
     params: Fit_surf_params,
@@ -658,8 +658,8 @@ function init(){
       click.deactivate();
       $j('#track_submit').addClass("disabled");
       $j('#stations_submit').addClass("disabled");
-      $('clear_fit').disabled=true;
-      $('trackprocessing').innerHTML="<img src=\"img/processing.gif\" width=\"16\" height=\"16\">";
+      $j('#clear_fit').prop('disabled',true);
+      $j('#trackprocessing').html('<img src="img/processing.gif" width="16" height="16">');
       Track_time=new Date().getTime();
         var lonlat = map.getLonLatFromViewPortPx(e.xy);
       TrackParams=Fit_surf_params;
