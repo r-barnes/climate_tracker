@@ -584,7 +584,7 @@ function init(){
 
   wms = new OpenLayers.Layer.WMS( "OpenLayers WMS", 
     "http://vmap0.tiles.osgeo.org/wms/vmap0",
-    {layers: 'basic', isBaseLayer:true/*, enableLocalCache:true*/},
+    {layers: 'basic', isBaseLayer:true, enableLocalCache:true},
     {isBaseLayer:'true'}
   );
   map.addLayer(wms);
@@ -597,14 +597,14 @@ function init(){
 
   roads = new OpenLayers.Layer.WMS( "Roads", 
     "http://vmap0.tiles.osgeo.org/wms/vmap0",
-    {transparent:true, layers: 'priroad,secroad' enableLocalCache:true}
+    {transparent:true, layers: 'priroad,secroad', enableLocalCache:true}
   );
   roads.setVisibility(false);
   map.addLayer(roads);
 
   ctylabel = new OpenLayers.Layer.WMS( "City Label", 
     "http://vmap0.tiles.osgeo.org/wms/vmap0",
-    {transparent:true, layers: 'ctylabel' enableLocalCache:true}
+    {transparent:true, layers: 'ctylabel', enableLocalCache:true}
   );
   ctylabel.setVisibility(false);
   map.addLayer(ctylabel);
