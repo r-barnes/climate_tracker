@@ -14,5 +14,5 @@ cat data/ushcn_monthly/formatted_stations.dat >> stations.dat
 cd src/
 make
 cd ..
-mv src/do_monthly_prcp ./
-mv src/do_monthly_temp ./
+mv src/do_monthly_prcp.exe ./
+mv src/do_monthly_temp.exe ./
