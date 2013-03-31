@@ -1,8 +1,15 @@
 <html>
 	<head>
 		<title>Climate Tracker</title>
-		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.10.1.custom.min.js"></script>
+<?php
+  if($_GET['local']){
+?>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+<?php } else { ?>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+<?php } ?>
 
     <script src="js/jquery.layout.min-1.3.0.js"></script>
 
