@@ -13,7 +13,7 @@ using namespace std;
 
 char CLIMATE_NAMES[CLIMATE_ELEMENTS][CLIMATE_ELEMENT_NAME_LEN+1]={"TMAX","TMIN","PRCP","SNOW","SNWD","RAIN","TAVG"};
 
-int lower_year=1900,upper_year=2010;
+int lower_year=1900,upper_year=2011;
 
 struct station_struct {
 	string csn;
@@ -152,7 +152,7 @@ int main(int argc, char **argv){
 		printf("                        [-a <ADMISSIBLE STATIONS FILE>]\n");
 		printf("                        [-M <Permissible Months (e.g. \"1,5,6\")>]\n");
 		printf("                        [-L <Lower bound year, inclusive (default: 1900)>]\n");
-		printf("                        [-U <Upper bound year, inclusive (default: 2010)>]\n");
+		printf("                        [-U <Upper bound year, inclusive (default: 2011)>]\n");
 		printf("                        [-s <USHCN STATIONS FILE>]\n");
 		printf("                        [-m <USHCN MONTHLY DATA FILE>]\n");
 		printf("                        [-c <AHCCD PRECIPITATION STATION FILE>]\n");

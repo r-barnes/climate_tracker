@@ -45,7 +45,7 @@ bool set_admissible_elements(const char *elements);
 
 #define CLIMATE_FLAG_ADJUSTED		'a'
 
-#define HIGHEST_YEAR	2011			//TODO
+#define HIGHEST_YEAR	2012			//TODO
 #define LOWEST_YEAR		1801			//TODO
 #define YEARS			(HIGHEST_YEAR-LOWEST_YEAR)
 
