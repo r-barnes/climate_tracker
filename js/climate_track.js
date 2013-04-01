@@ -217,20 +217,17 @@ function Track_Handler(request){
     add_to_tracklist(track_name,parseFloat(lat[0]),parseFloat(lon[0]),warning);
   }
 
-  $j('#trackprocessing').prop('title',(new Date().getTime()-Track_time)/1000);
-  if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
-    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
-    $j('#track_submit').removeClass("disabled");
-    $j('#stations_submit').removeClass("disabled");
-    $j('#clear_fit').prop('disabled',false);
-    click.activate();
-    return;
-  }
-
   $j('#track_submit').removeClass("disabled");
   $j('#stations_submit').removeClass("disabled");
   $j('#clear_fit').prop('disabled',false);
   click.activate();
+
+  $j('#trackprocessing').prop('title',(new Date().getTime()-Track_time)/1000);
+  if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
+    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
+    return;
+  }
+
   $j('#trackprocessing').html('<img src="img/good.gif" width="16" height="16">');
 
   try{
@@ -253,19 +250,15 @@ function Track_Handler(request){
 
 
 function Grad_Handler(request){
-  if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
-    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
-    $j('#track_submit').removeClass("disabled");
-    $j('#stations_submit').removeClass("disabled");
-    $j('#clear_fit').prop('disabled',false);
-    click.activate();
-    return;
-  }
-
   $j('#track_submit').removeClass("disabled");
   $j('#stations_submit').removeClass("disabled");
   $j('#clear_fit').prop('disabled',false);
   click.activate();
+
+  if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
+    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
+    return;
+  }
   $j('#trackprocessing').html('<img src="img/good.gif" width="16" height="16">');
 
   try{
