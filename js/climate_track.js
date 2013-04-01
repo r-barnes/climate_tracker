@@ -477,6 +477,17 @@ function Animate(){
   }
 }
 
+function ToggleFixBox(){
+  if ( typeof ToggleFixBox.fit_hide == 'undefined' ) {
+    ToggleFixBox.fit_hide=false;
+  }
+  if(ToggleFixBox.fit_hide)
+    tracks.addFeatures([Fit_box]);
+  else
+    tracks.removeFeatures([Fit_box]);
+  ToggleFixBox.fit_hide=!ToggleFixBox.fit_hide;
+}
+
 //////////////////////////////////////
 //VELOCITY
 //////////////////////////////////////
@@ -542,15 +553,6 @@ function change_velocity_min(year){
 function change_velocity_max(year){
   $j('#velocity_max_num').html(year);
   switch_velocity(velocity_track);
-}
-
-var fit_hide=false;
-function ToggleFixBox(){
-  if(fit_hide)
-    tracks.addFeatures([Fit_box]);
-  else
-    tracks.removeFeatures([Fit_box]);
-  fit_hide=!fit_hide;
 }
 
 /////////////////////////////////
