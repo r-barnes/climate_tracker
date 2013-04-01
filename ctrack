@@ -8,8 +8,7 @@ from scipy.optimize import leastsq, fsolve
 import pyproj
 #import pylab
 
-surfproj = False #The projection is in units of meters, by default (http://pyproj.googlecode.com/svn/trunk/README.html)
-geod = pyproj.Geod(ellps='WGS84')
+geod = pyproj.Geod(ellps='WGS84') #The projection is in units of meters, by default (http://pyproj.googlecode.com/svn/trunk/README.html)
 
 def distances(lon1,lat1,lon2,lat2):
   h,ba,distance_straight=geod.inv(lon1,lat1,lon2,lat2) #Angle is azimuth
@@ -63,7 +62,7 @@ def GetProjection(prcp,temp):
 
   return pyproj.Proj(proj='lcc',lat_1=latmin,lat_2=latmax,lon_0=loncenter,lat_0=latcenter,ellps='WGS84')
 
-def SurfaceFit(datafile):
+def SurfaceFit(surfproj,datafile):
   csvreader=csv.reader(open(datafile, 'r'), delimiter=' ')
 
   data={}
@@ -115,7 +114,7 @@ def dsurf_dx(p, x, y):
 def dsurf_dy(p, x, y):
   return (2*p[1]*y+p[2]*x+p[4])*1609.344  #Convert Units/m to Units/mile
 
-def TrackPoint(lon,lat,prcp,temp,trackyear,in_reverse):
+def TrackPoint(surfproj,lon,lat,prcp,temp,trackyear,in_reverse):
   ymin=max(min(temp.keys()),min(prcp.keys()))
   ymax=min(max(temp.keys()),max(prcp.keys()))
   if not trackyear:
@@ -183,7 +182,7 @@ def TrackPoint(lon,lat,prcp,temp,trackyear,in_reverse):
   return dx,pval,tval,year,trackx,tracky
 
 
-def GradientPoint(lon,lat,prcp,temp,year):
+def GradientPoint(surfproj,lon,lat,prcp,temp,year):
   ymin=max(min(temp.keys()),min(prcp.keys()))
   ymax=min(max(temp.keys()),max(prcp.keys()))
 
@@ -204,11 +203,11 @@ def GradientPoint(lon,lat,prcp,temp,year):
 
 
 
-if len(sys.argv)>1 and sys.argv[1]=='fit':
+def doFit():
   foutname=sys.argv[2]
   surfproj=GetProjection(sys.argv[3],sys.argv[4])
-  prcp=SurfaceFit(sys.argv[3])
-  temp=SurfaceFit(sys.argv[4])
+  prcp=SurfaceFit(surfproj,sys.argv[3])
+  temp=SurfaceFit(surfproj,sys.argv[4])
   try:
     fout=open(foutname,"wb")
     cPickle.dump( {"prcp":prcp, "temp":temp, "proj":surfproj}, fout )
@@ -218,7 +217,7 @@ if len(sys.argv)>1 and sys.argv[1]=='fit':
     sys.exit(-1)
   sys.exit(0)
 
-elif len(sys.argv)>1 and (sys.argv[1]=='track' or sys.argv[1]=='backtrack'):
+def doTrack():
   surface_file_name=sys.argv[2]
   track_file_name=sys.argv[3]
   track_hash=track_file_name.split("/")[1]
@@ -242,7 +241,7 @@ elif len(sys.argv)>1 and (sys.argv[1]=='track' or sys.argv[1]=='backtrack'):
   
   lon=sys.argv[4]
   lat=sys.argv[5]
-  dx,pval,tval,year,trackx,tracky=TrackPoint(lon,lat,prcp,temp,False,in_reverse)
+  dx,pval,tval,year,trackx,tracky=TrackPoint(surfproj,lon,lat,prcp,temp,False,in_reverse)
   #Prepare JSON output
   output=""
   output+='{'
@@ -263,7 +262,8 @@ elif len(sys.argv)>1 and (sys.argv[1]=='track' or sys.argv[1]=='backtrack'):
     print "Failed to open track output file!"
     sys.exit(-1)
   sys.exit(0)
-elif len(sys.argv)>1 and sys.argv[1]=='gradient':
+
+def doGradient():
   surface_file_name=sys.argv[2]
   grad_file_name=sys.argv[3]
 
@@ -280,7 +280,7 @@ elif len(sys.argv)>1 and sys.argv[1]=='gradient':
   
   lon=sys.argv[4]
   lat=sys.argv[5]
-  pvaldx,pvaldy,tvaldx,tvaldy=GradientPoint(lon,lat,prcp,temp,sys.argv[6])
+  pvaldx,pvaldy,tvaldx,tvaldy=GradientPoint(surfproj,lon,lat,prcp,temp,sys.argv[6])
   #Prepare JSON output
   output=""
   output+='{'
@@ -300,7 +300,7 @@ elif len(sys.argv)>1 and sys.argv[1]=='gradient':
 
 
 
-elif len(sys.argv)>1 and sys.argv[1]=='show':
+def doShow():
   import matplotlib.pyplot
   import mpl_toolkits.mplot3d.axes3d
   import numpy
@@ -357,7 +357,15 @@ elif len(sys.argv)>1 and sys.argv[1]=='show':
     ax.plot_surface(X,Y,tZ)
     fig.show()
 
-else:
+def main():
+  if len(sys.argv)>1 and sys.argv[1]=='fit':
+    doFit()
+  elif len(sys.argv)>1 and (sys.argv[1]=='track' or sys.argv[1]=='backtrack'):
+    doTrack()
+  elif len(sys.argv)>1 and sys.argv[1]=='gradient':
+    doGradient()
+  elif len(sys.argv)>1 and sys.argv[1]=='show':
+    doShow()
   print "Syntax:"
   print "\tctrack fit\t\tFILE_NAME\tPRECIP_DATA\tTEMP_DATA"
   print "\tctrack track\t\tSURFACE_FILE_NAME\tTRACK_FILE_NAME LON LAT"
@@ -365,3 +373,5 @@ else:
   print "\tctrack gradient\tGRAD_FILE_NAME\tGRAD_FILE_NAME LON LAT year\t"
   print "\tctrack show\t\tSURFACE_FILE_NAME"
   sys.exit(-1)
+
+main()
