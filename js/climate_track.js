@@ -255,18 +255,15 @@ function Grad_Handler(request){
     $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
     return;
   }
-  $j('#trackprocessing').html('<img src="img/good.gif" width="16" height="16">');
 
   try{
     var grad_response=$j.parseJSON(request.responseText);
   } catch (err) {
     $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
-    $j('#track_submit').removeClass("disabled");
-    $j('#stations_submit').removeClass("disabled");
-    $j('#clear_fit').prop('disabled',false);
-    click.activate();
     return;
   }
+
+  $j('#trackprocessing').html('<img src="img/good.gif" width="16" height="16">');
 
   $j('#grad_values').html("Pdx: " + grad_response[0].pvaldx + ", Pdy: " + grad_response[0].pvaldy + ", Tdx: " +  grad_response[0].tvaldx + ", Tdy: " + grad_response[0].tvaldy);
 }
