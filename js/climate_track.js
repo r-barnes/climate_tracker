@@ -477,15 +477,15 @@ function Animate(){
   }
 }
 
-function ToggleFixBox(){
-  if ( typeof ToggleFixBox.fit_hide == 'undefined' ) {
-    ToggleFixBox.fit_hide=false;
+function ToggleFitBox(){
+  if ( typeof ToggleFitBox.fit_hide == 'undefined' ) {
+    ToggleFitBox.fit_hide=false;
   }
-  if(ToggleFixBox.fit_hide)
+  if(ToggleFitBox.fit_hide)
     tracks.addFeatures([Fit_box]);
   else
     tracks.removeFeatures([Fit_box]);
-  ToggleFixBox.fit_hide=!ToggleFixBox.fit_hide;
+  ToggleFitBox.fit_hide=!ToggleFitBox.fit_hide;
 }
 
 //////////////////////////////////////
