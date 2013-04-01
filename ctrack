@@ -316,6 +316,7 @@ def doShow():
     sys.exit(-1)
   prcp=surfaces['prcp']
   temp=surfaces['temp']
+  surfproj=surfaces['proj']
 
   ymin=max(min(temp.keys()),min(prcp.keys()))
   ymax=min(max(temp.keys()),max(prcp.keys()))
@@ -364,8 +365,8 @@ def main():
     doTrack()
   elif len(sys.argv)>1 and sys.argv[1]=='gradient':
     doGradient()
-  elif len(sys.argv)>1 and sys.argv[1]=='gradient':
-    doGradient()
+  elif len(sys.argv)>1 and sys.argv[1]=='contours':
+    doContours()
   elif len(sys.argv)>1 and sys.argv[1]=='show':
     doShow()
   else:
