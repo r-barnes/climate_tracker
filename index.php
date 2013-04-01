@@ -75,7 +75,7 @@
 		<br>
 		<input type="submit" id="fit_submit" value="Fit Surfaces" onClick="FitSurfaces()" disabled="true">
 		<input type="submit" id="clear_fit" value="Clear" onClick="ClearStations()" disabled="true">
-		<input type="submit" id="fit_box_toggle" value="Box" onClick="ToggleFixBox()">
+		<input type="submit" id="fit_box_toggle" value="Box" onClick="ToggleFitBox()">
 		<br><select id="surface_type" style="display:none;"><option>Linear</option><option selected>Quad</option></select>
 		<select id="do_seasonal" onchange="year_season_select(this.value)" style="display:none"><option selected>Yearly</option><option>Seasonal</option></select>
 		<br>
