@@ -358,6 +358,46 @@ def doShow():
     ax.plot_surface(X,Y,tZ)
     fig.show()
 
+def doContours():
+  import matplotlib.pyplot
+  import numpy
+
+  surface_file_name=sys.argv[2]
+
+  try:
+    fin=open(surface_file_name,"rb")
+    surfaces=cPickle.load(fin)
+    fin.close()
+  except:
+    print "Failed to unpickle surface data!"
+    sys.exit(-1)
+  prcp=surfaces['prcp']
+  temp=surfaces['temp']
+  surfproj=surfaces['proj']
+
+  ymin=max(min(temp.keys()),min(prcp.keys()))
+  ymax=min(max(temp.keys()),max(prcp.keys()))
+
+  for ycur in range(ymin,ymax+1):
+    fig=matplotlib.pyplot.figure()
+
+    psurf=prcp[ycur]
+    tsurf=temp[ycur]
+
+    X=numpy.arange(psurf['lon_min'],psurf['lon_max'],0.25)
+    Y=numpy.arange(psurf['lat_min'],psurf['lat_max'],0.25)
+    X,Y=numpy.meshgrid(X,Y)
+    x,y=surfproj(X,Y)
+
+    pZ=surface_func(x,y,psurf['fit'])
+    tZ=surface_func(x,y,tsurf['fit'])
+
+    pcontour=matplotlib.pyplot.contour(X,Y,pZ,10)
+    tcontour=matplotlib.pyplot.contour(X,Y,tZ,10)
+    for contour in pcontour.collections:
+      points=[tuple(point) for point,code in contour.get_paths()[0].iter_segments()]
+      print points
+
 def main():
   if len(sys.argv)>1 and sys.argv[1]=='fit':
     doFit()
