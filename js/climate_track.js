@@ -154,7 +154,6 @@ function remove_track(num){
   do_track_hashes();
 }
 
-var Track_Params;
 var Track_time;
 function Track_Handler(request){
   function process_incoming_track(track_name,track_hash,years,lon,lat,in_reverse){
