@@ -397,6 +397,7 @@ def doContours():
     for contour in pcontour.collections:
       points=[tuple(point) for point,code in contour.get_paths()[0].iter_segments()]
       print points
+#See: http://stackoverflow.com/questions/5666056/matplotlib-extracting-data-from-contour-lines
 
 def main():
   if len(sys.argv)>1 and sys.argv[1]=='fit':
