@@ -6,6 +6,7 @@ import sys
 import scipy
 from scipy.optimize import leastsq, fsolve
 import pyproj
+import json
 #import pylab
 
 geod = pyproj.Geod(ellps='WGS84') #The projection is in units of meters, by default (http://pyproj.googlecode.com/svn/trunk/README.html)
@@ -378,6 +379,8 @@ def doContours():
   ymin=max(min(temp.keys()),min(prcp.keys()))
   ymax=min(max(temp.keys()),max(prcp.keys()))
 
+  thecontours="{"
+
   for ycur in range(ymin,ymax+1):
     fig=matplotlib.pyplot.figure()
 
@@ -394,9 +397,19 @@ def doContours():
 
     pcontour=matplotlib.pyplot.contour(X,Y,pZ,10)
     tcontour=matplotlib.pyplot.contour(X,Y,tZ,10)
+    thecontours+='"' + str(ycur)+'":['
     for contour in pcontour.collections:
-      points=[tuple(point) for point,code in contour.get_paths()[0].iter_segments()]
-      print points
+      xpoints=[str(round(point[0],5)) for point,code in contour.get_paths()[0].iter_segments()]
+      ypoints=[str(round(point[0],5)) for point,code in contour.get_paths()[0].iter_segments()]
+      xpoints=','.join(xpoints)
+      ypoints=','.join(ypoints)
+      thecontours+='{"x":['+xpoints+'],"y":['+ypoints+']},'
+    thecontours=thecontours[:-1]+"],"
+
+  thecontours=thecontours[:-1]+"}"
+
+  print thecontours
+      
 #See: http://stackoverflow.com/questions/5666056/matplotlib-extracting-data-from-contour-lines
 
 def main():
