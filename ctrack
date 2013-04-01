@@ -364,6 +364,8 @@ def main():
     doTrack()
   elif len(sys.argv)>1 and sys.argv[1]=='gradient':
     doGradient()
+  elif len(sys.argv)>1 and sys.argv[1]=='gradient':
+    doGradient()
   elif len(sys.argv)>1 and sys.argv[1]=='show':
     doShow()
   else:
@@ -372,6 +374,7 @@ def main():
     print "  ctrack track      SURFACE_FILE_NAME  TRACK_FILE_NAME LON        LAT"
     print "  ctrack backtrack  SURFACE_FILE_NAME  TRACK_FILE_NAME LON        LAT"
     print "  ctrack gradient   GRAD_FILE_NAME     GRAD_FILE_NAME  LON        LAT  year"
+    print "  ctrack contours   SURFACE_FILE_NAME"
     print "  ctrack show       SURFACE_FILE_NAME"
 
 main()
