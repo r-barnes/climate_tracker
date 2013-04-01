@@ -3,8 +3,15 @@
 /////////////////////////////////
 //Globals
 /////////////////////////////////
-var trackcolours=['Blue','Green','Red','Orange','Aqua',
-'Chartreuse','Brown','Salmon','Purple','MediumSpringGreen','Yellow'];
+
+//My colours
+var trackcolours=['Blue', 'Green', 'Red', 'Orange', 'Aqua', 'Chartreuse',
+'Brown', 'Salmon', 'Purple', 'MediumSpringGreen', 'Yellow'];
+
+//Colorbrewer Colours
+//var trackcolours=['#A6CEE3', '#1F78B4', '#B2DF8A', '#33A02C', '#FB9A99',
+//'#E31A1C', '#FDBF6F', '#FF7F00', '#CAB2D6', '#6A3D9A', '#FFFF99'];
+
 var tracklist=new Array();
 var track_hashes=new Array();
 var $j=jQuery.noConflict();
