@@ -367,11 +367,11 @@ def main():
   elif len(sys.argv)>1 and sys.argv[1]=='show':
     doShow()
   print "Syntax:"
-  print "\tctrack fit\t\tFILE_NAME\tPRECIP_DATA\tTEMP_DATA"
-  print "\tctrack track\t\tSURFACE_FILE_NAME\tTRACK_FILE_NAME LON LAT"
-  print "\tctrack backtrack\tSURFACE_FILE_NAME\tTRACK_FILE_NAME LON LAT"
-  print "\tctrack gradient\tGRAD_FILE_NAME\tGRAD_FILE_NAME LON LAT year\t"
-  print "\tctrack show\t\tSURFACE_FILE_NAME"
+  print "  ctrack fit        FILE_NAME          PRECIP_DATA     TEMP_DATA"
+  print "  ctrack track      SURFACE_FILE_NAME  TRACK_FILE_NAME LON        LAT"
+  print "  ctrack backtrack  SURFACE_FILE_NAME  TRACK_FILE_NAME LON        LAT"
+  print "  ctrack gradient   GRAD_FILE_NAME     GRAD_FILE_NAME  LON        LAT  year"
+  print "  ctrack show       SURFACE_FILE_NAME"
   sys.exit(-1)
 
 main()
