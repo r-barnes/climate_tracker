@@ -154,70 +154,70 @@ function remove_track(num){
   do_track_hashes();
 }
 
-function process_incoming_track(track_name,track_hash,years,lon,lat,in_reverse){
-  var stylepoint = { strokeColor: trackcolours[tracklist.length%trackcolours.length],//'#0000ff', 
-    strokeOpacity: 0.6,
-    pointRadius: 5
-  };
-  //Todo: Consider creating a number of sub-lines rather than line segments by creating a continuously-expanding array of points
-  var detrack=new Array();
-  var maxdist=0;
-
-  var startpointloc=null;
-  if(in_reverse)
-    startpointloc=new OpenLayers.Geometry.Point(parseFloat(lon[lon.length-1]),parseFloat(lat[lat.length-1]));
-  else
-    startpointloc=new OpenLayers.Geometry.Point(parseFloat(lon[0]),parseFloat(lat[0]));
-
-
-  var startpoint=new OpenLayers.Feature.Vector(startpointloc, null, stylepoint);
-  startpoint.attributes.when=1900;//parseFloat(years[0]);
-  detrack.push(startpoint);
-  tracks.addFeatures([startpoint]);
-  for(i=1;i<lat.length;i++){
-    var point1=new OpenLayers.Geometry.Point(lon[i-1],lat[i-1]);
-    point1.lon=lon[i-1];
-    point1.lat=lat[i-1];
-    var point2=new OpenLayers.Geometry.Point(lon[i],lat[i]);
-    point2.lon=lon[i];
-    point2.lat=lat[i];
-    var intermediate_point={lon:point2.lon,lat:point1.lat};
-    var dist = OpenLayers.Util.distVincenty(point1,point2);
-    var ndist = OpenLayers.Util.distVincenty(intermediate_point,point2);
-    var edist = OpenLayers.Util.distVincenty(point1,intermediate_point);
-    if(point2.lon>point1.lon) //If point2 is to the West
-      edist=-edist;
-    if(point2.lat<point1.lat) //If point2 is to the South
-      ndist=-ndist;
-    if(dist>maxdist)
-      maxdist=dist;
-    var line = new OpenLayers.Geometry.LineString([point1,point2]);
-    var lineFeature=new OpenLayers.Feature.Vector(line, null,
-      {strokeColor: trackcolours[tracklist.length%trackcolours.length],//'#0000ff', 
-        strokeOpacity: 1,//0.6,
-        strokeWidth: 8//5
-      }
-    );
-    lineFeature.attributes.when=parseFloat(years[i]);
-    lineFeature.attributes.dist=dist;
-    lineFeature.attributes.ndist=ndist;
-    lineFeature.attributes.edist=edist;
-    detrack.push(lineFeature)
-    tracks.addFeatures([lineFeature]);
-  }
-  var warning=false;
-  if(maxdist>100){
-    warning=true;
-    $j('#trackprocessing').html('<img src="img/warning.png">');
-  }
-  tracklist.push(detrack);
-  track_hashes.push(track_hash);
-  add_to_tracklist(track_name,parseFloat(lat[0]),parseFloat(lon[0]),warning);
-}
-
 var Track_Params;
 var Track_time;
 function Track_Handler(request){
+  function process_incoming_track(track_name,track_hash,years,lon,lat,in_reverse){
+    var stylepoint = { strokeColor: trackcolours[tracklist.length%trackcolours.length],//'#0000ff', 
+      strokeOpacity: 0.6,
+      pointRadius: 5
+    };
+    //Todo: Consider creating a number of sub-lines rather than line segments by creating a continuously-expanding array of points
+    var detrack=new Array();
+    var maxdist=0;
+
+    var startpointloc=null;
+    if(in_reverse)
+      startpointloc=new OpenLayers.Geometry.Point(parseFloat(lon[lon.length-1]),parseFloat(lat[lat.length-1]));
+    else
+      startpointloc=new OpenLayers.Geometry.Point(parseFloat(lon[0]),parseFloat(lat[0]));
+
+
+    var startpoint=new OpenLayers.Feature.Vector(startpointloc, null, stylepoint);
+    startpoint.attributes.when=1900;//parseFloat(years[0]);
+    detrack.push(startpoint);
+    tracks.addFeatures([startpoint]);
+    for(i=1;i<lat.length;i++){
+      var point1=new OpenLayers.Geometry.Point(lon[i-1],lat[i-1]);
+      point1.lon=lon[i-1];
+      point1.lat=lat[i-1];
+      var point2=new OpenLayers.Geometry.Point(lon[i],lat[i]);
+      point2.lon=lon[i];
+      point2.lat=lat[i];
+      var intermediate_point={lon:point2.lon,lat:point1.lat};
+      var dist = OpenLayers.Util.distVincenty(point1,point2);
+      var ndist = OpenLayers.Util.distVincenty(intermediate_point,point2);
+      var edist = OpenLayers.Util.distVincenty(point1,intermediate_point);
+      if(point2.lon>point1.lon) //If point2 is to the West
+        edist=-edist;
+      if(point2.lat<point1.lat) //If point2 is to the South
+        ndist=-ndist;
+      if(dist>maxdist)
+        maxdist=dist;
+      var line = new OpenLayers.Geometry.LineString([point1,point2]);
+      var lineFeature=new OpenLayers.Feature.Vector(line, null,
+        {strokeColor: trackcolours[tracklist.length%trackcolours.length],//'#0000ff', 
+          strokeOpacity: 1,//0.6,
+          strokeWidth: 8//5
+        }
+      );
+      lineFeature.attributes.when=parseFloat(years[i]);
+      lineFeature.attributes.dist=dist;
+      lineFeature.attributes.ndist=ndist;
+      lineFeature.attributes.edist=edist;
+      detrack.push(lineFeature)
+      tracks.addFeatures([lineFeature]);
+    }
+    var warning=false;
+    if(maxdist>100){
+      warning=true;
+      $j('#trackprocessing').html('<img src="img/warning.png">');
+    }
+    tracklist.push(detrack);
+    track_hashes.push(track_hash);
+    add_to_tracklist(track_name,parseFloat(lat[0]),parseFloat(lon[0]),warning);
+  }
+
   $j('#trackprocessing').prop('title',(new Date().getTime()-Track_time)/1000);
   if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
     $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
