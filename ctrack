@@ -366,12 +366,12 @@ def main():
     doGradient()
   elif len(sys.argv)>1 and sys.argv[1]=='show':
     doShow()
-  print "Syntax:"
-  print "  ctrack fit        FILE_NAME          PRECIP_DATA     TEMP_DATA"
-  print "  ctrack track      SURFACE_FILE_NAME  TRACK_FILE_NAME LON        LAT"
-  print "  ctrack backtrack  SURFACE_FILE_NAME  TRACK_FILE_NAME LON        LAT"
-  print "  ctrack gradient   GRAD_FILE_NAME     GRAD_FILE_NAME  LON        LAT  year"
-  print "  ctrack show       SURFACE_FILE_NAME"
-  sys.exit(-1)
+  else:
+    print "Syntax:"
+    print "  ctrack fit        FILE_NAME          PRECIP_DATA     TEMP_DATA"
+    print "  ctrack track      SURFACE_FILE_NAME  TRACK_FILE_NAME LON        LAT"
+    print "  ctrack backtrack  SURFACE_FILE_NAME  TRACK_FILE_NAME LON        LAT"
+    print "  ctrack gradient   GRAD_FILE_NAME     GRAD_FILE_NAME  LON        LAT  year"
+    print "  ctrack show       SURFACE_FILE_NAME"
 
 main()
