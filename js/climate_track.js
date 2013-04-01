@@ -228,18 +228,14 @@ function Track_Handler(request){
     return;
   }
 
-  $j('#trackprocessing').html('<img src="img/good.gif" width="16" height="16">');
-
   try{
     var track_response=$j.parseJSON(request.responseText);
   } catch (err) {
     $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
-    $j('#track_submit').removeClass("disabled");
-    $j('#stations_submit').removeClass("disabled");
-    $j('#clear_fit').prop('disabled',false);
-    click.activate();
     return;
   }
+
+  $j('#trackprocessing').html('<img src="img/good.gif" width="16" height="16">');
 
   for(i in track_response){
     tr=track_response[i];
