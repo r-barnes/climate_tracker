@@ -129,11 +129,11 @@ function add_to_tracklist(track_name,lat,lon,warning){
   var item="";
   var num=tracklist.length-1;
   trackcount++;
-  item+="<div id=\"track" + num + "\" style=\"float:left;width:100%;background-color:" + trackcolours[num%trackcolours.length] + "\">"
-  item+="<a onclick=\"remove_track(" + num + ")\"><img src=\"img/trash.png\" width=\"16\" height=\"16\"></a>";
+  item+='<div id="track' + num + '" style="float:left;width:100%;background-color:' + trackcolours[num%trackcolours.length] + '">';
+  item+='<a onclick="remove_track(' + num + ')"><img src="img/trash.png" width="16" height="16"></a>';
   if(warning)
-    item+="<img src=\"img/warning.png\" width=\"16\" height=\"16\"> ";
-  item+="<a onclick=\"switch_velocity(" + num + ")\"><img src=\"img/bounce_arrow.png\" width=\"16\" height=\"16\" title=\"Calculate Velocity\"></a>";
+    item+='<img src="img/warning.png" width="16" height="16"> ';
+  item+='<a onclick="switch_velocity(' + num + ')"><img src="img/bounce_arrow.png" width="16" height="16" title="Calculate Velocity"></a>';
   item+=track_name+" (";
   item+=(lat).toFixed(2);
   item+=", "+(lon).toFixed(2);
@@ -247,7 +247,7 @@ function Track_Handler(request){
 
   for(i in track_response){
     tr=track_response[i];
-    track_name=tr['trackprcp'].toFixed(1) + "\" and " + tr['tracktemp'].toFixed(1) + "&deg;";
+    track_name=tr['trackprcp'].toFixed(1) + '" and ' + tr['tracktemp'].toFixed(1) + '&deg;';
     process_incoming_track(track_name,tr['trackhash'],tr['year'],tr['lon'],tr['lat'],tr['in_reverse']);
   }
 }
@@ -311,7 +311,7 @@ var xurfaces_time;
 function FitSurfaces_Handler(request){
   $j('#fitprocessing').prop('title',(new Date().getTime()-FitSurfaces_time)/1000);
   if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
-    $j('#fitprocessing').html("<img src=\"img/bad.gif\" width=\"16\" height=\"16\">");
+    $j('#fitprocessing').html('<img src="img/bad.gif" width="16" height="16">');
     $j('#fit_submit').removeClass("disabled");
     $j('#clear_fit').prop('disabled',false);
     return;
@@ -322,14 +322,14 @@ function FitSurfaces_Handler(request){
   $j('#track_submit').removeClass("disabled");
   $j('#track_submit').addClass("down");
   doTrack();
-  $j('#fitprocessing').html("<img src=\"img/good.gif\" width=\"16\" height=\"16\">");
+  $j('#fitprocessing').html('<img src="img/good.gif" width="16" height="16">');
 }
 
 function FitSurfaces(){
   $j('#fit_submit').prop('disabled',true);
   $j('#clear_fit').prop('disabled',true);
   click.deactivate();
-  $j('#fitprocessing').html("<img src=\"img/processing.gif\" width=\"16\" height=\"16\">");
+  $j('#fitprocessing').html('<img src="img/processing.gif" width="16" height="16">');
 
   if(Fit_box!=null){
     tracks.removeFeatures([Fit_box]);
