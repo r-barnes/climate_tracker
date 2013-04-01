@@ -379,7 +379,7 @@ def doContours():
   ymin=max(min(temp.keys()),min(prcp.keys()))
   ymax=min(max(temp.keys()),max(prcp.keys()))
 
-  thecontours="{"
+  thecontours="["
 
   for ycur in range(ymin,ymax+1):
     fig=matplotlib.pyplot.figure()
@@ -397,16 +397,16 @@ def doContours():
 
     pcontour=matplotlib.pyplot.contour(X,Y,pZ,10)
     tcontour=matplotlib.pyplot.contour(X,Y,tZ,10)
-    thecontours+='"' + str(ycur)+'":['
+    thecontours+='{"year":' + str(ycur)+',"contours":['
     for contour in pcontour.collections:
       xpoints=[str(round(point[0],5)) for point,code in contour.get_paths()[0].iter_segments()]
       ypoints=[str(round(point[0],5)) for point,code in contour.get_paths()[0].iter_segments()]
       xpoints=','.join(xpoints)
       ypoints=','.join(ypoints)
       thecontours+='{"x":['+xpoints+'],"y":['+ypoints+']},'
-    thecontours=thecontours[:-1]+"],"
+    thecontours=thecontours[:-1]+"]},"
 
-  thecontours=thecontours[:-1]+"}"
+  thecontours=thecontours[:-1]+"]"
 
   print thecontours
       
