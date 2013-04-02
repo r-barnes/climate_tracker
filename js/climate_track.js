@@ -5,15 +5,14 @@
 /////////////////////////////////
 
 //My colours
-var trackcolours=['Blue', 'Green', 'Red', 'Orange', 'Aqua', 'Chartreuse',
-'Brown', 'Salmon', 'Purple', 'MediumSpringGreen', 'Yellow'];
+var trackcolours = ['Blue', 'Green', 'Red', 'Orange', 'Aqua', 'Chartreuse', 'Brown', 'Salmon', 'Purple', 'MediumSpringGreen', 'Yellow'];
 
 //Colorbrewer Colours
 //var trackcolours=['#A6CEE3', '#1F78B4', '#B2DF8A', '#33A02C', '#FB9A99',
 //'#E31A1C', '#FDBF6F', '#FF7F00', '#CAB2D6', '#6A3D9A', '#FFFF99'];
 
-var tracklist=new Array();
-var track_hashes=new Array();
+var tracklist=[];
+var track_hashes=[];
 var $j=jQuery.noConflict();
 var SERVER_URL="./server.php";
 var Fit_station_str;
@@ -36,6 +35,22 @@ var wms;
 map.addLayer(wms_states);*/
 
 /////////////////////////////////
+//Useful Functions
+/////////////////////////////////
+function AddItem(ListBox,Text,Value,Color){
+  // Create an Option object        
+  var opt = document.createElement("option");
+
+  // Add an Option object to Drop Down/List Box
+  document.getElementById(ListBox).options.add(opt);
+  // Assign text and value to Option object
+  opt.text = Text;
+  opt.value = Value;
+  if(Color)
+    opt.style.backgroundColor=Color;
+}
+
+/////////////////////////////////
 //Stations Layer
 /////////////////////////////////
 
@@ -48,6 +63,7 @@ var selcontrol;
 var tracks;
 
 function display_stations(){
+  var i,x;
   var count=0;
   document.getElementById("stationslist").options.length=0;
   for(i in stations.selectedFeatures)
@@ -79,6 +95,7 @@ function onFeatureUnselect(evt) {
 function station_highlighted(e){
   var hover_stations="";
   var hovercount=0;
+  var s;
   for(s in e.feature.cluster){
     hover_stations+="<li>"+e.feature.cluster[s].attributes.description+"</li>";
     hovercount++;
@@ -98,26 +115,14 @@ function station_unhighlighted(e){
 var TrackFilter = new OpenLayers.Filter.Comparison({
   type: OpenLayers.Filter.Comparison.LESS_THAN_OR_EQUAL_TO,
   property: "when",
-  value: 2011,
+  value: 2011
 });
 
 TrackFilterStrategy = new OpenLayers.Strategy.Filter({filter: TrackFilter});
 
-function AddItem(ListBox,Text,Value,Color){
-  // Create an Option object        
-  var opt = document.createElement("option");
-
-  // Add an Option object to Drop Down/List Box
-  document.getElementById(ListBox).options.add(opt);
-  // Assign text and value to Option object
-  opt.text = Text;
-  opt.value = Value;
-  if(Color)
-    opt.style.backgroundColor=Color;
-}
-
 function do_track_hashes(){
-  temp="";
+  var i;
+  var temp="";
   for(i in track_hashes)
     if(track_hashes[i]!=null)
       temp+=track_hashes[i]+",";
@@ -135,8 +140,8 @@ function add_to_tracklist(track_name,lat,lon,warning){
     item+='<img src="img/warning.png" width="16" height="16"> ';
   item+='<a onclick="switch_velocity(' + num + ')"><img src="img/bounce_arrow.png" width="16" height="16" title="Calculate Velocity"></a>';
   item+=track_name+" (";
-  item+=(lat).toFixed(2);
-  item+=", "+(lon).toFixed(2);
+  item+=lat.toFixed(2);
+  item+=", "+lon.toFixed(2);
   item+=")</div>";
   $j('#tracknum').html(trackcount);
   $j('#tracklist').append(item);
@@ -157,12 +162,13 @@ function remove_track(num){
 var Track_time;
 function Track_Handler(request){
   function process_incoming_track(track_name,track_hash,years,lon,lat,in_reverse){
+    var i;
     var stylepoint = { strokeColor: trackcolours[tracklist.length%trackcolours.length],//'#0000ff', 
       strokeOpacity: 0.6,
       pointRadius: 5
     };
     //Todo: Consider creating a number of sub-lines rather than line segments by creating a continuously-expanding array of points
-    var detrack=new Array();
+    var detrack=[];
     var maxdist=0;
 
     var startpointloc=null;
@@ -204,7 +210,7 @@ function Track_Handler(request){
       lineFeature.attributes.dist=dist;
       lineFeature.attributes.ndist=ndist;
       lineFeature.attributes.edist=edist;
-      detrack.push(lineFeature)
+      detrack.push(lineFeature);
       tracks.addFeatures([lineFeature]);
     }
     var warning=false;
@@ -228,8 +234,9 @@ function Track_Handler(request){
     return;
   }
 
+  var track_response;
   try{
-    var track_response=$j.parseJSON(request.responseText);
+    track_response=$j.parseJSON(request.responseText);
   } catch (err) {
     $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
     return;
@@ -237,10 +244,11 @@ function Track_Handler(request){
 
   $j('#trackprocessing').html('<img src="img/good.gif" width="16" height="16">');
 
+  var i;
   for(i in track_response){
-    tr=track_response[i];
-    track_name=tr['trackprcp'].toFixed(1) + '" and ' + tr['tracktemp'].toFixed(1) + '&deg;';
-    process_incoming_track(track_name,tr['trackhash'],tr['year'],tr['lon'],tr['lat'],tr['in_reverse']);
+    var tr=track_response[i];
+    var track_name=tr.trackprcp.toFixed(1) + '" and ' + tr.tracktemp.toFixed(1) + '&deg;';
+    process_incoming_track(track_name,tr.trackhash,tr.year,tr.lon,tr.lat,tr.in_reverse);
   }
 }
 
@@ -256,8 +264,9 @@ function Grad_Handler(request){
     return;
   }
 
+  var grad_response;
   try{
-    var grad_response=$j.parseJSON(request.responseText);
+    grad_response=$j.parseJSON(request.responseText);
   } catch (err) {
     $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
     return;
@@ -271,11 +280,12 @@ function Grad_Handler(request){
 
 
 function TrackHashLoad(){
+  var i;
   if($j('#interesting_surfaces').val()=="box"){
     var hashes=$j('#track_hashes').val();
     hashes=hashes.split(",");
     for(i in hashes){
-      var request = OpenLayers.Request.POST({
+      OpenLayers.Request.POST({
         url: SERVER_URL,
         params: {"type":"TrackHashLoad","hash":$j.trim(hashes[i])},
         headers: {"Content-Type": "text/plain"},
@@ -283,7 +293,7 @@ function TrackHashLoad(){
       });
     }
   } else {
-    var request = OpenLayers.Request.POST({
+    OpenLayers.Request.POST({
       url: SERVER_URL,
       params: {"type":"TrackHashLoad","hash":$j('#interesting_surfaces').val()},
       headers: {"Content-Type": "text/plain"},
@@ -292,7 +302,7 @@ function TrackHashLoad(){
   }
 }
 
-var xurfaces_time;
+var FitSurfaces_time;
 function FitSurfaces_Handler(request){
   $j('#fitprocessing').prop('title',(new Date().getTime()-FitSurfaces_time)/1000);
   if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
@@ -323,6 +333,7 @@ function FitSurfaces(){
 
   Fit_station_str="";
   var bounds=null;
+  var i,x;
   for(i in stations.selectedFeatures)
     for(x in stations.selectedFeatures[i].cluster){
       Fit_station_str+=","+stations.selectedFeatures[i].cluster[x].attributes.title;
@@ -409,17 +420,18 @@ function doGradient(){
 
 function QuickSelect(){
   var qslist=quick_stations[$j('#quickstations').val()];
+  var i,s;
   selcontrol.unselectAll();
   for(i in stations.features)
     for(s in stations.features[i].cluster)
-      if(qslist.indexOf(parseInt(stations.features[i].cluster[s].attributes.title))!=-1)
+      if(qslist.indexOf(parseInt(stations.features[i].cluster[s].attributes.title,10))!=-1)
         stations.features[i].cluster[s].attributes.selected=1;
       else
         stations.features[i].cluster[s].attributes.selected=0;
   clustering.recluster();
   for(i in stations.features)
     for(s in stations.features[i].cluster)
-      if(qslist.indexOf(parseInt(stations.features[i].cluster[s].attributes.title))!=-1){
+      if(qslist.indexOf(parseInt(stations.features[i].cluster[s].attributes.title,10))!=-1){
         selcontrol.select(stations.features[i]);
         break;
       }
@@ -435,7 +447,7 @@ function centerUS(){
 
 var map_year=2011;
 function change_map_year(year){
-  year=parseInt(year);
+  year=parseInt(year,10);
   if(!(1900<=year && year<=2011)) return;
   map_year=year;
   $j('#year_range_value').html(map_year);
@@ -496,6 +508,7 @@ var velocity_track=-1;
 var old_colour;
 
 function undraw_velocity(){
+  var i;
   if(velocity_track==-1) return;
 
   old_colour=trackcolours[velocity_track%trackcolours.length];
@@ -509,15 +522,16 @@ function undraw_velocity(){
 function calculate_velocity(){
   if (velocity_track==-1) return;
   tracklist[velocity_track][1].style.strokeColor="Black";
-  var velocity_min=parseInt($j('#velocity_min_num').html());
-  var velocity_max=parseInt($j('#velocity_max_num').html());
+  var velocity_min=parseInt($j('#velocity_min_num').html(),10);
+  var velocity_max=parseInt($j('#velocity_max_num').html(),10);
   old_colour=trackcolours[velocity_track%trackcolours.length];
   var speed_avg=0;
   var nspeed_avg=0;
   var espeed_avg=0;
   var segs=0;
+  var i;
   for(i in tracklist[velocity_track]){
-    line_when=tracklist[velocity_track][i].attributes.when;
+    var line_when=tracklist[velocity_track][i].attributes.when;
     if(velocity_min<=line_when && line_when<=velocity_max){
       tracklist[velocity_track][i].style.strokeColor="Black";
       tracklist[velocity_track][i].style.strokeOpacity=1.0;
@@ -583,20 +597,20 @@ function init(){
   );
   map.addLayer(wms);
 
-  slabel = new OpenLayers.Layer.WMS( "State Labels", 
+  var slabel_layer = new OpenLayers.Layer.WMS( "State Labels", 
     "http://vmap0.tiles.osgeo.org/wms/vmap0",
     {transparent:true, layers: 'statelabel', enableLocalCache:true}
   );
-  map.addLayer(slabel);
+  map.addLayer(slabel_layer);
 
-  roads = new OpenLayers.Layer.WMS( "Roads", 
+  var roads_layer = new OpenLayers.Layer.WMS( "Roads", 
     "http://vmap0.tiles.osgeo.org/wms/vmap0",
     {transparent:true, layers: 'priroad,secroad', enableLocalCache:true}
   );
-  roads.setVisibility(false);
-  map.addLayer(roads);
+  roads_layer.setVisibility(false);
+  map.addLayer(roads_layer);
 
-  ctylabel = new OpenLayers.Layer.WMS( "City Label", 
+  var ctylabel = new OpenLayers.Layer.WMS( "City Label", 
     "http://vmap0.tiles.osgeo.org/wms/vmap0",
     {transparent:true, layers: 'ctylabel', enableLocalCache:true}
   );
@@ -749,6 +763,7 @@ function init(){
             subdivisions: 2, // default is 2
             displaySystem: 'english'
           }));
+  var i;
   for(i in quick_stations)
     AddItem("quickstations",quick_stations[i][0],i);
 }
