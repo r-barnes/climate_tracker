@@ -407,7 +407,7 @@ def doContours():
       xpoints=','.join(xpoints)
       ypoints=','.join(ypoints)
       thecontours+='{"x":['+xpoints+'],"y":['+ypoints+']},'
-    thecontours+=',"tcontours":['
+    thecontours=thecontours[:-1]+'],"tcontours":['
     for contour in tcontour.collections:
       xpoints=[str(round(point[0],5)) for point,code in contour.get_paths()[0].iter_segments()]
       ypoints=[str(round(point[1],5)) for point,code in contour.get_paths()[0].iter_segments()]
