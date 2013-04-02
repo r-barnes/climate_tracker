@@ -278,6 +278,23 @@
 
 
 
+	function Contours(){
+		$surf=$_REQUEST['surf'];
+
+		if(!file_exists("products/$surf.yearly.contours")){
+			exec("./ctrack contours products/$surf.yearly.surfaces products/$surf.yearly.contours",$output,$ret);
+			if($ret!=0)
+				print "Error: Failed to run contour program.";
+		}
+
+		print file_get_contents("products/$surf.yearly.contours");
+	}
+
+
+
+
+
+
 
 	function TrackHashLoad(){
 		$hash=$_REQUEST['hash'];
@@ -301,6 +318,8 @@
 		Gradient();
 	elseif ($_REQUEST['type']=='TrackHashLoad')
 		TrackHashLoad();
+	elseif ($_REQUEST['type']=='Contours')
+		Contours();
 	else
 		print "Error: Unrecognised command";
 ?>
