@@ -408,7 +408,9 @@ def doContours():
 
   thecontours=thecontours[:-1]+"]"
 
-  print thecontours
+  fout=open(sys.argv[3],'w')
+  fout.write(thecontours)
+  fout.close()
       
 #See: http://stackoverflow.com/questions/5666056/matplotlib-extracting-data-from-contour-lines
 
@@ -425,11 +427,11 @@ def main():
     doShow()
   else:
     print "Syntax:"
-    print "  ctrack fit        FILE_NAME          PRECIP_DATA     TEMP_DATA"
-    print "  ctrack track      SURFACE_FILE_NAME  TRACK_FILE_NAME LON        LAT"
-    print "  ctrack backtrack  SURFACE_FILE_NAME  TRACK_FILE_NAME LON        LAT"
-    print "  ctrack gradient   GRAD_FILE_NAME     GRAD_FILE_NAME  LON        LAT  year"
-    print "  ctrack contours   SURFACE_FILE_NAME"
+    print "  ctrack fit        FILE_NAME          PRECIP_DATA       TEMP_DATA"
+    print "  ctrack track      SURFACE_FILE_NAME  TRACK_FILE_NAME   LON        LAT"
+    print "  ctrack backtrack  SURFACE_FILE_NAME  TRACK_FILE_NAME   LON        LAT"
+    print "  ctrack gradient   GRAD_FILE_NAME     GRAD_FILE_NAME    LON        LAT  year"
+    print "  ctrack contours   SURFACE_FILE_NAME  CONTOUR_FILE_NAME"
     print "  ctrack show       SURFACE_FILE_NAME"
 
 main()
