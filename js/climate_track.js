@@ -385,7 +385,7 @@ function Contour_Handler(request){
         newcontour.addPoint(new OpenLayers.Geometry.Point(data[d].x[p],data[d].y[p]));
       }
       var lineFeature=new OpenLayers.Feature.Vector(newcontour, null,
-        {strokeColor: colour, strokeOpacity: 0.6, strokeWidth: 3}
+        {strokeColor: colour, strokeOpacity: 0.8, strokeWidth: 3}
       );
       lineFeature.attributes.when=parseFloat(year);
       contours_layer.addFeatures([lineFeature]);
@@ -394,6 +394,8 @@ function Contour_Handler(request){
 
   $j('#stations_submit').removeClass("disabled");
   $j('#clear_fit').prop('disabled',false);
+
+  contours_layer.removeAllFeatures();
 
   if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
     $j('#fitprocessing').html('<img src="img/bad.gif" width="16" height="16">');
