@@ -379,11 +379,6 @@ ContourFilterStrategy = new OpenLayers.Strategy.Filter({filter: ContourFilter});
 
 function Contour_Handler(request){
   function process_incoming_contour(year,data,colour){
-    var stylepoint = { strokeColor: '#ffffff',
-      strokeOpacity: 0.6,
-      pointRadius: 5
-    };
-
     for(var d=0;d<data.length;++d){
       var newcontour = new OpenLayers.Geometry.LineString();
       for(var p=0;p<data[d].x.length;++p){
