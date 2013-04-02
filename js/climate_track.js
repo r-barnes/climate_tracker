@@ -368,6 +368,14 @@ function FitSurfaces(){
 //Contour Layer
 /////////////////////////////////
 var contours_layer;
+contours_layer = new OpenLayers.Layer.Vector("Contours",{
+  strategies: [TrackFilterStrategy], //new OpenLayers.Strategy.Fixed() ?
+  rendererOptions: { zIndexing: true }
+});
+
+map.addLayer(contours_layer);
+
+
 function Contour_Handler(request){
   function process_incoming_contour(year,data){
     var stylepoint = { strokeColor: '#ffffff',
@@ -388,7 +396,7 @@ function Contour_Handler(request){
           strokeWidth: 8//5
         }
       );
-      lineFeature.attributes.when=parseFloat(years[i]);
+      lineFeature.attributes.when=parseFloat(year);
       contours_layer.addFeatures([lineFeature]);
     }
   }
