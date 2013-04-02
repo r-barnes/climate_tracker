@@ -728,7 +728,7 @@ function init(){
   map.addLayer(ctylabel);
 
 
-  clustering = new OpenLayers.Strategy.AttributeCluster({attribute:"selected"});//AttributeCluster({attribute:'selected'})
+  clustering = new OpenLayers.Strategy.AttributeCluster({attribute:"selected"});
   stations = new OpenLayers.Layer.Vector("Stations", {
     styleMap: station_style,
     strategies: [
