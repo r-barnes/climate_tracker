@@ -397,18 +397,19 @@ function Contour_Handler(request){
   $j('#clear_fit').prop('disabled',false);
 
   if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
-    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">'); //TODO
+    $j('#fitprocessing').html('<img src="img/bad.gif" width="16" height="16">');
     return;
   }
 
-  $j('#trackprocessing').html('<img src="img/good.gif" width="16" height="16">');
-
+  var contour_response;
   try{
-    var contour_response=$j.parseJSON(request.responseText);
+    contour_response=$j.parseJSON(request.responseText);
   } catch (err) {
-    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
+  $j('#fitprocessing').html('<img src="img/bad.gif" width="16" height="16">');
     return;
   }
+
+  $j('#fitprocessing').html('<img src="img/good.gif" width="16" height="16">');
 
   for(i in contour_response){
     cn=contour_response[i];
@@ -475,6 +476,18 @@ function doContours(){
     $j("#doContours").removeClass("down");
   else
     $j("#doContours").addClass("down");
+
+  $j('#DoContours').prop('disabled',true);
+  $j('#fit_submit').prop('disabled',true);
+  $j('#clear_fit').prop('disabled',true);
+  $j('#fitprocessing').html('<img src="img/processing.gif" width="16" height="16">');
+
+  OpenLayers.Request.POST({
+    url: SERVER_URL,
+    params: {"type":"Contours","data":Fit_station_str},
+    headers: {"Content-Type": "text/plain"},
+    callback: Contour_Handler
+  });
 }
 
 function QuickSelect(){
