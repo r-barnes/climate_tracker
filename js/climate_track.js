@@ -413,7 +413,7 @@ function Contour_Handler(request){
 
   for(i in contour_response){
     cn=contour_response[i];
-    process_incoming_contour(cn['year'],cn['data']);
+    process_incoming_contour(cn.year,cn.data);
   }
 }
 
