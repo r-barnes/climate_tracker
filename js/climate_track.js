@@ -375,8 +375,6 @@ function Contour_Handler(request){
       strokeOpacity: 0.6,
       pointRadius: 5
     };
-    //Todo: Consider creating a number of sub-lines rather than line segments by creating a continuously-expanding array of points
-    var detrack=[];
 
     for(var d=0;d<data.length;++d){
       var newcontour = new OpenLayers.Geometry.LineString();
