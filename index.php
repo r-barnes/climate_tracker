@@ -70,6 +70,12 @@
 	</div>
 
 	<div class="ui-layout-east" id="sidebar">
+    <img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" usemap="forkme_map">
+    <map name="forkme_map">
+      <area shape="poly" coords="16,0,56,0,148,92,148,132" href="https://github.com/r-barnes/climate_tracker" alt="Fork me on GitHub">
+    </map>
+
+
 		<b>Selected Stations (<span id="stationnum">0</span>)</b>
 		<br><select id="stationslist" size="10" style="width:100%">
 		</select>
