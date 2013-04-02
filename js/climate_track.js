@@ -474,22 +474,26 @@ function doGradient(){
 }
 
 function doContours(){
-  if($j("#doContours").hasClass("down"))
+  if($j("#doContours").hasClass("down")) {
     $j("#doContours").removeClass("down");
-  else
+    contours_layer.setVisibility(false);
+  } else {
     $j("#doContours").addClass("down");
+    contours_layer.setVisibility(true);
 
-  $j('#doContours').prop('disabled',true);
-  $j('#fit_submit').prop('disabled',true);
-  $j('#clear_fit').prop('disabled',true);
-  $j('#fitprocessing').html('<img src="img/processing.gif" width="16" height="16">');
+    $j('#doContours').prop('disabled',true);
+    $j('#fit_submit').prop('disabled',true);
+    $j('#clear_fit').prop('disabled',true);
+    $j('#fitprocessing').html('<img src="img/processing.gif" width="16" height="16">');
 
-  OpenLayers.Request.POST({
-    url: SERVER_URL,
-    params: {"type":"Contours","surf":Fit_station_str},
-    headers: {"Content-Type": "text/plain"},
-    callback: Contour_Handler
-  });
+    //TODO: Should make a note if we already have the contour data
+    OpenLayers.Request.POST({
+      url: SERVER_URL,
+      params: {"type":"Contours","surf":Fit_station_str},
+      headers: {"Content-Type": "text/plain"},
+      callback: Contour_Handler
+    });
+  }
 }
 
 function QuickSelect(){
