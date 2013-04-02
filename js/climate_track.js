@@ -369,8 +369,16 @@ function FitSurfaces(){
 /////////////////////////////////
 var contours_layer;
 
+var ContourFilter = new OpenLayers.Filter.Comparison({
+  type: OpenLayers.Filter.Comparison.EQUAL_TO,
+  property: "when",
+  value: 2011
+});
+
+ContourFilterStrategy = new OpenLayers.Strategy.Filter({filter: ContourFilter});
+
 function Contour_Handler(request){
-  function process_incoming_contour(year,data){
+  function process_incoming_contour(year,data,colour){
     var stylepoint = { strokeColor: '#ffffff',
       strokeOpacity: 0.6,
       pointRadius: 5
@@ -382,10 +390,7 @@ function Contour_Handler(request){
         newcontour.addPoint(new OpenLayers.Geometry.Point(data[d].x[p],data[d].y[p]));
       }
       var lineFeature=new OpenLayers.Feature.Vector(newcontour, null,
-        {strokeColor: '#0000ff', 
-          strokeOpacity: 1,//0.6,
-          strokeWidth: 8//5
-        }
+        {strokeColor: colour, strokeOpacity: 0.6, strokeWidth: 3}
       );
       lineFeature.attributes.when=parseFloat(year);
       contours_layer.addFeatures([lineFeature]);
@@ -412,7 +417,8 @@ function Contour_Handler(request){
 
   for(i in contour_response){
     cn=contour_response[i];
-    process_incoming_contour(cn.year,cn.contours);
+    process_incoming_contour(cn.year,cn.tcontours, '#FFCACB');
+    process_incoming_contour(cn.year,cn.pcontours, '#C5FEFF');
   }
 }
 
@@ -526,6 +532,8 @@ function change_map_year(year){
   document.title="Climate Tracker (" + map_year + ")";
   TrackFilter.value=map_year;
   TrackFilterStrategy.setFilter(TrackFilter);
+  ContourFilter.value=map_year;
+  ContourFilterStrategy.setFilter(ContourFilter);
 }
 
 var animate_speed=1;
@@ -732,7 +740,7 @@ function init(){
   map.addLayer(tracks);
 
   contours_layer = new OpenLayers.Layer.Vector("Contours",{
-    strategies: [TrackFilterStrategy], //new OpenLayers.Strategy.Fixed() ?
+    strategies: [ContourFilterStrategy], //new OpenLayers.Strategy.Fixed() ?
     rendererOptions: { zIndexing: true }
   });
 
