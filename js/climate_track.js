@@ -858,6 +858,7 @@ function init(){
 
   map.setCenter(new OpenLayers.LonLat(-93.9196,45.7326),5);
   map.addControl(new OpenLayers.Control.LayerSwitcher());
+  //Displays Lat/Lon in bottom-right of map
   map.addControl(new OpenLayers.Control.MousePosition({numDigits:3}));
   map.addControl(new OpenLayers.Control.ScaleBar({
             divisions: 2,   // default is 2
