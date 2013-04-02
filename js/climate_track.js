@@ -477,14 +477,14 @@ function doContours(){
   else
     $j("#doContours").addClass("down");
 
-  $j('#DoContours').prop('disabled',true);
+  $j('#doContours').prop('disabled',true);
   $j('#fit_submit').prop('disabled',true);
   $j('#clear_fit').prop('disabled',true);
   $j('#fitprocessing').html('<img src="img/processing.gif" width="16" height="16">');
 
   OpenLayers.Request.POST({
     url: SERVER_URL,
-    params: {"type":"Contours","data":Fit_station_str},
+    params: {"type":"Contours","surf":Fit_station_str},
     headers: {"Content-Type": "text/plain"},
     callback: Contour_Handler
   });
