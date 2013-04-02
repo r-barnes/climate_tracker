@@ -378,7 +378,7 @@ function Contour_Handler(request){
 
     for(var d=0;d<data.length;++d){
       var newcontour = new OpenLayers.Geometry.LineString();
-      for(var p=0;p<data[d].length;++p){
+      for(var p=0;p<data[d].x.length;++p){
         newcontour.addPoint(new OpenLayers.Geometry.Point(data[d].x[p],data[d].y[p]));
       }
       var lineFeature=new OpenLayers.Feature.Vector(newcontour, null,
