@@ -1,5 +1,4 @@
 <?php
-	putenv('PYTHONPATH=/home/ugrad/rbarnes/public_html/lib/python2.4/site-packages');
   putenv('MPLCONFIGDIR=temp');
 
 	function HashSurfaceList($list){
