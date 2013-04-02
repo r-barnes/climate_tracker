@@ -361,7 +361,7 @@ def doShow():
 
 def doContours():
   import matplotlib
-  matplotlib.use('Agg')
+  matplotlib.use('Agg') #Don't use X-Server
   import matplotlib.pyplot
   import numpy
 
