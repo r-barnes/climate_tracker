@@ -316,6 +316,7 @@ function FitSurfaces_Handler(request){
   $j('#clear_fit').prop('disabled',false);
   $j('#track_submit').removeClass("disabled");
   $j('#track_submit').addClass("down");
+  $j('#doContours').removeClass("disabled");
   doTrack();
   $j('#fitprocessing').html('<img src="img/good.gif" width="16" height="16">');
 }
@@ -368,6 +369,7 @@ function FitSurfaces(){
 //Contour Layer
 /////////////////////////////////
 var contours_layer;
+var have_contours=false;
 
 var ContourFilter = new OpenLayers.Filter.Comparison({
   type: OpenLayers.Filter.Comparison.EQUAL_TO,
@@ -417,6 +419,7 @@ function Contour_Handler(request){
     process_incoming_contour(cn.year,cn.tcontours, '#FFCACB');
     process_incoming_contour(cn.year,cn.pcontours, '#C5FEFF');
   }
+  have_contours=true;
 }
 
 /////////////////////////////////
@@ -439,6 +442,10 @@ function doSelect(){
   $j("#pan_submit").removeClass("down");
   $j("#stations_submit").addClass("down");
   $j("#track_submit").removeClass("down");
+  $j("#doContours").addClass("disabled");
+  $j("#doContours").removeClass("down");
+  have_contours=false;
+  contours_layer.removeAllFeatures();
 }
 
 function doTrack(){
@@ -454,6 +461,10 @@ function ClearStations(){
   selcontrol.unselectAll();
   $j("#track_submit").addClass("disabled");
   $j("#track_submit").removeClass("down");
+  $j("doContours").addClass("disabled");
+  $j("#doContours").removeClass("down");
+  have_contours=false;
+  contours_layer.removeAllFeatures();
   click.deactivate();
   $j('#fitprocessing').html("");
   doSelect();
@@ -474,6 +485,7 @@ function doGradient(){
 }
 
 function doContours(){
+  if($j("#doContours").hasClass("disabled")) return;
   if($j("#doContours").hasClass("down")) {
     $j("#doContours").removeClass("down");
     contours_layer.setVisibility(false);
@@ -481,18 +493,20 @@ function doContours(){
     $j("#doContours").addClass("down");
     contours_layer.setVisibility(true);
 
-    $j('#doContours').prop('disabled',true);
-    $j('#fit_submit').prop('disabled',true);
-    $j('#clear_fit').prop('disabled',true);
-    $j('#fitprocessing').html('<img src="img/processing.gif" width="16" height="16">');
+    if(!have_contours){
+      $j('#doContours').prop('disabled',true);
+      $j('#fit_submit').prop('disabled',true);
+      $j('#clear_fit').prop('disabled',true);
+      $j('#fitprocessing').html('<img src="img/processing.gif" width="16" height="16">');
 
-    //TODO: Should make a note if we already have the contour data
-    OpenLayers.Request.POST({
-      url: SERVER_URL,
-      params: {"type":"Contours","surf":Fit_station_str},
-      headers: {"Content-Type": "text/plain"},
-      callback: Contour_Handler
-    });
+      //TODO: Should make a note if we already have the contour data
+      OpenLayers.Request.POST({
+        url: SERVER_URL,
+        params: {"type":"Contours","surf":Fit_station_str},
+        headers: {"Content-Type": "text/plain"},
+        callback: Contour_Handler
+      });
+    }
   }
 }
 
