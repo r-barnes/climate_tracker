@@ -42,6 +42,7 @@
 					<label>Loop<input type="checkbox" id="animateloop"></label>
 				</div>
 				<div style="float:right;margin-right:2em;">
+          <a class="button" id="doContours" onClick="doContours()">Contours</a>
 					<input type="submit" value="Center MN" onClick="centerMN()">
 					<input type="submit" value="Center US" onClick="centerUS()">
 				</div>

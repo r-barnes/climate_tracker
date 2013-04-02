@@ -470,6 +470,13 @@ function doGradient(){
     $j("#gradient_submit").addClass("down");
 }
 
+function doContours(){
+  if($j("#doContours").hasClass("down"))
+    $j("#doContours").removeClass("down");
+  else
+    $j("#doContours").addClass("down");
+}
+
 function QuickSelect(){
   var qslist=quick_stations[$j('#quickstations').val()];
   var i,s;
