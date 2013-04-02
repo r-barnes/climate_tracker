@@ -62,6 +62,22 @@ var click;
 var selcontrol;
 var tracks;
 
+var station_style = new OpenLayers.StyleMap({
+  "default": new OpenLayers.Style({
+      pointRadius: "7", // sized according to type attribute
+      fillColor: "#ffcc66",
+      strokeColor: "#ff9933",
+      strokeWidth: 2,
+      graphicZIndex: 1,
+    fillOpacity:0.5
+  }),
+  "select": new OpenLayers.Style({
+      fillColor: "#66ccff",
+      strokeColor: "#3399ff",
+      graphicZIndex: 2
+  })
+});
+
 function display_stations(){
   var i,x;
   var count=0;
@@ -710,22 +726,6 @@ function init(){
   );
   ctylabel.setVisibility(false);
   map.addLayer(ctylabel);
-
-  var station_style = new OpenLayers.StyleMap({
-    "default": new OpenLayers.Style({
-        pointRadius: "7", // sized according to type attribute
-        fillColor: "#ffcc66",
-        strokeColor: "#ff9933",
-        strokeWidth: 2,
-        graphicZIndex: 1,
-      fillOpacity:0.5
-    }),
-    "select": new OpenLayers.Style({
-        fillColor: "#66ccff",
-        strokeColor: "#3399ff",
-        graphicZIndex: 2
-    })
-  });
 
 
   clustering = new OpenLayers.Strategy.AttributeCluster({attribute:"selected"});//AttributeCluster({attribute:'selected'})
