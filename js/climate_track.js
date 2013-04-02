@@ -365,6 +365,58 @@ function FitSurfaces(){
 }
 
 /////////////////////////////////
+//Contour Layer
+/////////////////////////////////
+var contours_layer;
+function Contour_Handler(request){
+  function process_incoming_contour(year,data){
+    var stylepoint = { strokeColor: '#ffffff',
+      strokeOpacity: 0.6,
+      pointRadius: 5
+    };
+    //Todo: Consider creating a number of sub-lines rather than line segments by creating a continuously-expanding array of points
+    var detrack=[];
+
+    for(var d=0;d<data.length;++d){
+      var newcontour = new OpenLayers.Geometry.LineString();
+      for(var p=0;p<data[d].length;++p){
+        newcontour.addPoint(new OpenLayers.Geometry.Point(data[d].x[p],data[d].y[p]));
+      }
+      var lineFeature=new OpenLayers.Feature.Vector(newcontour, null,
+        {strokeColor: '#0000ff', 
+          strokeOpacity: 1,//0.6,
+          strokeWidth: 8//5
+        }
+      );
+      lineFeature.attributes.when=parseFloat(years[i]);
+      contours_layer.addFeatures([lineFeature]);
+    }
+  }
+
+  $j('#stations_submit').removeClass("disabled");
+  $j('#clear_fit').prop('disabled',false);
+
+  if(request.status!=200 || request.responseText.substring(0,5)=="Error"){
+    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">'); //TODO
+    return;
+  }
+
+  $j('#trackprocessing').html('<img src="img/good.gif" width="16" height="16">');
+
+  try{
+    var contour_response=$j.parseJSON(request.responseText);
+  } catch (err) {
+    $j('#trackprocessing').html('<img src="img/bad.gif" width="16" height="16">');
+    return;
+  }
+
+  for(i in contour_response){
+    cn=contour_response[i];
+    process_incoming_contour(cn['year'],cn['data']);
+  }
+}
+
+/////////////////////////////////
 //GUI Controls
 /////////////////////////////////
 
