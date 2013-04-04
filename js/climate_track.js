@@ -322,9 +322,8 @@ function FitSurfaces_Handler(request){
   var data=$j.parseJSON(request.responseText);
   Fit_station_str=data.stations;
 
-//  return pyproj.Proj(proj='lcc',lat_1=latmin,lat_2=latmax,lon_0=loncenter,lat_0=latcenter,ellps='WGS84')
-
-  Proj4js.defs[Fit_station_str]='+title=LCC of Stations +proj=lcc +lat_2=' + data.fits.lat_2 + ' +lat_1=' + data.fits.lat_1 + ' +lat_0=' + data.fits.lat_0 + ' +lon_0=' + data.fits.lon_0 + "ellps='WGS84'" + '+units=m';
+  Proj4js.defs["CURRENT_FIT"]='+title=LCC of Stations +proj=lcc +lat_2=' + data.fits.lat_2 + ' +lat_1=' + data.fits.lat_1 + ' +lat_0=' + data.fits.lat_0 + ' +lon_0=' + data.fits.lon_0 + " +ellps='WGS84'" + ' +units=m';
+  var projdest = new Proj4js.Proj("CURRENT_FIT");
 
   $j('#clear_fit').prop('disabled',false);
   $j('#track_submit').removeClass("disabled");
