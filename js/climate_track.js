@@ -19,6 +19,7 @@ var Fit_station_str;
 var Fit_surf_params;
 var Fit_box=null;      //Holds vector object square denoting selected region
 var projdest;          //Used for performing projections and displaying surface values
+var Fit_surf_info=false;
 
 /////////////////////////////////
 //Map Object
@@ -323,7 +324,9 @@ function FitSurfaces_Handler(request){
   Fit_station_str=data.stations;
 
   Proj4js.defs["CURRENT_FIT"]='+title=LCC of Stations +proj=lcc +lat_2=' + data.fits.lat_2 + ' +lat_1=' + data.fits.lat_1 + ' +lat_0=' + data.fits.lat_0 + ' +lon_0=' + data.fits.lon_0 + " +ellps='WGS84'" + ' +units=m';
-  var projdest = new Proj4js.Proj("CURRENT_FIT");
+  projdest = new Proj4js.Proj("CURRENT_FIT");
+
+  Fit_surf_info=data.fits;
 
   $j('#clear_fit').prop('disabled',false);
   $j('#track_submit').removeClass("disabled");
@@ -680,11 +683,21 @@ function change_velocity_max(year){
 /////////////////////////////////
 var projsource = new Proj4js.Proj('EPSG:4326');
 
+function surf_val(x,y,fit){
+  return fit[0]*x*x+fit[1]*y*y+fit[2]*x*y+fit[3]*x+fit[4]*y+fit[5];
+}
+
 function display_surface_values(e){
-/*  var point = map.getLonLatFromPixel( this.events.getMousePosition(e) );
+  if(!Fit_surf_info) return;
+  var point = map.getLonLatFromPixel( this.events.getMousePosition(e) );
   point=new Proj4js.Point(point.lon,point.lat);
-  Proj4js.transform(source, dest, point);
-  $j('#surfacevalues').html(point.lon);*/
+  Proj4js.transform(projsource, projdest, point);
+  $j('#surfacevalues').html(
+    surf_val(point.x,point.y,Fit_surf_info.fits[map_year].temp).toFixed(1)
+    +"&deg;F, "
+    +surf_val(point.x,point.y,Fit_surf_info.fits[map_year].prcp).toFixed(1)
+    +'"'
+  );
 }
 
 /////////////////////////////////
