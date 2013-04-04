@@ -14,30 +14,19 @@
 		return $data;
 	}
 
-	function DoData($stations, $season){
-		switch($season){
-			case 'yearly':
-				$mstr="";break;
-			case 'winter':
-				$mstr="-M 11,12,1,2";break;
-			case 'summer':
-				$mstr="-M 6,7,8";break;
-			default:
-				return false;
-		}
-
-		if(!file_exists("temp/$stations.$season.temp")){
-			exec("./do_monthly_temp.exe -L 1890 -U 2011 -P temp/$stations.$season $mstr -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.avg -c data/ahccd/temp/TempStations.csv", $output, $ret);
-//			exec("./do_gdd -L 1890 -P temp/$stations.$season $mstr -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
-//			exec("./do_hdd -L 1890 -P temp/$stations.$season $mstr -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
+	function DoData($stations){
+		if(!file_exists("temp/$stations.temp")){
+			exec("./do_monthly_temp.exe -L 1890 -U 2011 -P temp/$stations $mstr -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.avg -c data/ahccd/temp/TempStations.csv", $output, $ret);
+//			exec("./do_gdd -L 1890 -P temp/$stations -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
+//			exec("./do_hdd -L 1890 -P temp/$stations -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
 			if($ret!=0){
 				print "Error: Failed to extract temperature data.";
 				return false;
 			}
 		}
 
-		if(!file_exists("temp/$stations.$season.prcp")){
-			exec("./do_monthly_prcp.exe -L 1890 -U 2011 -P temp/$stations.$season $mstr -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.pcp -c data/ahccd/prcp/PrcpStations.csv", $output, $ret);
+		if(!file_exists("temp/$stations.prcp")){
+			exec("./do_monthly_prcp.exe -L 1890 -U 2011 -P temp/$stations -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.pcp -c data/ahccd/prcp/PrcpStations.csv", $output, $ret);
 			if($ret!=0)
 				return false;
 		}
@@ -45,20 +34,12 @@
 		return true;
 	}
 
-	function DoSurfaces($stations, $season){
-		switch($season){
-			case 'yearly':
-			case 'winter':
-			case 'summer':
-				break;
-			default:
-				return false;
-		}
-		if(!file_exists("products/$stations.$season.surfaces")){
-			exec("./ctrack fit products/$stations.$season.surfaces temp/$stations.$season.PRCP temp/$stations.$season.TAVG", $output, $ret);
+	function DoSurfaces($stations){
+		if(!file_exists("products/$stations.surfaces")){
+			exec("./ctrack fit products/$stations.surfaces temp/$stations.PRCP temp/$stations.TAVG", $output, $ret);
 			if($ret!=0){
 				print "Error: Failed to fit surfaces!\n";
-				print "Tried: products/$stations.$season.surfaces temp/$stations.$season.PRCP temp/$stations.$season.TAVG\n";
+				print "Tried: products/$stations.surfaces temp/$stations.PRCP temp/$stations.TAVG\n";
 				return false;
 			}
 		}
@@ -82,12 +63,12 @@
 		}
 
 		//Have we already constructed the averages for these stations/season?
-		if(!DoData($stations,'yearly')){
+		if(!DoData($stations)){
 			print "Error: Failed construct yearly climate averages";
 			return false;
     }
 
-		if(!DoSurfaces($stations,'yearly')){
+		if(!DoSurfaces($stations)){
 			print "Error: Failed to construct yearly surfaces";
 			return false;
 		}
@@ -100,7 +81,7 @@
 		return sha1($stations.$x.$y);
 	}
 
-	function DoTrack($stations,$season,$x,$y,$backtrack){
+	function DoTrack($stations,$x,$y,$backtrack){
 		$hash=HashSurfaceLoc($stations,$x,$y);
 
 		if($backtrack)
@@ -108,13 +89,13 @@
 		else
 			$track="track";
 
-		if(!file_exists("products/$hash.$season.track")){
-			exec("./ctrack $track products/$stations.$season.surfaces products/$hash.$season.track $x $y",$output,$ret);
+		if(!file_exists("products/$hash.track")){
+			exec("./ctrack $track products/$stations.surfaces products/$hash.track $x $y",$output,$ret);
 			if($ret!=0)
 				return false;
 		}
 
-		return file_get_contents("products/$hash.$season.track");
+		return file_get_contents("products/$hash.track");
 	}
 
 	function Track(){
@@ -132,7 +113,7 @@
 		$x=(float)$_REQUEST['x'];
 		$y=(float)$_REQUEST['y'];
 
-		if($track=DoTrack($stations,'yearly',$x,$y,$backtrack)){
+		if($track=DoTrack($stations,$x,$y,$backtrack)){
 			print "[$track]";
 		} else {
 			print "Error: Failed to track intersection of yearly surfaces";
@@ -143,16 +124,16 @@
 	}
 
 
-	function DoGradient($stations,$season,$x,$y,$year){
+	function DoGradient($stations,$x,$y,$year){
 		$hash=HashSurfaceLoc($stations,$x,$y);
 
-		if(!file_exists("products/$hash.$season.$year.grad")){
-			exec("./ctrack gradient products/$stations.$season.surfaces products/$hash.$season.$year.grad $x $y $year",$output,$ret);
+		if(!file_exists("products/$hash.$year.grad")){
+			exec("./ctrack gradient products/$stations.surfaces products/$hash.$year.grad $x $y $year",$output,$ret);
 			if($ret!=0)
 				return false;
 		}
 
-		return file_get_contents("products/$hash.$season.$year.grad");
+		return file_get_contents("products/$hash.$year.grad");
 	}
 
 
@@ -172,7 +153,7 @@
 		$x=(float)$_REQUEST['x'];
 		$y=(float)$_REQUEST['y'];
 
-		if($track=DoGradient($stations,'yearly',$x,$y,$year)){
+		if($track=DoGradient($stations,$x,$y,$year)){
 			print "[$track]";
 		} else {
 			print "Error: Failed to track intersection of yearly surfaces";
@@ -190,13 +171,13 @@
 	function Contours(){
 		$surf=$_REQUEST['surf'];
 
-		if(!file_exists("products/$surf.yearly.contours")){
-			exec("./ctrack contours products/$surf.yearly.surfaces products/$surf.yearly.contours",$output,$ret);
+		if(!file_exists("products/$surf.contours")){
+			exec("./ctrack contours products/$surf.surfaces products/$surf.contours",$output,$ret);
 			if($ret!=0)
 				print "Error: Failed to run contour program.";
 		}
 
-		print file_get_contents("products/$surf.yearly.contours");
+		print file_get_contents("products/$surf.contours");
 	}
 
 
