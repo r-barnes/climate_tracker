@@ -689,7 +689,7 @@ function surf_val(x,y,fit){
 
 function display_surface_values(e){
   if(!Fit_surf_info) return;
-  var point = map.getLonLatFromPixel( this.events.getMousePosition(e) );
+  var point = map.getLonLatFromViewPortPx(e.xy);
   point=new Proj4js.Point(point.lon,point.lat);
   Proj4js.transform(projsource, projdest, point);
   $j('#surfacevalues').html(
@@ -812,7 +812,7 @@ function init(){
       $j('#clear_fit').prop('disabled',true);
       $j('#trackprocessing').html('<img src="img/processing.gif" width="16" height="16">');
       Track_time=new Date().getTime();
-        var lonlat = map.getLonLatFromViewPortPx(e.xy);
+      var lonlat = map.getLonLatFromViewPortPx(e.xy);
       TrackParams=Fit_surf_params;
       if( $j("#gradient_submit").hasClass("down") ){
         TrackParams.type="Gradient";
