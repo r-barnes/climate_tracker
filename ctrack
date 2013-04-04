@@ -216,6 +216,9 @@ def doFit():
   except:
     print "Failed to open fitted surfaces output file!"
     sys.exit(-1)
+  print '{"prcp":[' + ','.join(['{"year":'+str(k)+',"fit":['+','.join([str(i) for i in v['fit']])+"]}" for k,v in prcp.items()]),
+  print '],"temp":[' + ','.join(['{"year":'+str(k)+',"fit":['+','.join([str(i) for i in v['fit']])+"]}" for k,v in prcp.items()]),
+  print ']}'
   sys.exit(0)
 
 def doTrack():
