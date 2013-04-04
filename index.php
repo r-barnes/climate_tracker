@@ -34,7 +34,6 @@
 				<a class="button" id="backtrack_submit" onClick="doBackTrack()">Backtrack</a>
 				<a class="button" id="gradient_submit" onClick="doGradient()">Gradient</a>
 				<span id="trackprocessing" style="margin-right:5em;"></span>
-				<select id="which_season" style="display:none"><option>Summer</option><option>Winter</option></select>
 
 				<div style="float:right">
 					<a class="button" id="animate_submit" onClick="Animate()">Animate</a>
@@ -83,8 +82,6 @@
 		<input type="submit" id="fit_submit" value="Fit Surfaces" onClick="FitSurfaces()" disabled="true">
 		<input type="submit" id="clear_fit" value="Clear" onClick="ClearStations()" disabled="true">
 		<input type="submit" id="fit_box_toggle" value="Box" onClick="ToggleFitBox()">
-		<br><select id="surface_type" style="display:none;"><option>Linear</option><option selected>Quad</option></select>
-		<select id="do_seasonal" onchange="year_season_select(this.value)" style="display:none"><option selected>Yearly</option><option>Seasonal</option></select>
 		<br>
 		<select id="quickstations">
 		</select>
@@ -94,11 +91,6 @@
 		<b>Track List (<span id="tracknum">0</span>)</b><input type="submit" id="track_hash_load" onClick="TrackHashLoad()" value="Load">
 		<select id="interesting_surfaces" style="width:100%">
 			<option value="box">From Box Below</option>
-<!--				<option value="9b2f3aec1d109ca7a47d1172dc5b451c4fa1727c.quad.yearly">Twin Cities</option>
-			<option value="c7d18e8b54657eec65b20b5dd64ba743abe4182f.quad.yearly">Red River Valley</option>
-			<option value="c8a89c3d652540684e63157fbe7d846107a2f248.quad.yearly">Duluth</option>
-			<option value="fc6fd50e36c9e2337b4a91476f030c4e2769d9d0.quad.yearly">Rochester</option>
-			<option value="65340d4a4c30e00482fc68ff19bd165ed9694ee9.quad.yearly">Marshall</option>-->
 		</select>
 		<br><input id="track_hashes" type="text" style="width:100%">
 		<br><div id="tracklist" style="height:10em;border:1px solid black;overflow-y:scroll;">
