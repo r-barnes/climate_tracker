@@ -18,21 +18,12 @@ var SERVER_URL="./server.php";
 var Fit_station_str;
 var Fit_surf_params;
 var Fit_box=null;      //Holds vector object square denoting selected region
+var projdest;          //Used for performing projections and displaying surface values
 
 /////////////////////////////////
 //Map Object
 /////////////////////////////////
 var map;
-
-/////////////////////////////////
-//Base Layer
-/////////////////////////////////
-var wms_north_america;
-
-var wms;
-
-/*var wms_states = new OpenLayers.Layer.WMS("States","http://mrdata.usgs.gov/cgi-bin/mapserv?",{map: 'usstates.map', transparent: 'true', layers: 'states'}, {singleTile: 'true', ratio: 1, isBaseLayer:'true'});
-map.addLayer(wms_states);*/
 
 /////////////////////////////////
 //Useful Functions
@@ -328,7 +319,13 @@ function FitSurfaces_Handler(request){
     return;
   }
 
-  Fit_station_str=request.responseText;
+  var data=$j.parseJSON(request.responseText);
+  Fit_station_str=data.stations;
+
+//  return pyproj.Proj(proj='lcc',lat_1=latmin,lat_2=latmax,lon_0=loncenter,lat_0=latcenter,ellps='WGS84')
+
+  Proj4js.defs[Fit_station_str]='+title=LCC of Stations +proj=lcc +lat_2=' + data.fits.lat_2 + ' +lat_1=' + data.fits.lat_1 + ' +lat_0=' + data.fits.lat_0 + ' +lon_0=' + data.fits.lon_0 + "ellps='WGS84'" + '+units=m';
+
   $j('#clear_fit').prop('disabled',false);
   $j('#track_submit').removeClass("disabled");
   $j('#track_submit').addClass("down");
@@ -680,6 +677,18 @@ function change_velocity_max(year){
 }
 
 /////////////////////////////////
+//DISPLAY SURFACE VALUES
+/////////////////////////////////
+var projsource = new Proj4js.Proj('EPSG:4326');
+
+function display_surface_values(e){
+/*  var point = map.getLonLatFromPixel( this.events.getMousePosition(e) );
+  point=new Proj4js.Point(point.lon,point.lat);
+  Proj4js.transform(source, dest, point);
+  $j('#surfacevalues').html(point.lon);*/
+}
+
+/////////////////////////////////
 //Initialise
 /////////////////////////////////
 function init(){
@@ -760,7 +769,6 @@ function init(){
   });
 
   map.addLayer(contours_layer);
-
 
   OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {                
     defaultHandlerOptions: {
@@ -865,10 +873,7 @@ function init(){
             subdivisions: 2, // default is 2
             displaySystem: 'english'
           }));
-  map.events.register("mousemove", map, function (e) {            
-    var point = map.getLonLatFromPixel( this.events.getMousePosition(e) )     
-    $j('#surfacevalues').html(point.lon);
-  });
+  map.events.register("mousemove", map, display_surface_values);
 
   var i;
   for(i in quick_stations)
