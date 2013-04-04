@@ -13,6 +13,8 @@
 
     <script src="js/jquery.layout.min-1.3.0.js"></script>
 
+    <script src="proj4js/proj4js-compressed.js"></script>
+
     <script src="openlayers/OpenLayers.js"></script>
     <script src="openlayers/OpenLayers_AddOns.js"></script>
 		<script src="openlayers/OpenLayers_ScaleBar.js"></script>
