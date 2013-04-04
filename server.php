@@ -57,6 +57,11 @@
 			}
 		}
 
+		if(!file_exists("products/$stations.fits_json")){
+      print "Error: Failed to retrieve cached fits.";
+      return false;
+    }
+
     $fits_json=file_get_contents("products/$stations.fits_json");
     print '{"stations":"'.$stations.'","fits":'.$fits_json.'}';
 		return true;
