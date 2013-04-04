@@ -14,39 +14,6 @@
 		return $data;
 	}
 
-	function DoData($stations){
-		if(!file_exists("temp/$stations.temp")){
-			exec("./do_monthly_temp.exe -L 1890 -U 2011 -P temp/$stations $mstr -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.avg -c data/ahccd/temp/TempStations.csv", $output, $ret);
-//			exec("./do_gdd -L 1890 -P temp/$stations -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
-//			exec("./do_hdd -L 1890 -P temp/$stations -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
-			if($ret!=0){
-				print "Error: Failed to extract temperature data.";
-				return false;
-			}
-		}
-
-		if(!file_exists("temp/$stations.prcp")){
-			exec("./do_monthly_prcp.exe -L 1890 -U 2011 -P temp/$stations -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.pcp -c data/ahccd/prcp/PrcpStations.csv", $output, $ret);
-			if($ret!=0)
-				return false;
-		}
-
-		return true;
-	}
-
-	function DoSurfaces($stations){
-		if(!file_exists("products/$stations.surfaces")){
-			exec("./ctrack fit products/$stations.surfaces temp/$stations.PRCP temp/$stations.TAVG", $output, $ret);
-			if($ret!=0){
-				print "Error: Failed to fit surfaces!\n";
-				print "Tried: products/$stations.surfaces temp/$stations.PRCP temp/$stations.TAVG\n";
-				return false;
-			}
-		}
-		return true;
-	}
-
-//		print '{"tracks":[{"lat":[45.1,43.97,47.6],"lon":[-95.2,-94.3,-96.2]}]}';
 	function FitSurfaces(){
 		$list=PrepareSurfaceList();
 		$stations=HashSurfaceList($list);
@@ -63,14 +30,31 @@
 		}
 
 		//Have we already constructed the averages for these stations/season?
-		if(!DoData($stations)){
-			print "Error: Failed construct yearly climate averages";
-			return false;
-    }
+		if(!file_exists("temp/$stations.temp")){
+			exec("./do_monthly_temp.exe -L 1890 -U 2011 -P temp/$stations $mstr -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.avg -c data/ahccd/temp/TempStations.csv", $output, $ret);
+//			exec("./do_gdd -L 1890 -P temp/$stations -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
+//			exec("./do_hdd -L 1890 -P temp/$stations -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
+			if($ret!=0){
+				print "Error: Failed to extract temperature data.";
+				return false;
+			}
+		}
 
-		if(!DoSurfaces($stations)){
-			print "Error: Failed to construct yearly surfaces";
-			return false;
+		if(!file_exists("temp/$stations.prcp")){
+			exec("./do_monthly_prcp.exe -L 1890 -U 2011 -P temp/$stations -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.pcp -c data/ahccd/prcp/PrcpStations.csv", $output, $ret);
+			if($ret!=0){
+        print "Error: Failed to extract precipitation data.";
+				return false;
+      }
+		}
+
+		if(!file_exists("products/$stations.surfaces")){
+			exec("./ctrack fit products/$stations.surfaces temp/$stations.PRCP temp/$stations.TAVG", $output, $ret);
+			if($ret!=0){
+				print "Error: Failed to fit surfaces!\n";
+				print "Tried: products/$stations.surfaces temp/$stations.PRCP temp/$stations.TAVG\n";
+				return false;
+			}
 		}
 
 		print $stations;
