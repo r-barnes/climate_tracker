@@ -212,7 +212,7 @@ def doFit():
   prcp=SurfaceFit(surfproj,sys.argv[3])
   temp=SurfaceFit(surfproj,sys.argv[4])
   try:
-    fout=open(foutname+".fits","wb")
+    fout=open(foutname+".surfaces","wb")
     cPickle.dump( {"prcp":prcp, "temp":temp, "proj":surfproj}, fout )
     fout.close()
   except:
