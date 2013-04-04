@@ -69,15 +69,6 @@
 	function FitSurfaces(){
 		$list=PrepareSurfaceList();
 		$stations=HashSurfaceList($list);
-		switch($_REQUEST['do_seasonal']){
-			case 'Yearly':
-				$seasonal='yearly';		break;
-			case 'Seasonal':
-				$seasonal='seasonal';	break;
-			default:
-				print "Error: Unrecognised season";
-				return false;
-		}
 
 		//Do we have the list of stations ready to input into average-calculator?
 		if(!file_exists("products/$stations.stations")){
@@ -91,21 +82,13 @@
 		}
 
 		//Have we already constructed the averages for these stations/season?
-		if($seasonal=='yearly' && !DoData($stations,'yearly')){
+		if(!DoData($stations,'yearly')){
 			print "Error: Failed construct yearly climate averages";
 			return false;
-		} elseif($seasonal=='seasonal' && (	!DoData($stations,'winter') || 
-											!DoData($stations,'summer'))) {
-			print "Error: Failed to construct seasonal climate averages";
-			return false;
-		}
+    }
 
-		if($seasonal=='yearly' && !DoSurfaces($stations,'yearly')){
+		if(!DoSurfaces($stations,'yearly')){
 			print "Error: Failed to construct yearly surfaces";
-			return false;
-		} elseif($seasonal=='seasonal' && (	!DoSurfaces($stations,'winter') ||
-											!DoSurfaces($stations,'summer'))) {
-			print "Error: Failed to construct seasonal surfaces";
 			return false;
 		}
 
@@ -137,15 +120,6 @@
 	function Track(){
 		$stations=$_REQUEST['surf'];
 
-		if($_REQUEST['do_seasonal']=='Yearly')
-			$seasonal='yearly';
-		elseif($_REQUEST['do_seasonal']=='Seasonal')
-			$seasonal='seasonal';
-		else{
-			print "Error: Unrecognised Season";
-			return false;
-		}
-
 		if($_REQUEST['backtrack']=='true')
 			$backtrack=true;
 		else
@@ -158,22 +132,11 @@
 		$x=(float)$_REQUEST['x'];
 		$y=(float)$_REQUEST['y'];
 
-
-		if($seasonal=='yearly'){
-			if($track=DoTrack($stations,'yearly',$x,$y,$backtrack)){
-				print "[$track]";
-			} else {
-				print "Error: Failed to track intersection of yearly surfaces";
-				return false;
-			}
-		} elseif($seasonal=='seasonal'){
-			if(	($track1=DoTrack($stations,'winter',$x,$y,$backtrack)) &&
-				($track2=DoTrack($stations,'summer',$x,$y,$backtrack))){
-				print "[$track1,$track2]";
-			} else {
-				print "Error: Failed to track intersections of seasonal surfaces";
-				return false;
-			}
+		if($track=DoTrack($stations,'yearly',$x,$y,$backtrack)){
+			print "[$track]";
+		} else {
+			print "Error: Failed to track intersection of yearly surfaces";
+			return false;
 		}
 
 		return true;
@@ -197,15 +160,6 @@
 		$stations=$_REQUEST['surf'];
 		$year=$_REQUEST['year'];
 
-		if($_REQUEST['do_seasonal']=='Yearly')
-			$seasonal='yearly';
-		elseif($_REQUEST['do_seasonal']=='Seasonal')
-			$seasonal='seasonal';
-		else{
-			print "Error: Unrecognised Season";
-			return false;
-		}
-
 		if($_REQUEST['backtrack']=='true')
 			$backtrack=true;
 		else
@@ -218,22 +172,11 @@
 		$x=(float)$_REQUEST['x'];
 		$y=(float)$_REQUEST['y'];
 
-
-		if($seasonal=='yearly'){
-			if($track=DoGradient($stations,'yearly',$x,$y,$year)){
-				print "[$track]";
-			} else {
-				print "Error: Failed to track intersection of yearly surfaces";
-				return false;
-			}
-		} elseif($seasonal=='seasonal'){
-			if(	($track1=DoGradient($stations,'winter',$x,$y,$year)) &&
-				($track2=DoGradient($stations,'summer',$x,$y,$year))){
-				print "[$track1,$track2]";
-			} else {
-				print "Error: Failed to track intersections of seasonal surfaces";
-				return false;
-			}
+		if($track=DoGradient($stations,'yearly',$x,$y,$year)){
+			print "[$track]";
+		} else {
+			print "Error: Failed to track intersection of yearly surfaces";
+			return false;
 		}
 
 		return true;
