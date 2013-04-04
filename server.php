@@ -45,14 +45,7 @@
 		return true;
 	}
 
-	function DoSurfaces($stations, $season, $surf){
-		switch($surf){ #Todo: Doesn't do planar fitting
-			case 'quad':
-			case 'plane':
-				break;
-			default:
-				return false;
-		}
+	function DoSurfaces($stations, $season){
 		switch($season){
 			case 'yearly':
 			case 'winter':
@@ -76,15 +69,6 @@
 	function FitSurfaces(){
 		$list=PrepareSurfaceList();
 		$stations=HashSurfaceList($list);
-		switch($_REQUEST['surface_type']){
-			case 'Quad':
-				$surf='quad';	break;
-			case 'Linear':
-				$surf='plane';	break;
-			default:
-				print "Error: Unrecognised surface type";
-				return false;
-		}
 		switch($_REQUEST['do_seasonal']){
 			case 'Yearly':
 				$seasonal='yearly';		break;
@@ -116,11 +100,11 @@
 			return false;
 		}
 
-		if($seasonal=='yearly' && !DoSurfaces($stations,'yearly',$surf)){
+		if($seasonal=='yearly' && !DoSurfaces($stations,'yearly')){
 			print "Error: Failed to construct yearly surfaces";
 			return false;
-		} elseif($seasonal=='seasonal' && (	!DoSurfaces($stations,'winter',$surf) ||
-											!DoSurfaces($stations,'summer',$surf))) {
+		} elseif($seasonal=='seasonal' && (	!DoSurfaces($stations,'winter') ||
+											!DoSurfaces($stations,'summer'))) {
 			print "Error: Failed to construct seasonal surfaces";
 			return false;
 		}
@@ -133,7 +117,7 @@
 		return sha1($stations.$x.$y);
 	}
 
-	function DoTrack($stations,$surf,$season,$x,$y,$backtrack){
+	function DoTrack($stations,$season,$x,$y,$backtrack){
 		$hash=HashSurfaceLoc($stations,$x,$y);
 
 		if($backtrack)
@@ -153,15 +137,6 @@
 	function Track(){
 		$stations=$_REQUEST['surf'];
 
-		if($_REQUEST['surface_type']=='Quad')
-			$surf='quad';
-		elseif($_REQUEST['surface_type']=='Linear')
-			$surf='plane';
-		else{
-			print "Error: Unrecognised Surface";
-			return false;
-		}
-
 		if($_REQUEST['do_seasonal']=='Yearly')
 			$seasonal='yearly';
 		elseif($_REQUEST['do_seasonal']=='Seasonal')
@@ -185,15 +160,15 @@
 
 
 		if($seasonal=='yearly'){
-			if($track=DoTrack($stations,$surf,'yearly',$x,$y,$backtrack)){
+			if($track=DoTrack($stations,'yearly',$x,$y,$backtrack)){
 				print "[$track]";
 			} else {
 				print "Error: Failed to track intersection of yearly surfaces";
 				return false;
 			}
 		} elseif($seasonal=='seasonal'){
-			if(	($track1=DoTrack($stations,$surf,'winter',$x,$y,$backtrack)) &&
-				($track2=DoTrack($stations,$surf,'summer',$x,$y,$backtrack))){
+			if(	($track1=DoTrack($stations,'winter',$x,$y,$backtrack)) &&
+				($track2=DoTrack($stations,'summer',$x,$y,$backtrack))){
 				print "[$track1,$track2]";
 			} else {
 				print "Error: Failed to track intersections of seasonal surfaces";
@@ -205,7 +180,7 @@
 	}
 
 
-	function DoGradient($stations,$surf,$season,$x,$y,$year){
+	function DoGradient($stations,$season,$x,$y,$year){
 		$hash=HashSurfaceLoc($stations,$x,$y);
 
 		if(!file_exists("products/$hash.$season.$year.grad")){
@@ -222,15 +197,6 @@
 		$stations=$_REQUEST['surf'];
 		$year=$_REQUEST['year'];
 
-		if($_REQUEST['surface_type']=='Quad')
-			$surf='quad';
-		elseif($_REQUEST['surface_type']=='Linear')
-			$surf='plane';
-		else{
-			print "Error: Unrecognised Surface";
-			return false;
-		}
-
 		if($_REQUEST['do_seasonal']=='Yearly')
 			$seasonal='yearly';
 		elseif($_REQUEST['do_seasonal']=='Seasonal')
@@ -254,15 +220,15 @@
 
 
 		if($seasonal=='yearly'){
-			if($track=DoGradient($stations,$surf,'yearly',$x,$y,$year)){
+			if($track=DoGradient($stations,'yearly',$x,$y,$year)){
 				print "[$track]";
 			} else {
 				print "Error: Failed to track intersection of yearly surfaces";
 				return false;
 			}
 		} elseif($seasonal=='seasonal'){
-			if(	($track1=DoGradient($stations,$surf,'winter',$x,$y,$year)) &&
-				($track2=DoGradient($stations,$surf,'summer',$x,$y,$year))){
+			if(	($track1=DoGradient($stations,'winter',$x,$y,$year)) &&
+				($track2=DoGradient($stations,'summer',$x,$y,$year))){
 				print "[$track1,$track2]";
 			} else {
 				print "Error: Failed to track intersections of seasonal surfaces";
