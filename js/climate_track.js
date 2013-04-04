@@ -372,7 +372,7 @@ function FitSurfaces(){
   tracks.addFeatures([Fit_box]);
 
   FitSurfaces_time=new Date().getTime();
-  Fit_surf_params={"type":"FitSurfaces","data":Fit_station_str,"bounds":bounds.toString(),"do_seasonal":$j('#do_seasonal').val()};
+  Fit_surf_params={"type":"FitSurfaces","data":Fit_station_str,"bounds":bounds.toString()};
   var request = OpenLayers.Request.POST({
     url: SERVER_URL,
     params: Fit_surf_params,
