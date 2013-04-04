@@ -31,7 +31,7 @@
 
 		//Have we already constructed the averages for these stations/season?
 		if(!file_exists("temp/$stations.temp")){
-			exec("./do_monthly_temp.exe -L 1890 -U 2011 -P temp/$stations $mstr -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.avg -c data/ahccd/temp/TempStations.csv", $output, $ret);
+			exec("./do_monthly_temp.exe -L 1890 -U 2011 -P temp/$stations -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.avg -c data/ahccd/temp/TempStations.csv", $output, $ret);
 //			exec("./do_gdd -L 1890 -P temp/$stations -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
 //			exec("./do_hdd -L 1890 -P temp/$stations -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
 			if($ret!=0){
@@ -49,15 +49,16 @@
 		}
 
 		if(!file_exists("products/$stations.surfaces")){
-			exec("./ctrack fit products/$stations.surfaces temp/$stations.PRCP temp/$stations.TAVG", $output, $ret);
+			exec("./ctrack fit products/$stations temp/$stations.PRCP temp/$stations.TAVG", $output, $ret);
 			if($ret!=0){
 				print "Error: Failed to fit surfaces!\n";
-				print "Tried: products/$stations.surfaces temp/$stations.PRCP temp/$stations.TAVG\n";
+				print "Tried: products/$stations temp/$stations.PRCP temp/$stations.TAVG\n";
 				return false;
 			}
 		}
 
-		print $stations;
+    $fits_json=file_get_contents("products/$stations.fits_json");
+    print '{"stations":"'.$stations.'","fits":'.$fits_json.'}';
 		return true;
 	}
 
