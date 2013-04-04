@@ -49,6 +49,7 @@
 			<div id="mapwrapper" style="margin:5px 0 5px 0;width:100%;position:relative;">
 				<div id="year_range_value">2011</div>
 				<div style="width:100%; height:600px; border:1px solid black;" id="map"></div>
+        <div id="surfacevalues">Cheese</div>
 			</div>
 			<div id="year_range_div" style="text-align:center;width:100%;height:5em">
 				<div id="year_range" style="width:90%;margin:10px auto 0 auto"></div>
