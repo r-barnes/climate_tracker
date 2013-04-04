@@ -865,6 +865,11 @@ function init(){
             subdivisions: 2, // default is 2
             displaySystem: 'english'
           }));
+  map.events.register("mousemove", map, function (e) {            
+    var point = map.getLonLatFromPixel( this.events.getMousePosition(e) )     
+    $j('#surfacevalues').html(point.lon);
+  });
+
   var i;
   for(i in quick_stations)
     AddItem("quickstations",quick_stations[i][0],i);
