@@ -61,7 +61,9 @@ def GetProjection(prcp,temp):
   loncenter=(lonmin+lonmax)/2.0
   latcenter=(latmin+latmax)/2.0
 
-  return pyproj.Proj(proj='lcc',lat_1=latmin,lat_2=latmax,lon_0=loncenter,lat_0=latcenter,ellps='WGS84')
+  projdata='"lat_1":%f,"lat_2":%f,"lon_0":%f,"lat_0":%f' % (latmin,latmax,loncenter,latcenter)
+
+  return pyproj.Proj(proj='lcc', lat_1=latmin, lat_2=latmax, lon_0=loncenter, lat_0=latcenter, ellps='WGS84'), projdata
 
 def SurfaceFit(surfproj,datafile):
   csvreader=csv.reader(open(datafile, 'r'), delimiter=' ')
@@ -206,19 +208,25 @@ def GradientPoint(surfproj,lon,lat,prcp,temp,year):
 
 def doFit():
   foutname=sys.argv[2]
-  surfproj=GetProjection(sys.argv[3],sys.argv[4])
+  surfproj,projdata=GetProjection(sys.argv[3],sys.argv[4])
   prcp=SurfaceFit(surfproj,sys.argv[3])
   temp=SurfaceFit(surfproj,sys.argv[4])
   try:
-    fout=open(foutname,"wb")
+    fout=open(foutname+".fits","wb")
     cPickle.dump( {"prcp":prcp, "temp":temp, "proj":surfproj}, fout )
     fout.close()
   except:
     print "Failed to open fitted surfaces output file!"
     sys.exit(-1)
-  print '{"prcp":[' + ','.join(['{"year":'+str(k)+',"fit":['+','.join([str(i) for i in v['fit']])+"]}" for k,v in prcp.items()]),
-  print '],"temp":[' + ','.join(['{"year":'+str(k)+',"fit":['+','.join([str(i) for i in v['fit']])+"]}" for k,v in prcp.items()]),
-  print ']}'
+
+  fout=open(foutname+".fits_json",'w')
+  fout.write('{')
+  fout.write(projdata + ',')
+  fout.write('"fits":{')
+  fout.write(','.join(['"'+str(y)+'":{"temp":[' +','.join([str(i) for i in temp[y]['fit']])+'],"prcp":[' + ','.join([str(i) for i in prcp[y]['fit']])+']}' for y in prcp]))
+  fout.write('}}')
+  fout.close()
+
   sys.exit(0)
 
 def doTrack():
