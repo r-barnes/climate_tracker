@@ -89,6 +89,7 @@
 	}
 
 	function Track(){
+    $_REQUEST=json_decode(file_get_contents('php://input'), true);
 		$stations=$_REQUEST['surf'];
 
 		if($_REQUEST['backtrack']=='true')
@@ -128,6 +129,8 @@
 
 
 	function Gradient(){
+    $_REQUEST=json_decode(file_get_contents('php://input'), true);
+
 		$stations=$_REQUEST['surf'];
 		$year=$_REQUEST['year'];
 
@@ -189,6 +192,11 @@
 			print "Error: Track file not found.";
 		return;
 	}
+
+  var_dump(file_get_contents('php://input'), true);
+  $contents = ob_get_contents();
+  ob_end_clean();
+  error_log($contents);
 
 	if($_REQUEST['type']=='FitSurfaces')
 		FitSurfaces();

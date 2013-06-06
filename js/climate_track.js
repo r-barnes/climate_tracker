@@ -829,7 +829,8 @@ function init(){
       TrackParams.year=$j('#year_range').slider("value");
       var request = OpenLayers.Request.POST({
         url: SERVER_URL,
-        params: TrackParams,
+        params: {"type":TrackParams.type},
+        data: JSON.stringify(TrackParams),
         headers: {"Content-Type": "text/plain"},
         callback: TrackParams.callback
       });
