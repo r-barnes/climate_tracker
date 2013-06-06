@@ -30,30 +30,34 @@
 			fclose($fout);
 		}
 
-    error_log("ClimateTracker: Constructing monthly temperatures");
 		//Have we already constructed the averages for these stations/season?
 		if(!file_exists("temp/$stations.temp")){
+      error_log("ClimateTracker: Constructing monthly temperatures");
+      error_log("Using: " . "./do_monthly_temp.exe -L 1890 -U 2011 -P temp/$stations -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.avg -c data/ahccd/temp/TempStations.csv");
 			exec("./do_monthly_temp.exe -L 1890 -U 2011 -P temp/$stations -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.avg -c data/ahccd/temp/TempStations.csv", $output, $ret);
-//			exec("./do_gdd -L 1890 -P temp/$stations -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
-//			exec("./do_hdd -L 1890 -P temp/$stations -a products/$stations.stations -s ushcn_daily/ushcn-stations.txt -d ushcn_daily/us_daily.txt", $output, $ret);
+      error_log("Output: " . implode('//',$output));
 			if($ret!=0){
 				print "Error: Failed to extract temperature data.";
 				return false;
 			}
 		}
 
-    error_log("ClimateTracker: Constructing monthly precipitations");
 		if(!file_exists("temp/$stations.prcp")){
+      error_log("ClimateTracker: Constructing monthly precipitations");
+      error_log("Using: " . "./do_monthly_prcp.exe -L 1890 -U 2011 -P temp/$stations -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.pcp -c data/ahccd/prcp/PrcpStations.csv");
 			exec("./do_monthly_prcp.exe -L 1890 -U 2011 -P temp/$stations -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.pcp -c data/ahccd/prcp/PrcpStations.csv", $output, $ret);
+      error_log("Output: " . implode('//',$output));
 			if($ret!=0){
         print "Error: Failed to extract precipitation data.";
 				return false;
       }
 		}
 
-    error_log("ClimateTracker: Fitting surfaces");
 		if(!file_exists("products/$stations.surfaces")){
+      error_log("ClimateTracker: Fitting surfaces");
+      error_log("Using: " . "./ctrack fit products/$stations temp/$stations.PRCP temp/$stations.TAVG");
 			exec("./ctrack fit products/$stations temp/$stations.PRCP temp/$stations.TAVG", $output, $ret);
+      error_log("Output: " . implode('//',$output));
 			if($ret!=0){
 				print "Error: Failed to fit surfaces!\n";
 				print "Tried: products/$stations temp/$stations.PRCP temp/$stations.TAVG\n";
