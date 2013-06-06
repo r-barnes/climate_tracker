@@ -18,6 +18,7 @@
 		$list=PrepareSurfaceList();
 		$stations=HashSurfaceList($list);
 
+    error_log("ClimateTracker: Getting list of stations");
 		//Do we have the list of stations ready to input into average-calculator?
 		if(!file_exists("products/$stations.stations")){
 			$fout=fopen("products/$stations.stations","w");
@@ -29,6 +30,7 @@
 			fclose($fout);
 		}
 
+    error_log("ClimateTracker: Constructing monthly temperatures");
 		//Have we already constructed the averages for these stations/season?
 		if(!file_exists("temp/$stations.temp")){
 			exec("./do_monthly_temp.exe -L 1890 -U 2011 -P temp/$stations -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.avg -c data/ahccd/temp/TempStations.csv", $output, $ret);
@@ -40,6 +42,7 @@
 			}
 		}
 
+    error_log("ClimateTracker: Constructing monthly precipitations");
 		if(!file_exists("temp/$stations.prcp")){
 			exec("./do_monthly_prcp.exe -L 1890 -U 2011 -P temp/$stations -a products/$stations.stations -s data/ushcn_monthly/ushcn-stations.txt -m data/ushcn_monthly/9641C_201112_F52.pcp -c data/ahccd/prcp/PrcpStations.csv", $output, $ret);
 			if($ret!=0){
@@ -48,6 +51,7 @@
       }
 		}
 
+    error_log("ClimateTracker: Fitting surfaces");
 		if(!file_exists("products/$stations.surfaces")){
 			exec("./ctrack fit products/$stations temp/$stations.PRCP temp/$stations.TAVG", $output, $ret);
 			if($ret!=0){
@@ -57,11 +61,13 @@
 			}
 		}
 
+    error_log("ClimateTracker: Checking for cached fits");
 		if(!file_exists("products/$stations.fits_json")){
       print "Error: Failed to retrieve cached fits.";
       return false;
     }
 
+    error_log("ClimateTracker: Retrieving cached fits");
     $fits_json=file_get_contents("products/$stations.fits_json");
     print '{"stations":"'.$stations.'","fits":'.$fits_json.'}';
 		return true;
@@ -193,11 +199,12 @@
 		return;
 	}
 
+/*
   var_dump(file_get_contents('php://input'), true);
   $contents = ob_get_contents();
   ob_end_clean();
   error_log($contents);
-
+*/
 	if($_REQUEST['type']=='FitSurfaces')
 		FitSurfaces();
 	elseif ($_REQUEST['type']=='Track')
